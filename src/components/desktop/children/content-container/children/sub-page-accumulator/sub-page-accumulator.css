@@ -1,0 +1,9 @@
+#sub-page-Accumulator{
+    width: 100%;
+}
+
+#sub-page-Accumulator #caption-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}

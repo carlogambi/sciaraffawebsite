@@ -1,0 +1,19 @@
+#bio{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#images{
+    width: 45%;
+    min-width: 500px;
+}
+#images img{
+    width: 100%;
+}
+
+#text{
+ width: 50%;
+ min-width: 500px;
+}

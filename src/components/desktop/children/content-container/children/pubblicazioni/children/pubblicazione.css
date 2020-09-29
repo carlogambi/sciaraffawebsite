@@ -1,0 +1,17 @@
+.pubblication{
+    width: 600px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px black;
+    padding: 0px;
+}
+
+.pubblication div {
+    width: 40%;  
+}
+
+.pubblication img {
+    width: 50%;
+    object-fit: scale-down;
+}

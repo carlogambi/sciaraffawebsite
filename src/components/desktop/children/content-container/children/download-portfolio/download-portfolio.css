@@ -1,0 +1,35 @@
+h1{
+
+}
+#pssw-gate{
+
+}
+#pssw-input{
+    font-size: 3em;
+}
+span{
+
+}
+
+#dwnld-button{
+    color: black;
+    border: solid 1px black;
+    padding: 20px;
+    margin: 30px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    border: solid 1px black;
+    padding: 20px;
+    font-size: 3em;
+}
+
+#download-portfolio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,28 @@
+.gallery{
+    border: solid 1px black;
+    width: fit-content;
+    margin: 20px;
+}
+.gallery img{
+    width: 400px;
+}
+.video-contents{
+    border: solid 1px black;
+    width: fit-content;
+    margin: 20px;
+}
+.audio-contents{
+    border: solid 1px black;
+    width: fit-content;
+    margin: 20px;
+}
+.downloads{
+    border: solid 1px black;
+    width: fit-content;
+    margin: 20px;
+}
+.links{
+    border: solid 1px black;
+    width: fit-content;
+    margin: 20px;
+}

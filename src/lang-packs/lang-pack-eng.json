@@ -1,0 +1,523 @@
+{
+    "langName": "eng",
+
+    "pages": [
+        {
+            "id": "home",
+            "pageType": "home",
+            "title": "ENG home",
+            "subTitle": "ENG test subtitle",
+            "mainContent": "ENG home main content",
+            "footer": "home footer",
+            "media": {
+                "video": [
+                    "http://link_a_sito_esterno.html",
+                    "http://link_a_sito_esterno.html"
+                ],
+                "audio": [
+                    "http://link_a_sito_esterno.html",
+                    "http://link_a_sito_esterno.html"
+                ],
+                "images": [
+                    "images/home/placeholder.jpg",
+                    "images/home/placeholder.jpg"
+                ]
+            }
+        },
+        {
+            "id": "progettispeciali",
+            "pageType": "pageaggregator",
+            "title": "ENG progetti speciali",
+            "pageAggregator":  {},
+            "subTitle": "ENG test subtitle",
+            "mainContent": "ENG home main content",
+            "footer": "home footer"
+        },
+        {
+            "id": "progettisonori",
+            "pageType": "pageaggregator",
+            "title": "ENG progetti sonori",
+            "pageAggregator":  {},
+            "subTitle": "ENG progetti sonorisubtitle",
+            "mainContent": "ENG progetti sonori main content",
+            "footer": "progetti sonori footer"
+        },
+        {
+            "id": "archiviolavori",
+            "pageType": "pageaggregator",
+            "title": "ENG archivio lavori",
+            "subTitle": null,
+            "mainContent": null,
+            "footer": null
+        },
+        {
+            "id": "downloadportfolio",
+            "pageType": "downloadportfolio",
+            "title": "ENG download portfolio",
+            "pageAggregator":  {},
+            "mainContent": "ENG home main content",
+            "password": ["prova123456789"],
+            "psswButtonText": "inserisci password",
+            "buttonText": "scarica portfolio",
+            "url": "download/useless.pdf"
+        },
+        {
+            "id": "pubblicazioni",
+            "pageType": "pubblicazioni",
+            "title": "ENG pubblicazioni",
+            "mainContent": "ENG home main content",
+            "publications": [
+                {
+                    "title": "ENG titolo pubblicazione 1",
+                    "press": "giornale pubblicazione 1",
+                    "caption": "caption pubblicazione 1",
+                    "img": "images/publications/placeholder.jpg",
+                    "link": "https://www.prova.it"
+                },
+                {
+                    "title": "ENG titolo pubblicazione 2",
+                    "press": "giornale pubblicazione 2",
+                    "caption": "caption pubblicazione 2",
+                    "img": "images/publications/placeholder.jpg",
+                    "link": "https://www.prova.it"
+                },
+                {
+                    "title": "ENG titolo pubblicazione 3",
+                    "press": "giornale pubblicazione 3",
+                    "caption": "caption pubblicazione 3",
+                    "img": "images/publications/placeholder.jpg",
+                    "link": "https://www.prova.it"
+                },
+                {
+                    "title": "ENG titolo pubblicazione 4",
+                    "press": "giornale pubblicazione 4",
+                    "caption": "caption pubblicazione 4",
+                    "img": "images/publications/placeholder.jpg",
+                    "link": "https://www.prova.it"
+                }
+            ]
+          },
+        {
+            "id": "bio",
+            "pageType": "bio",
+            "title": "ENG bio",
+            "subTitle": "ENG bio subtitle",
+            "mainContent": "ENG bio main content",
+            "footer": "bio footer",
+            "images": [
+                "images/bio/placeholder.jpg"
+            ]
+        },
+        {
+            "id": "lavoro1",
+            "pageType": "subPage",
+            "aggregatorId": "archiviolavori",
+            "title": "ENG lavoro1",
+            "subTitle": "ENG lavoro1 subtitle",
+            "mainContent": "ENG lavoro1 main content",
+            "footer": "lavoro1 footer",
+            "audioContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "videoContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "images": [
+                "images/archivio-lavori/placeholder.jpg",
+                "images/archivio-lavori/placeholder.jpg"
+            ],
+            "downloads": [
+                "download/portfolio.pdf",
+                "download/portfolio.pdf"
+            ],
+            "links": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ]
+        },
+        {
+            "id": "lavoro1",
+            "pageType": "subPage",
+            "aggregatorId": "archiviolavori",
+            "title": "ENG lavoro1",
+            "subTitle": "ENG lavoro1 subtitle",
+            "mainContent": "ENG lavoro1 main content",
+            "footer": "lavoro1 footer",
+            "audioContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "videoContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "images": [
+                "images/archivio-lavori/placeholder.jpg",
+                "images/archivio-lavori/placeholder.jpg"
+            ],
+            "downloads": [
+                "download/portfolio.pdf",
+                "download/portfolio.pdf"
+            ],
+            "links": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ]
+        },
+        {
+            "id": "lavoro2",
+            "pageType": "subPage",
+            "aggregatorId": "archiviolavori",
+            "title": "ENG lavoro2",
+            "subTitle": "ENG lavoro2 subtitle",
+            "mainContent": "ENG lavoro2 main content",
+            "footer": "lavoro2 footer",
+            "audioContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "videoContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "images": [
+                "images/archivio-lavori/placeholder.jpg",
+                "images/archivio-lavori/placeholder.jpg"
+            ],
+            "downloads": [
+                "download/portfolio.pdf",
+                "download/portfolio.pdf"
+            ],
+            "links": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ]
+        },
+        {
+            "id": "lavoro3",
+            "pageType": "subPage",
+            "aggregatorId": "archiviolavori",
+            "title": "ENG lavoro3",
+            "subTitle": "ENG lavoro3 subtitle",
+            "mainContent": "ENG lavoro3 main content",
+            "footer": "lavoro3 footer",
+            "audioContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "videoContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "images": [
+                "images/archivio-lavori/placeholder.jpg",
+                "images/archivio-lavori/placeholder.jpg"
+            ],
+            "downloads": [
+                "download/portfolio.pdf",
+                "download/portfolio.pdf"
+            ],
+            "links": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ]
+        },
+        {
+            "id": "lavoro4",
+            "pageType": "subPage",
+            "aggregatorId": "archiviolavori",
+            "title": "ENG lavoro4",
+            "subTitle": "ENG lavoro4 subtitle",
+            "mainContent": "ENG lavoro4 main content",
+            "footer": "lavoro4 footer",
+            "audioContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "videoContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "images": [
+                "images/archivio-lavori/placeholder.jpg",
+                "images/archivio-lavori/placeholder.jpg"
+            ],
+            "downloads": [
+                "download/portfolio.pdf",
+                "download/portfolio.pdf"
+            ],
+            "links": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ]
+        },
+        {
+            "id": "progetto1",
+            "pageType": "subPage",
+            "aggregatorId": "progettispeciali",
+            "title": "ENG progetto1",
+            "subTitle": "ENG progetto1 subtitle",
+            "mainContent": "ENG progetto1 main content",
+            "footer": "progetto1 footer",
+            "audioContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "videoContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "images": [
+                "images/progetti-speciali/placeholder.jpg",
+                "images/progetti-speciali/placeholder.jpg"
+            ],
+            "downloads": [
+                "download/portfolio.pdf",
+                "download/portfolio.pdf"
+            ],
+            "links": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ]
+        },
+        {
+            "id": "progetto2",
+            "pageType": "subPage",
+            "aggregatorId": "progettispeciali",
+            "title": "ENG progetto2",
+            "subTitle": "ENG progetto2 subtitle",
+            "mainContent": "ENG progetto2 main content",
+            "footer": "progetto2 footer",
+            "audioContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "videoContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "images": [
+                "images/progetti-speciali/placeholder.jpg",
+                "images/progetti-speciali/placeholder.jpg"
+            ],
+            "downloads": [
+                "download/portfolio.pdf",
+                "download/portfolio.pdf"
+            ],
+            "links": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ]
+        },
+        {
+            "id": "progetto3",
+            "pageType": "subPage",
+            "aggregatorId": "progettispeciali",
+            "title": "ENG progetto3",
+            "subTitle": "ENG progetto3 subtitle",
+            "mainContent": "ENG progetto3 main content",
+            "footer": "progetto3 footer",
+            "audioContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "videoContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "images": [
+                "images/progetti-speciali/placeholder.jpg",
+                "images/progetti-speciali/placeholder.jpg"
+            ],
+            "downloads": [
+                "download/portfolio.pdf",
+                "download/portfolio.pdf"
+            ],
+            "links": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ]
+        },
+        {
+            "id": "progetto4",
+            "pageType": "subPage",
+            "aggregatorId": "progettispeciali",
+            "title": "ENG progetto4",
+            "subTitle": "ENG progetto4 subtitle",
+            "mainContent": "ENG progetto4 main content",
+            "footer": "progetto4 footer",
+            "audioContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "videoContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "images": [
+                "images/progetti-speciali/placeholder.jpg",
+                "images/progetti-speciali/placeholder.jpg"
+            ],
+            "downloads": [
+                "download/portfolio.pdf",
+                "download/portfolio.pdf"
+            ],
+            "links": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ]
+        },
+        {
+            "id": "progettosonoro1",
+            "pageType": "subPage",
+            "aggregatorId": "progettisonori",
+            "title": "ENG progetto sonoro 1",
+            "subTitle": "ENG progetto sonoro 1 subtitle",
+            "mainContent": "ENG progetto sonoro 1 main content",
+            "footer": "progetto sonoro 1 footer",
+            "audioContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "videoContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "images": [
+                "images/progetti-speciali/placeholder.jpg",
+                "images/progetti-speciali/placeholder.jpg"
+            ],
+            "downloads": [
+                "download/portfolio.pdf",
+                "download/portfolio.pdf"
+            ],
+            "links": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ]
+        },
+        {
+            "id": "progettosonoro2",
+            "pageType": "subPage",
+            "aggregatorId": "progettisonori",
+            "title": "ENG progetto sonoro 2",
+            "subTitle": "ENG progetto sonoro 2 subtitle",
+            "mainContent": "ENG progetto sonoro 2 main content",
+            "footer": "progetto sonoro 2 footer",
+            "audioContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "videoContents": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ],
+            "images": [
+                "images/progetti-speciali/placeholder.jpg",
+                "images/progetti-speciali/placeholder.jpg"
+            ],
+            "downloads": [
+                "download/portfolio.pdf",
+                "download/portfolio.pdf"
+            ],
+            "links": [
+                "http://link_a_sito_esterno.html",
+                "http://link_a_sito_esterno.html"
+            ]
+        }
+        
+    ],
+
+    "menuStructure": [
+        {
+            "itemName": "home",
+            "id": "home",
+            "subitems": []
+        },
+        {
+            "itemName": "archivio lavori",
+            "id": "archiviolavori",
+            "subitems": [
+                {
+                    "itemName": "lavoro1",
+                    "id": "progettosonoro2",
+                    "subitems": []
+                },
+                {
+                    "itemName": "lavoro2",
+                    "id": "lavoro2",
+                    "subitems": []
+                },
+                {
+                    "itemName": "lavoro3",
+                    "id": "lavoro3",
+                    "subitems": []
+                },
+                {
+                    "itemName": "lavoro4",
+                    "id": "lavoro4",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "itemName": "progetti speciali",
+            "id": "progettispeciali",
+            "subitems": [
+                {
+                    "itemName": "progetto1",
+                    "id": "progetto1",
+                    "subitems": []
+                },
+                {
+                    "itemName": "progetto2",
+                    "id": "progetto2",
+                    "subitems": []
+                },
+                {
+                    "itemName": "progetto3",
+                    "id": "progetto3",
+                    "subitems": []
+                },
+                {
+                    "itemName": "progetto4",
+                    "id": "progetto4",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "itemName": "progetti sonori",
+            "id": "progettisonori",
+            "subitems": [
+                {
+                    "itemName": "progetto sonoro 1",
+                    "id": "progettosonoro1",
+                    "subitems": []
+                },
+                {
+                    "itemName": "progetto sonoro 2",
+                    "id": "progettosonoro2",
+                    "subitems": []
+                }
+            ]
+        },
+        {
+            "itemName": "download portfolio",
+            "id": "downloadportfolio",
+            "subitems": []
+        },
+        {
+            "itemName": "pubblicazioni",
+            "id": "pubblicazioni",
+            "subitems": []
+        },
+        {
+            "itemName": "bio",
+            "id": "bio",
+            "subitems": []
+        }
+    ]
+}
