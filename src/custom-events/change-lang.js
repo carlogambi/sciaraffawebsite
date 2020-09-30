@@ -1,12 +1,12 @@
 import {setLang} from './../lang-packs/lang-manager';
-import $ from 'jquery'
+// import $ from 'jquery'
 let a = document.querySelector('#custom-event-dispatcher');
 
-const updateHtmlLangAttribute = (lang) => {
-    if($('html').attr('lang') !== lang){
-        $('html').attr('lang', lang);
-    }
-}
+// const updateHtmlLangAttribute = (lang) => {
+//     if($('html').attr('lang') !== lang){
+//         $('html').attr('lang', lang);
+//     }
+// }
 
 export default {
     trigger: (lang) => {
@@ -17,7 +17,7 @@ export default {
                 { detail: lang }
                 )
                 );
-        updateHtmlLangAttribute(lang);
+        // updateHtmlLangAttribute(lang);
 
     },
     interecept: (callback) => {
