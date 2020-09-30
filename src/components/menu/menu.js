@@ -23,10 +23,10 @@ const hiddenMenu = {
     right: '-500px'
 }
 
-const MenuContainer = ({langPack, open}) => {
+const MenuContainer = ({langPack, open, setOpen}) => {
     return  <div style={open?visibleMenu:hiddenMenu}>
             <LangMenu langPack={langPack}/>
-            <MainMenu langPack={langPack}/>
+            <MainMenu langPack={langPack} setOpen={oc => setOpen(oc)} open={open}/>
         </div>
 }
 
@@ -68,6 +68,7 @@ export default (props) => {
         <MenuContainer 
             langPack={props.langPack} 
             open={open}
+            setOpen={oc => setOpen(oc)}
             />
     </React.Fragment>
 
