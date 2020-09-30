@@ -1,28 +1,29 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
-import Home from './components/Home'
-import About from './components/About'
-import Contacts from './components/Contacts'
-import Navbar from './components/Navbar'
+import MainContainer from './components/main-container/main-contaier'
+import Menu from './components/menu/menu'
 
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Post from './components/Post';
+import {BrowserRouter } from 'react-router-dom'
+
+import  {currentLang} from './lang-packs/lang-manager'
+import changeLang from './custom-events/change-lang';
 
 function App() {
+
+  const [langPack, setlangPack] = useState(currentLang);
+
+  changeLang.interecept(() => setlangPack(currentLang));
+
   return (
-    <Router>
+    <BrowserRouter>
     <div className="App">
-        <Navbar />
-      <Switch>
-      <Route exact path='/' component={Home} />
-      <Route exact path='/about' component={About} />
-      <Route exact path='/contacts' component={Contacts} />
-      <Route exact path='/post:id' component={Post}/>
-      </Switch>
+        <Menu langPack={langPack} />
+        <MainContainer langPack={langPack} />
     </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
