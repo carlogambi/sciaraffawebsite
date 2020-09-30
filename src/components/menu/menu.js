@@ -6,13 +6,14 @@ const menuStyle = {
     position: "fixed",
     top: '120px',
     transition: 'right 1s',
-    width: '400px'
+    width: '400px',
+    backgroundColor: 'white'
 
 }
 
 const visibleMenu = {
     ...menuStyle,
-    border: 'solid 1px red',
+    border: 'solid 1px black',
     right: "10px"
 
 }
@@ -34,12 +35,12 @@ const buttonStyle = {
     position: 'fixed',
     top: '20px',
     right: '10px',
-    fontSize: '40pt',
+    fontSize: '30pt',
     border:'solid 1px black',
     borderRadius:'100%',
-    minHeight:'80px',
-    maxHeight: '80px',
-    width:'80px',
+    minHeight:'60px',
+    maxHeight: '60px',
+    width:'60px',
     cursor:'pointer'
 }
 
@@ -57,7 +58,7 @@ const ToggleButton = (props) => {
 
 export default (props) => {
     const [open, setOpen] = useState(false);
-    const bttnTxt = open?'->':'<-'
+    const bttnTxt = open?'>':'='
 
     return <React.Fragment>
         <ToggleButton 

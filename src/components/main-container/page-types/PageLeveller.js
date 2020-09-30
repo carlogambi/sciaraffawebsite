@@ -3,14 +3,18 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import  { currentLang } from '../../../lang-packs/lang-manager';
 
+const linkStyle = {
+    textDecoration: 'none',
+    color: 'unset'
+}
+
 const SubTag = ({tag}) => {
-    return <Link to={`subTagAggregator${tag}`}>
+    return <Link style={linkStyle} to={`subTagAggregator${tag}`}>
             <span>{tag}</span>
         </Link>
 }
 
 const subTaglistStyle = {
-    border: 'solid 1px black',
     display:'flex',
     justifyContent: 'space-around',
     flexWrap: 'wrap',
@@ -33,11 +37,14 @@ const captionStyle = {
     border: 'solid 1px black',
     width: '300px',
     minHeight: '250px',
-    maxHeight: '250px'
+    maxHeight: '250px',
+    margin: '10px'
 }
 
+
+
 const Caption = ({data}) => {
-    return <Link to={`singlePage${data.id}`}>
+    return <Link style={linkStyle}to={`singlePage${data.id}`}>
         <div style={captionStyle}>
             <h1>{data.title}</h1>
             <h4>{JSON.stringify(data.tags)}</h4>
@@ -46,6 +53,7 @@ const Caption = ({data}) => {
         </div>
     </Link>
 }
+
 
 const captionListStyle = {
     display: 'flex',
