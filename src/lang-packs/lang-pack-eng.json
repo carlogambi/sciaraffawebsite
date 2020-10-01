@@ -72,9 +72,38 @@
         },
         {
             "id": "publications",
-            "title": "pubblicazioni ENG",
+            "title": "pubblicazioni ITA",
             "tags": ["mainmenu"],
-            "content": "pubblicazioni content ENG"
+            "content": [
+                {
+                    "title": "title publication 1",
+                    "author": "name author publication 1",
+                    "magazine": "magazine name publication 1",
+                    "link": "https://www.linkacaso.com"
+
+                },
+                {
+                    "title": "title publication 2",
+                    "author": "name author publication 2",
+                    "magazine": "magazine name publication 2",
+                    "link": "https://www.linkacaso.com"
+
+                },
+                {
+                    "title": "title publication 3",
+                    "author": "name author publication 3",
+                    "magazine": "magazine name publication 3",
+                    "link": "https://www.linkacaso.com"
+
+                },
+                {
+                    "title": "title publication 4",
+                    "author": "name author publication 4",
+                    "magazine": "magazine name publication 4",
+                    "link": "https://www.linkacaso.com"
+
+                }
+            ]
         },
         {
             "id": "portfoliodownload",
