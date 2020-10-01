@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from './../../utility/Image'
 const bioPageStyle ={
     display:'flex',
     justifyContent: 'space-around',
@@ -33,13 +33,13 @@ const imgStyle = {
 }
 
 
+
+
 export default ({langPack}) => {
     const page = langPack.content;
     console.log(langPack);
     const images = page.images.map(
-        (img,i) =>
-         <img style={imgStyle} src={`/${img}`} key={i} alt='bio-img' />
-         );
+        (img,i) => <Image img={img} style={imgStyle} key={i} />);
 
     return <div style={bioPageStyle}>
         <div style={bioSection}>
