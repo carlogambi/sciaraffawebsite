@@ -1,5 +1,15 @@
 {
     "name": "ita",
+    "tagReference": [
+        {
+        "mainTagName": "works",
+        "subtags": ["ohai", "live", "intervento"]
+        },
+        {
+        "mainTagName": "audio",
+        "subtags": ["ohai", "live"]
+        }
+    ],
     "pages": [
         {
             "id": "bio",
@@ -112,40 +122,28 @@
             "id": "lavoro1",
             "title": "lavoro1 ITA",
             "tags": ["works", "audio"],
-            "subtags": {
-                "parentTag": "works",
-                "tags":["ohai", "live", "intervento"]
-            },
+            "subtags": ["ohai", "live", "intervento"],
             "content": "lavoro1 ITA"
         },
         {
             "id": "lavoro2",
             "title": "lavoro2 ITA",
             "tags": ["audio"],
-            "subtags": {
-                "parentTag": "works",
-                "tags":["ohai", "live", "intervento"]
-            },
+            "subtags": ["ohai", "live", "intervento"],
             "content": "lavoro2 ITA"
         },
         {
             "id": "lavoro3",
             "title": "lavoro3 ITA",
             "tags": ["works"],
-            "subtags": {
-                "parentTag": "audio",
-                "tags":[ "intervento"]
-            },
+            "subtags": [ "intervento"],
             "content": "lavoro3 ITA"
         },
         {
             "id": "lavoro4",
             "title": "lavoro4 ITA",
             "tags": ["works"],
-            "subtags": {
-                "parentTag": "audio",
-                "tags":["ohai", "intervento"]
-            },
+            "subtags": ["ohai", "intervento"],
             "content": "lavoro4 ITA"
         }
 

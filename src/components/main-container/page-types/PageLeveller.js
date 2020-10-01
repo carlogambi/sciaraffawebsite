@@ -23,11 +23,7 @@ const subTaglistStyle = {
 }
 
 const SubTagList = ({data}) => {
-    let list = data.langPack.pages.filter(p => p.subtags);
-    list = list.filter(p => p.subtags.parentTag === data.id)
-    list = list.map(p => p.subtags.tags).flat();
-    list = [...new Set(list)]
-    
+    const list = (data.langPack.tagReference.find(mt => mt.mainTagName === data.id)).subtags
     return <div style={subTaglistStyle}>
         {list.map((st, i) => <SubTag tag={st} key={i} />)}
     </div>
@@ -65,13 +61,11 @@ const captionListStyle = {
     const subTagList = () => {
         let pages = currentLang.pages.filter(p => p.subtags)
         pages = pages.filter(p => {              
-            return p.subtags.tags.includes(props.match.params.tag)
+            return p.subtags.includes(props.match.params.tag)
         })
         return pages;
     } 
     const pageList = props.match?subTagList():mainTagsList();
-    // const pageList = props.langPack.pages.filter(p => p.tags.includes(props.id));
-    console.log({pageList});
     return <div>
         <h1>{props.match?props.match.params.tag:props.id}</h1>
         {props.match?null:<SubTagList data={props} />}
