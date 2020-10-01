@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from './../../utility/Image'
 const imgStyle = {
     width: '400px'
 };
@@ -46,7 +46,7 @@ export default ({langPack}) => {
             :null
             }
         {page.image?
-            <img style={imgStyle} src={`/${page.image}`} alt='contacts-img' />
+            <Image style={imgStyle} src={`/${page.image}`} alt='contacts-img' />
             :null
         }
         {page.spaceInfo?

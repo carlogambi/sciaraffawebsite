@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import Image from './../../utility/Image'
 const buttonStyle = {
     border: 'solid 1px black',
     padding: '3px',
@@ -79,7 +79,7 @@ export default ({langPack}) => {
 
     return <div style={pageStyle}>
             <h1>portfolio download</h1>
-            {info.image?<img src={info.image} alt='dwnld-img' style={imgStyle} />:null}
+            {info.image?<Image src={info.image} alt='dwnld-img' style={imgStyle} />:null}
             {psswCorrect?
                 <Download info={info} />
             :

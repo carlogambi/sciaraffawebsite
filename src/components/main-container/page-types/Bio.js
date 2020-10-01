@@ -39,7 +39,7 @@ export default ({langPack}) => {
     const page = langPack.content;
     console.log(langPack);
     const images = page.images.map(
-        (img,i) => <Image img={img} style={imgStyle} key={i} />);
+        (img,i) => <Image src={img} style={imgStyle} key={i} />);
 
     return <div style={bioPageStyle}>
         <div style={bioSection}>
