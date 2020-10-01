@@ -32,7 +32,8 @@ return <span
 const langMenuStyle = {
     margin: '20px',
     display: 'flex',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    alignitems: 'center'
 }
 
 export default () => {
