@@ -5,7 +5,15 @@
             "id": "bio",
             "title": "bio ENG",
             "tags": ["mainmenu"],
-            "content": "bio content ENG"
+            "content": {
+                "subTitle": "sottotitolo ENG",
+                "mainContent": "contenuto principale ENG",
+                "footer": "chiusura ENG",
+                "images": [
+                    "images/bio/placeholder.jpg",
+                    "images/bio/placeholder.jpg"
+                ]
+            }
         },
         {
             "id": "works",
@@ -23,7 +31,34 @@
             "id": "contacts",
             "title": "contatti ENG",
             "tags": ["mainmenu"],
-            "content": "contatti content ENG"
+            "content": {
+                "mainContent": "main content ENG",
+                "image": "images/contacts/placeholder.jpg",
+                "spaceInfo":{
+                    "name": "phisical space name",
+                    "address": "via qualcosa 00"
+                },
+                "contacts": [
+                    {
+                        "role": "roulo 1 ENG",
+                        "name": "name 1",
+                        "mail": "mail@mail.it",
+                        "phone": "123456"
+                    },
+                    {
+                        "role": "roulo 2 ENG",
+                        "name": "name 2",
+                        "mail": "mail@mail.it",
+                        "phone": "123456"
+                    },
+                    {
+                        "role": "roulo 3 ENG",
+                        "name": "name 3",
+                        "mail": "mail@mail.it",
+                        "phone": "123456"
+                    }
+                ]
+            }
         },
         {
             "id": "publications",
@@ -35,7 +70,13 @@
             "id": "portfoliodownload",
             "title": "download portfolio ENG",
             "tags": ["mainmenu"],
-            "content": "download portfolio ENG"
+            "content": {
+                "mainContent": "ENG home main content",
+                "password": ["prova123456789", "seconda password"],
+                "psswButtonText": "inserisci password",
+                "buttonText": "scarica portfolio",
+                "url": "download/useless.pdf"
+            }
         },
         {
             "id": "lavoro1",

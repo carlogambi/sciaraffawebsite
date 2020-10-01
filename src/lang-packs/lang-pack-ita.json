@@ -5,7 +5,15 @@
             "id": "bio",
             "title": "bio ITA",
             "tags": ["mainmenu"],
-            "content": "bio content ITA"
+            "content": {
+                "subTitle": "sottotitolo ITA",
+                "mainContent": "contenuto principale ITA",
+                "footer": "chiusura ITA",
+                "images": [
+                    "images/bio/placeholder.jpg",
+                    "images/bio/placeholder.jpg"
+                ]
+            }
         },
         {
             "id": "works",
@@ -23,19 +31,82 @@
             "id": "contacts",
             "title": "contatti ITA",
             "tags": ["mainmenu"],
-            "content": "contatti content ITA"
+            "content": {
+                "mainContent": "main content ITA",
+                "image": "images/contacts/placeholder.jpg",
+                "spaceInfo":{
+                    "name": "phisical space name",
+                    "address": "via qualcosa 00"
+                },
+                "contacts": [
+                    {
+                        "role": "roulo 1 ITA",
+                        "name": "name 1",
+                        "mail": "mail@mail.it",
+                        "phone": "123456"
+                    },
+                    {
+                        "role": "roulo 2 ITA",
+                        "name": "name 2",
+                        "mail": "mail@mail.it",
+                        "phone": "123456"
+                    },
+                    {
+                        "role": "roulo 3 ITA",
+                        "name": "name 3",
+                        "mail": "mail@mail.it",
+                        "phone": "123456"
+                    }
+                ]
+            }
         },
         {
             "id": "publications",
             "title": "pubblicazioni ITA",
             "tags": ["mainmenu"],
-            "content": "pubblicazioni content ITA"
+            "content": [
+                {
+                    "title": "title publication 1",
+                    "author": "name author publication 1",
+                    "magazine": "magazine name publication 1",
+                    "link": "https://www.linkacaso.com"
+
+                },
+                {
+                    "title": "title publication 2",
+                    "author": "name author publication 2",
+                    "magazine": "magazine name publication 2",
+                    "link": "https://www.linkacaso.com"
+
+                },
+                {
+                    "title": "title publication 3",
+                    "author": "name author publication 3",
+                    "magazine": "magazine name publication 3",
+                    "link": "https://www.linkacaso.com"
+
+                },
+                {
+                    "title": "title publication 4",
+                    "author": "name author publication 4",
+                    "magazine": "magazine name publication 4",
+                    "link": "https://www.linkacaso.com"
+
+                }
+            ]
         },
         {
             "id": "portfoliodownload",
             "title": "download portfolio ITA",
             "tags": ["mainmenu"],
-            "content": "download portfolio ITA"
+            "content": {
+                "image": "images/portfoliodownload/placeholder.jpg",
+                "mainContent": "ITA home main content",
+                "password": ["prova123456789", "seconda password"],
+                "psswButtonText": "inserisci password",
+                "buttonText": "scarica portfolio",
+                "url": "download/useless.pdf"
+            }
         },
         {
             "id": "lavoro1",

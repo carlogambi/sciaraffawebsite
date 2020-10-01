@@ -9,20 +9,21 @@ import { currentLang } from '../../../lang-packs/lang-manager';
 
 export default (props) => {
     const id = props.match.params.id;
+    const findPage = id => currentLang.pages.find(p => p.id === id)
     
     let currentPage;
     switch (id) {
         case 'bio':
-        currentPage = <Bio langPack={currentLang}/>
+        currentPage = <Bio langPack={findPage('bio')}/>
         break;
         case 'contacts':
-        currentPage = <Contacts langPack={currentLang}/>
+        currentPage = <Contacts langPack={findPage('contacts')}/>
         break;
         case 'publications':
-            currentPage = <Publications langPack={currentLang}/>
+            currentPage = <Publications langPack={findPage('publications')}/>
         break;
         case 'portfoliodownload':
-            currentPage = <PortfolioDownload langPack={currentLang}/>;
+            currentPage = <PortfolioDownload langPack={findPage('portfoliodownload')}/>;
         break;
         default:
             currentPage = <Pageleveller langPack={currentLang} id={id}  subTagRef={false}/>
