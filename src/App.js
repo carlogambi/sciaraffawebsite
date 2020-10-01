@@ -4,7 +4,7 @@ import './App.css';
 import MainContainer from './components/main-container/main-contaier'
 import Menu from './components/menu/menu'
 
-import {BrowserRouter } from 'react-router-dom'
+import {BrowserRouter, Link } from 'react-router-dom'
 
 import  {currentLang} from './lang-packs/lang-manager'
 import changeLang from './custom-events/change-lang';
@@ -15,7 +15,12 @@ const titleStyle = {
   paddingLeft: '20px'
 }
 
-const title = <h2 style={titleStyle}>Alessandro Sciaraffa</h2>
+const linkStyle = {
+  textDecoration: 'unset',
+  color: 'unset'
+}
+
+const Title = () => <Link style={linkStyle} to='/'><h2 style={titleStyle}>Alessandro Sciaraffa</h2></Link>
 
 function App() {
 
@@ -26,7 +31,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-        {title}
+        <Title />
         <Menu langPack={langPack} />
         <MainContainer langPack={langPack} />
     </div>
