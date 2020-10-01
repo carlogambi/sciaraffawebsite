@@ -24,10 +24,9 @@ const Publication = ({info}) => {
 }
 
 const publicationsContainerStyle = {
+    width: '100%',
     display: 'flex',
-    flexDirection: 'column',
     flexWrap: 'wrap',
-    maxHeight: '800px'
 }
 
 export default ({langPack}) => {

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import deviceDetector from '../../utility/device-detector';
 import Image from './../../utility/Image'
 const buttonStyle = {
     border: 'solid 1px black',
@@ -30,8 +31,7 @@ const pageStyle = {
 
 };
 const imgStyle = {
-    width: 'auto',
-    maxHeight: '300px'
+    width: (deviceDetector() === 'desktop')?'40%':'70%',
 }
 
 const Psswgate = (props) => {
