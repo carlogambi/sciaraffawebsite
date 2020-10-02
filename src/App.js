@@ -9,6 +9,10 @@ import {BrowserRouter, Link } from 'react-router-dom'
 import  {currentLang} from './lang-packs/lang-manager'
 import changeLang from './custom-events/change-lang';
 
+import deviceDetector from './components/utility/device-detector';
+
+const currentDevice = deviceDetector()
+
 const titleStyle = {
   textTransform: 'uppercase', 
   textAlign: 'left', 
@@ -31,7 +35,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-        <Title />
+        {currentDevice === 'mobile'?<Title />:null}
         <Menu langPack={langPack} />
         <MainContainer langPack={langPack} />
     </div>

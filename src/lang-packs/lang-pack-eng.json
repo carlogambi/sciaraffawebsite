@@ -72,7 +72,7 @@
         },
         {
             "id": "publications",
-            "title": "pubblicazioni ITA",
+            "title": "pubblicazioni ENG",
             "tags": ["mainmenu"],
             "content": [
                 {
@@ -110,6 +110,7 @@
             "title": "download portfolio ENG",
             "tags": ["mainmenu"],
             "content": {
+                "image": "images/portfoliodownload/placeholder.jpg",
                 "mainContent": "ENG home main content",
                 "password": ["prova123456789", "seconda password"],
                 "psswButtonText": "inserisci password",
@@ -122,28 +123,104 @@
             "title": "lavoro1 ENG",
             "tags": ["works", "audio"],
             "subtags": ["ohai", "live", "intervento"],
-            "content": "lavoro1 ENG"
+            "content": {
+                "subTitle": "sottotitolo ",
+                "mainContent": "contenuto principale",
+                "footer": "footer",
+                "images": [
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg"
+                ],
+                "videos": [
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768"
+                ],
+                "audios": [
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
+                ]  
+            }
         },
         {
             "id": "lavoro2",
             "title": "lavoro2 ENG",
             "tags": ["audio"],
             "subtags": ["ohai", "live", "intervento"],
-            "content": "lavoro2 ENG"
+            "content": {
+                "subTitle": "sottotitolo ",
+                "mainContent": "contenuto principale",
+                "footer": "footer",
+                "images": [
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg"
+                ],
+                "videos": [
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768"
+                ],
+                "audios": [
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
+                ]  
+            }
         },
         {
             "id": "lavoro3",
             "title": "lavoro3 ENG",
             "tags": ["works"],
             "subtags": [ "intervento"],
-            "content": "lavoro3 ENG"
+            "content": {
+                "subTitle": "sottotitolo ",
+                "mainContent": "contenuto principale",
+                "footer": "footer",
+                "images": [
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg"
+                ],
+                "videos": [
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768"
+                ],
+                "audios": [
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
+                ]  
+            }
         },
         {
             "id": "lavoro4",
             "title": "lavoro4 ENG",
             "tags": ["works"],
             "subtags": ["ohai", "intervento"],
-            "content": "lavoro4 ENG"
+            "content": {
+                "subTitle": "sottotitolo ",
+                "mainContent": "contenuto principale",
+                "footer": "footer",
+                "images": [
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg"
+                ],
+                "videos": [
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768"
+                ],
+                "audios": [
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
+                ]  
+            }
         }
 
     ]

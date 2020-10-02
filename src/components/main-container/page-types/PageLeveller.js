@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import {Link} from 'react-router-dom';
 import  { currentLang } from '../../../lang-packs/lang-manager';
 
 const linkStyle = {
     textDecoration: 'none',
+    position:'relative',
     color: 'unset'
 }
 
@@ -29,23 +30,35 @@ const SubTagList = ({data}) => {
     </div>
 }
 
-const captionStyle = {
-    border: 'solid 1px black',
+let captionStyle = {
     width: '300px',
     minHeight: '250px',
     maxHeight: '250px',
     margin: '10px'
 }
 
-
+const captionTextContainerStyle = {
+    backgroundColor: '#ffffff73',
+    position: 'absolute',
+    top: '0px',bottom: '0px',left: '0px',right: '0px',
+}
 
 const Caption = ({data}) => {
+    const [hover, setHover] = useState(false)
+    captionStyle = {
+        ...captionStyle,
+        backgroundImage: `url(${data.content.images[0]})`,
+        backgroundSize: '150%',
+        backgroundPosition: 'center center',
+    }
+    
     return <Link style={linkStyle}to={`singlePage${data.id}`}>
-        <div style={captionStyle}>
-            <h1>{data.title}</h1>
-            <h4>{JSON.stringify(data.tags)}</h4>
-            <h5>{JSON.stringify(data.subtags)}</h5>
-            <p>{data.content}</p>
+        <div
+            style={captionStyle}
+            onMouseEnter={() => setHover(true)}    
+            onMouseLeave={() => setHover(false)}    
+        >{hover?<div style={captionTextContainerStyle}><h1>{data.title}</h1>
+        <h4>{data.content.subTitle}</h4></div>:null}
         </div>
     </Link>
 }

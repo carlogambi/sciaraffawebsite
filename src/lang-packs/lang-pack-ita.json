@@ -123,28 +123,104 @@
             "title": "lavoro1 ITA",
             "tags": ["works", "audio"],
             "subtags": ["ohai", "live", "intervento"],
-            "content": "lavoro1 ITA"
+            "content": {
+                "subTitle": "sottotitolo ",
+                "mainContent": "contenuto principale",
+                "footer": "footer",
+                "images": [
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg"
+                ],
+                "videos": [
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768"
+                ],
+                "audios": [
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
+                ]  
+            }
         },
         {
             "id": "lavoro2",
             "title": "lavoro2 ITA",
             "tags": ["audio"],
             "subtags": ["ohai", "live", "intervento"],
-            "content": "lavoro2 ITA"
+            "content": {
+                "subTitle": "sottotitolo ",
+                "mainContent": "contenuto principale",
+                "footer": "footer",
+                "images": [
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg"
+                ],
+                "videos": [
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768"
+                ],
+                "audios": [
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
+                ]  
+            }
         },
         {
             "id": "lavoro3",
             "title": "lavoro3 ITA",
             "tags": ["works"],
             "subtags": [ "intervento"],
-            "content": "lavoro3 ITA"
+            "content": {
+                "subTitle": "sottotitolo ",
+                "mainContent": "contenuto principale",
+                "footer": "footer",
+                "images": [
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg"
+                ],
+                "videos": [
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768"
+                ],
+                "audios": [
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
+                ]  
+            }
         },
         {
             "id": "lavoro4",
             "title": "lavoro4 ITA",
             "tags": ["works"],
             "subtags": ["ohai", "intervento"],
-            "content": "lavoro4 ITA"
+            "content": {
+                "subTitle": "sottotitolo ",
+                "mainContent": "contenuto principale",
+                "footer": "footer",
+                "images": [
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/placeholder.jpg"
+                ],
+                "videos": [
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768"
+                ],
+                "audios": [
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
+                ]  
+            }
         }
 
     ]

@@ -1,15 +1,19 @@
 import React from 'react';
 import changeLang from '../../../custom-events/change-lang';
-
+import deviceDetector from '../../utility/device-detector';
 import {langNameList, currentLang} from './../../../lang-packs/lang-manager'
 
+const currentDevice = deviceDetector();
+
+
 const currentLangButtonStyle = {
-    border: 'solid 1px black',
+    // border: 'solid 1px black',
     backgroundColor: 'black',
     color: 'white',
     padding: '5px',
     textTransform: 'uppercase',
-    cursor: 'none'
+    cursor: 'none',
+    margin: currentDevice==='desktop'?'10px':'unset'
 }
 
 const CurrentLangButton = ({langName}) => {
@@ -29,15 +33,36 @@ return <span
     >{langName}</span>
 }
 
-const langMenuStyle = {
-    margin: '20px',
-    display: 'flex',
-    justifyContent: 'space-around',
-    alignitems: 'center'
+let langMenuStyle; 
+switch(currentDevice){
+    case 'mobile':
+        langMenuStyle = {
+            margin: '20px',
+            display: 'flex',
+            justifyContent: 'space-around',
+            alignitems: 'center'
+        }
+        break;
+    case 'desktop':
+        langMenuStyle = {
+            margin: '30px',
+            display: 'flex',
+            justifyContent: 'space-between'
+        }
+        break;
+        default:
+        break;
+}
+
+const titleStyle ={
+    fontSize: '20pt',
+    textTransform: 'uppercase',
 }
 
 export default () => {
 return <div style={langMenuStyle}>
+    {currentDevice === 'desktop'?<span style={titleStyle}>Alessandro Sciaraffa</span>:null}
+    <div>
     {langNameList.map(
         (ln,i)=>
         (ln===currentLang.name)?
@@ -45,5 +70,6 @@ return <div style={langMenuStyle}>
         :
         <LangButton langName={ln} key={i} />
     )}
+    </div>
 </div>
 }
