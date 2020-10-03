@@ -37,13 +37,13 @@ let captionStyle = {
     margin: '10px'
 }
 
-const captionTextContainerStyle = {
+export const captionTextContainerStyle = {
     backgroundColor: '#ffffff73',
     position: 'absolute',
     top: '0px',bottom: '0px',left: '0px',right: '0px',
 }
 
-const Caption = ({data}) => {
+export const Caption = ({data}) => {
     const [hover, setHover] = useState(false)
     captionStyle = {
         ...captionStyle,
@@ -64,7 +64,7 @@ const Caption = ({data}) => {
 }
 
 
-const captionListStyle = {
+export const captionListStyle = {
     display: 'flex',
     flexWrap: 'wrap'
 }

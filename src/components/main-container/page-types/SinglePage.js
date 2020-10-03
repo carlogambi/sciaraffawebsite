@@ -4,12 +4,29 @@ import langManager from '../../../lang-packs/lang-manager';
 import deviceDetector from '../../utility/device-detector';
 import loadingplaceholder from './../../utility/loadingimageplaceholder.png'
 
-const audioStyle = {
+const currentDevice = deviceDetector();
+
+let audioStyle = {
     margin: '10px',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    width: "70%"
+}
+if(currentDevice === 'mobile'){
+    audioStyle = null;
+    audioStyle={
+        minWidth: '100%',
+        margin: '10px'
+    }
+
 }
 
-const Audio = ({url}) => <ReactPlayer style={audioStyle} width='70%' height='150px' url={url}/>;
+const Audio = ({url}) => 
+    <ReactPlayer 
+    style={audioStyle} 
+    width='70%' 
+    height='150px' 
+    url={url}
+    />;
 
 let videoStyle = {
     alignSelf: 'center',
@@ -17,13 +34,13 @@ let videoStyle = {
     height: '500px',
     margin: '30px'
 }
-if(deviceDetector() === 'mobile'){
+if(currentDevice === 'mobile'){
     videoStyle = null;
     videoStyle = {
         alignSelf: 'center',
-        width: '90%',
-        height: '170px',
-        margin: '30px'
+        width: '100%',
+        height: '230px',
+        margin: '15px'
     }
 }
 const VimeoVideo = ({url}) => {
@@ -33,7 +50,8 @@ const VimeoVideo = ({url}) => {
         {loaded?<ReactPlayer 
                 height={videoStyle.height} 
                 width={videoStyle.width} 
-                style={videoStyle} url={url} 
+                style={videoStyle} 
+                url={url} 
                 
                 />:<img 
                 style={videoStyle} 
@@ -45,9 +63,9 @@ const VimeoVideo = ({url}) => {
             }
 
 const imgStyle={
-    width: '70%',
+    width: (currentDevice === 'mobile')?'100%':'70%',
     alignSelf: 'center',
-    margin: '30px'
+    margin: (currentDevice === 'mobile')?'15px':'30px'
 
 }
 
@@ -55,7 +73,8 @@ const pageStyle ={
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    width: '100%'
+    width: '100%',
+    pagging: '0%'
 }
 
 export default (props) => {
