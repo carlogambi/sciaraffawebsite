@@ -57,6 +57,8 @@ switch(currentDevice){
 const titleStyle ={
     fontSize: '20pt',
     textTransform: 'uppercase',
+    letterSpacing: '15px',
+    cursor: 'context-menu'
 }
 
 export default () => {
