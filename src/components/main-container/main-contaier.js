@@ -9,7 +9,7 @@ import Home from './page-types/Home';
 
 export default (props) => {
     return <Switch>
-                <Route exact path='/' component={Home}/>
+                <Route exact path='/' render={(routerProps) => <Home {...routerProps} data={props}/>}/>
                 <Route exact path='/mainpage:id' component={PageAggregator}/>
                 <Route exact path='/singlePage:id' component={SinglePage}/>
                 <Route exact path='/subTagAggregator:tag' component={PageLeveller} subTagRef={true}/>

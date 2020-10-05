@@ -6,21 +6,30 @@ import  { currentLang } from '../../../lang-packs/lang-manager';
 const linkStyle = {
     textDecoration: 'none',
     position:'relative',
-    color: 'unset'
+    color: 'unset',
+    textTransform: 'uppercase',
+    fontWeight: '700',
+    letterSpacing: '3px',
+    fontSize: '14pt',
+    paddingRight:'10px',
+
 }
 
 const SubTag = ({tag}) => {
-    return <Link style={linkStyle} to={`subTagAggregator${tag}`}>
+    return <Link style={{...linkStyle, textAlign: 'right'}} to={`subTagAggregator${tag}`}>
             <span>{tag}</span>
         </Link>
 }
 
 const subTaglistStyle = {
+    borderRight: 'solid 1px black',
     display:'flex',
-    justifyContent: 'space-around',
     flexWrap: 'wrap',
-    width:'80%',
-    marginBottom: '80px'
+    lineHeight: '40px',
+    height: 'fit-content',
+    width:'17%',
+    flexDirection: 'column',
+    alignContent: 'flex-end'
 }
 
 const SubTagList = ({data}) => {
@@ -66,7 +75,26 @@ export const Caption = ({data}) => {
 
 export const captionListStyle = {
     display: 'flex',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    width: '75%'
+}
+
+const minContainerStyle = {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%'
+}
+
+const titleStyle ={
+    // border: 'solid 1px black',
+    textAlign: 'left',
+    // paddingLeft: '17%',
+    paddingLeft: '40%',
+    textTransform: 'uppercase',
+    // letterSpacing: '6px',
+    letterSpacing: '20px',
+    fontSize: '30pt'
 }
 
  const PageLeveller = (props) => {
@@ -80,13 +108,15 @@ export const captionListStyle = {
     } 
     const pageList = props.match?subTagList():mainTagsList();
     return <div>
-        <h1>{props.match?props.match.params.tag:props.id}</h1>
+        <h1 style={titleStyle}>{props.match?props.match.params.tag:props.id}</h1>
+        <div style={minContainerStyle}>
         {props.match?null:<SubTagList data={props} />}
         <div style={captionListStyle}>
             {pageList.map(
                 (p,i) =>
                 <Caption data={p} key={i} />
             )}
+        </div>
         </div>
     </div>
 }
