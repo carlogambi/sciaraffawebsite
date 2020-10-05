@@ -6,7 +6,7 @@ const PublicationStyle ={
     width: '300px',
     textAlign: 'left',
     lineHeight: '3px',
-    margin: '30px',
+    margin: '15px',
     paddingBottom: '10px'
 }
 
