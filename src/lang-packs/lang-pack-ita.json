@@ -3,11 +3,11 @@
     "tagReference": [
         {
         "mainTagName": "works",
-        "subtags": ["ohai", "live", "intervento"]
+        "subtags": ["special projects", "performances", "sound sculptures", "paintings", "music"]
         },
         {
-        "mainTagName": "audio",
-        "subtags": ["ohai", "live"]
+        "mainTagName": "exhibitions",
+        "subtags": ["2014", "2017", "2019", "2020"]
         }
     ],
     "pages": [
@@ -27,15 +27,15 @@
         },
         {
             "id": "works",
-            "title": "works ITA",
+            "title": "Archivio Lavori",
             "tags": ["mainmenu"],
             "content": "works content ITA"
         },
         {
-            "id": "audio",
-            "title": "audio ITA",
+            "id": "exhibitions",
+            "title": "Exhibitions",
             "tags": ["mainmenu"],
-            "content": "audio content ITA"
+            "content": "exhibitions content ITA"
         },
         {
             "id": "contacts",
@@ -72,7 +72,7 @@
         },
         {
             "id": "publications",
-            "title": "pubblicazioni ITA",
+            "title": "Press",
             "tags": ["mainmenu"],
             "content": [
                 {
@@ -119,66 +119,75 @@
             }
         },
         {
-            "id": "lavoro1",
-            "title": "lavoro1 ITA",
-            "tags": ["works", "audio"],
-            "subtags": ["ohai", "live", "intervento"],
+            "id": "lunatici",
+            "title": "I Lunatici parlano alla Luna",
+            "tags": [ "exhibitions"],
+            "subtags": ["2014"],
             "content": {
-                "subTitle": "sottotitolo ",
-                "mainContent": "contenuto principale",
-                "footer": "footer",
+                "subTitle": " Galleria Giorgio Persano, Torino, Italy ",
+                "date": "14 marzo | 17 maggio 2014",
+                "cit": {
+                    "text": "Chi ama la Luna davvero non si contenta di contemplarla come un’immagine convenzionale.Vuole entrare in un rapporto più stretto con lei, vuole vedere di più nella Luna, vuole che la Luna dica di più",
+                    "author": "Italo Calvino"
+                },
+                "mainContent": "I lunatici parlano alla Luna è il lavoro sonoro di Alessandro Sciaraffa, fulcro della mostra personale dell’artista alla galleria Giorgio Persano. Grazie al collegamento in streaming con il Radio Telescopio dell’Osservatorio Astronomico Val Pellice, al pubblico che interviene all’evento inaugurale è data la possibilità di parlare con la Luna. Una trasmissione radio EME (Earth-Moon-Earth) permetterà di riflettere sulla superficie lunare la voce dei presenti ed ascoltarne l’eco. I partecipanti saranno invitati ad entrare in una sorta di intima ‘capsula spaziale’, una tenda di 3 metri di diametro per 7 di altezza, così, isolati dallo spazio circostante, possono urlare, sussurrare, ululare i propri sogni, le proprie istanze, le proprie odi a quel misterioso satellite che per secoli tanto ha incantato poeti, pensatori e scienziati. L’intenzione dell’artista è di “offrire in un’esperienza diretta, fruibile da tutti, la voce come estensione di noi stessi proiettata verso l’altrove. Un gesto che indica uno sguardo verticale, un nuovo orizzonte misurato dalla distanza con un riflesso, vuole indicare una diversa prospettiva dello sguardo. La costruzione di un’esperienza di senso, capace di superare gli ostacoli delle sovrastrutture che ci tengono ancorati alla sola superficie del suolo, prende la forma di una meditazione sulla nostra condizione”. Le parole, le frasi, i suoni protagonisti di questo dialogo con la Luna, registrati il 14 marzo – giorno dell’evento partecipativo, saranno il sottofondo sonoro per tutta la durata della mostra.",
+                "footer": " Le opere esposte sono tutte ideate come un omaggio al nostro satellite, la cui superficie è impressa idealmente nell’immaginario collettivo come nei lavori di Sciaraffa la ritroviamo impressa sulla pelle di tamburi o sulla carta fotografica.",
                 "images": [
-                    "images/archivio-lavori/placeholder.jpg",
-                    "images/archivio-lavori/placeholder.jpg",
-                    "images/archivio-lavori/placeholder.jpg"
+                    "images/exhibitions/lunatici/1.jpg",
+                    "images/exhibitions/lunatici/2.png",
+                    "images/exhibitions/lunatici/3.png",
+                    "images/exhibitions/lunatici/4.png",
+                    "images/exhibitions/lunatici/5.png",
+                    "images/exhibitions/lunatici/6.png",
+                    "images/exhibitions/lunatici/7.png"
                 ],
                 "videos": [
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768"
+                    "https://vimeo.com/207813559"
                 ],
-                "audios": [
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
-                ]  
+                "audios": []  
             }
         },
         {
-            "id": "lavoro2",
-            "title": "lavoro2 ITA",
-            "tags": ["audio"],
-            "subtags": ["ohai", "live", "intervento"],
+            "id": "fontanelle",
+            "title": "fontanelle",
+            "tags": ["exhibitions"],
+            "subtags": ["2017", "sound sculptures"],
             "content": {
-                "subTitle": "sottotitolo ",
-                "mainContent": "contenuto principale",
-                "footer": "footer",
+                "subTitle": "Galerie Italienne",
+                "date": "1 dicembre 2016 - 21 gennaio 2017",
+                "cit": {
+                    "text": "L'acqua cerca sempre l'acqua",
+                    "author": "Alessandro Sciaraffa"
+                },
+                "mainContent": "Distribuita su tutto lo spazio della galleria, “Fontanella Secca” presenta i lavori del ciclo ‘Fontanelle riuniti per la prima volta. Il lavoro di Sciaraffa è sempre stato incentrato sul suono. Le opere in mostra sono un lavoro intorno al rumore dell'acqua. Grazie al dialogo tra le diverse sculture sonore, realizzate appositamente per il nuovo spazio espositivo della Galleria Italiana, lo spettatore è immerso in un'esperienza sinestetica in cui il suono e il visivo intendono creare un'opera a sé stante. Con questo nuovo ciclo Alessandro Sciaraffa porta l'esperienza tecnologica al limite per mettere in relazione il suono dell'acqua, l'architettura, la natura e gli strumenti musicali. Legno, acciaio e ottone sono stati utilizzati per le loro diverse proprietà fisiche, quando messi insieme, la miscela genera un lavoro unico.",
+                "footer": null,
                 "images": [
-                    "images/archivio-lavori/placeholder.jpg",
-                    "images/archivio-lavori/placeholder.jpg",
-                    "images/archivio-lavori/placeholder.jpg"
+                    "images/exhibitions/fontanelle/1.png",
+                    "images/exhibitions/fontanelle/2.png",
+                    "images/exhibitions/fontanelle/3.jpg",
+                    "images/exhibitions/fontanelle/4.png",
+                    "images/exhibitions/fontanelle/5.png",
+                    "images/exhibitions/fontanelle/6.png",
+                    "images/exhibitions/fontanelle/7.png"
                 ],
-                "videos": [
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768"
-                ],
-                "audios": [
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
-                ]  
+                "videos": [],
+                "audios": []  
             }
         },
         {
-            "id": "lavoro3",
-            "title": "lavoro3 ITA",
+            "id": "aurora",
+            "title": "Aurora",
             "tags": ["works"],
-            "subtags": [ "intervento"],
+            "subtags": [ "special projects", "2019", "2020"],
             "content": {
-                "subTitle": "sottotitolo ",
-                "mainContent": "contenuto principale",
-                "footer": "footer",
+                "subTitle": "Nell'ambito di Luci d'Artista 2019 ",
+                "date": "da 7 Dicembre 2019 a 11 Gennaio 2020",
+                "cit": {
+                    "text": "Stele del Torino Outlet Village, a cura di Riccardo Passoni - Direttore GAM Torino. Torino Outlet Village. Via Torino, 160 - Settimo Torinese",
+                    "author": ""
+                },
+                "mainContent": "Per la XXII edizione di Luci d’Artista, Aurora, una nuova opera luminosa e sonora realizzata appositamente per la Stele del Torino Outlet Village. Attraverso l’utilizzo di videomapping ed effetti sonori, Alessandro Sciaraffa plasma un’aurora boreale sulla stele del Torino Outlet Village, trasformandola in una fronda splendente e prodigiosa che rischiara il cielo notturno, diventando richiamo e punto di partenza per una connessione spirituale, politica e sociale tra individuo e universo. La Stele del Torino Outlet Village, realizzata - come l’intera struttura - dall’architetto Claudio Silvestrin, è alta 88 metri e svetta visibile da più punti della area di Torino e di Settimo Torinese. Nel 2017, al termine dei lavori, l’architetto aveva dichiarato “Ho pensato a un’architettura che fa da ponte per nuovi cieli e nuove terre”. Accogliendo questa intenzione, Sciaraffa la declina riproducendo un fenomeno naturale di luoghi lontani, un evento prodigioso che unisce suono, luce e vibrazioni ondulatorie in una visione cosmica che utilizza la luce per ricucire il tessuto urbano. Aurora è visibile dalla città, dal treno e dall’autostrada, ma anche dall’aereo e dalla Stazione Spaziale Internazionale. Il termine aurora boreale è stato attribuito all’imponente fenomeno luminoso naturale da Galileo Galilei nel 1619. Aurora è anche il nome della divinità romana dell’alba, che viaggiava dall’est all’ovest annunciando il sorgere del sole, e sono proprio gli sciami di particelle solari che, spinte a grande velocità contro il campo magnetico terrestre urtano gli atomi presenti nell’atmosfera rarefatta, che si caricano di energia diventando luminosi. Le aurore generano luce scintillante dai toni prevalentemente verdastri, con infinite sfumature di forme e colori, spesso accompagnate da suoni simili a sibili, crepitii, cinguettii, oppure inudibili se non attraverso apparecchiature capaci di captare le basse frequenze generate da questa manifestazione luminosa. Con questa installazione Alessandro Sciaraffa racconta anche sé stesso e il suo percorso artistico, caratterizzato dalla presenza simbiotica di suono, tecnologia e natura, e in questo caso è la sua personale esperienza, al cospetto di una aurora boreale, ad essere narrata",
+                "footer": "Le immagini e i suoni registrati durante la sua permanenza a Tiriberka di Murmansk in Russia sono stati tradotti sulla stele di Torino Outlet Village, dando vita a una corrispondenza tra suono visibile e luce sonora. Captati alle basse frequenze, i suoni dell’aurora boreale vengono tradotti in un grafico multicolore che ne riverbera visivamente le sempre mutevoli, e altrimenti impercettibili, sfumature. Le immagini “noise” in movimento restituiscono i contorni mobili dell’aurora e gli effetti acustici sulla stele del Torino Outlet Village.",
                 "images": [
                     "images/archivio-lavori/placeholder.jpg",
                     "images/archivio-lavori/placeholder.jpg",
@@ -197,17 +206,42 @@
             }
         },
         {
-            "id": "lavoro4",
-            "title": "lavoro4 ITA",
+            "id": "tiportoalmare",
+            "title": "Ti porto al mare",
             "tags": ["works"],
-            "subtags": ["ohai", "intervento"],
+            "subtags": ["sound sculptures"],
             "content": {
                 "subTitle": "sottotitolo ",
                 "mainContent": "contenuto principale",
                 "footer": "footer",
                 "images": [
-                    "images/archivio-lavori/placeholder.jpg",
-                    "images/archivio-lavori/placeholder.jpg",
+                    "images/archivio-lavori/tiportoalmare/1.png",
+                    "images/archivio-lavori/tiportoalmare/2.png",
+                    "images/archivio-lavori/tiportoalmare/3.png",
+                    "images/archivio-lavori/tiportoalmare/4.png"
+                ],
+                "videos": [
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768",
+                    "https://vimeo.com/207792768"
+                ],
+                "audios": [
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
+                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
+                ]  
+            }
+        },
+        {
+            "id": "totem",
+            "title": "Totem",
+            "tags": ["works"],
+            "subtags": ["sound sculptures"],
+            "content": {
+                "subTitle": "sottotitolo ",
+                "mainContent": "contenuto principale",
+                "footer": "footer",
+                "images": [
                     "images/archivio-lavori/placeholder.jpg"
                 ],
                 "videos": [

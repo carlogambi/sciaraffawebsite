@@ -73,8 +73,23 @@ const pageStyle ={
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
+    alignItems: 'center',
     width: '100%',
     pagging: '0%'
+}
+
+const mainContent = {
+    width: '60%',
+    fontSize:'16pt'
+}
+
+const citStyle = {
+    width: '60%',
+    fontSize: '18pt'
+}
+const footerStyle ={
+    width: '60%',
+    fontSize: '16pt'
 }
 
 export default (props) => {
@@ -84,11 +99,13 @@ export default (props) => {
     console.log(page);
     return <div style={pageStyle}>
         {page.title?<h1>{page.title}</h1>:null}
+        {content.date?<h4>{content.date}</h4>:null}
         {content.subTitle?<h3>{content.subTitle}</h3>:null}
         {content.images?<img style={imgStyle} src={content.images[0]} alt='main-img' />:null}
         {content.audios?content.audios.map((v, i) => <Audio key={i} url={v} />):null}
-        {content.mainContent?<p>{content.mainContent}</p>:null}
-        {content.footer?<p><i>{content.footer}</i></p>:null}
+        {content.cit?<p style={citStyle}><i>{content.cit.text}</i><br/>{content.cit.author}</p>:null}
+        {content.mainContent?<p style={mainContent}>{content.mainContent}</p>:null}
+        {content.footer?<p style={footerStyle}><i>{content.footer}</i></p>:null}
         {content.videos?content.videos.map((v, i) => <VimeoVideo key={i} url={v} />):null}
         {content.images?content.images.map((img, i) => <img style={imgStyle} src={img} key={i} alt='main-img' />):null}
         {}

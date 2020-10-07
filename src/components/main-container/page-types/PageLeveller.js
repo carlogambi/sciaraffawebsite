@@ -47,10 +47,14 @@ let captionStyle = {
 }
 
 export const captionTextContainerStyle = {
+    margin: '10px',
     backgroundColor: '#ffffff73',
     position: 'absolute',
     top: '0px',bottom: '0px',left: '0px',right: '0px',
+    fontSize: '10pt',
+    maxWidth: '300px',
 }
+
 
 export const Caption = ({data}) => {
     const [hover, setHover] = useState(false)
@@ -59,6 +63,7 @@ export const Caption = ({data}) => {
         backgroundImage: `url(${data.content.images[0]})`,
         backgroundSize: '150%',
         backgroundPosition: 'center center',
+        // opacity: hover?'0.3':'1.0'
     }
     
     return <Link style={linkStyle}to={`singlePage${data.id}`}>
@@ -67,7 +72,7 @@ export const Caption = ({data}) => {
             onMouseEnter={() => setHover(true)}    
             onMouseLeave={() => setHover(false)}    
         >{hover?<div style={captionTextContainerStyle}><h1>{data.title}</h1>
-        <h4>{data.content.subTitle}</h4></div>:null}
+        <h4 >{data.content.subTitle}</h4></div>:null}
         </div>
     </Link>
 }
