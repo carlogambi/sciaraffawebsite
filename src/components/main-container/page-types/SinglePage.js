@@ -79,17 +79,17 @@ const pageStyle ={
 }
 
 const mainContent = {
-    width: '60%',
-    fontSize:'16pt'
+    width: currentDevice==='mobile'?'97%':'70%',
+    fontSize: currentDevice==='mobile'?'12pt':'16pt',
 }
 
 const citStyle = {
     width: '60%',
-    fontSize: '18pt'
+    fontSize: currentDevice==='mobile'?'11pt':'18pt'
 }
 const footerStyle ={
     width: '60%',
-    fontSize: '16pt'
+    fontSize: currentDevice==='mobile'?'11pt':'18pt'
 }
 
 export default (props) => {

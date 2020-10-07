@@ -35,7 +35,7 @@ const MenuContainer = ({langPack, open, setOpen}) => {
 
 const buttonStyle = {
     position: 'fixed',
-    top: '50px',
+    top: '10px',
     right: '10px',
     fontSize: '30pt',
     border:'solid 1px black',

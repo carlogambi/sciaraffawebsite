@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 
 import {Link} from 'react-router-dom';
 import  { currentLang } from '../../../lang-packs/lang-manager';
+import deviceDetector from '../../utility/device-detector';
+
+const currentDevice = deviceDetector()
 
 const linkStyle = {
     textDecoration: 'none',
@@ -11,25 +14,27 @@ const linkStyle = {
     fontWeight: '700',
     letterSpacing: '3px',
     fontSize: '14pt',
-    paddingRight:'10px',
+    borderRight: currentDevice==='mobile'?'100px':'unset'
 
 }
 
 const SubTag = ({tag}) => {
-    return <Link style={{...linkStyle, textAlign: 'right'}} to={`subTagAggregator${tag}`}>
-            <span>{tag}</span>
+    return <Link style={{...linkStyle, textAlign: currentDevice==='mobile'?'left':'right'}} to={`subTagAggregator${tag}`}>
+           {tag}
         </Link>
 }
 
 const subTaglistStyle = {
-    borderRight: 'solid 1px black',
+    borderRight: currentDevice==='mobile'?'solid 1px white':'solid 1px black',
     display:'flex',
     flexWrap: 'wrap',
     lineHeight: '40px',
     height: 'fit-content',
-    width:'17%',
+    width:currentDevice==='mobile'?'70%':'17%',
     flexDirection: 'column',
-    alignContent: 'flex-end'
+    alignContent: currentDevice==='mobile'?'flex-start':'flex-end',
+    alignSelf: currentDevice==='mobile'?'left':'',
+    paddingLeft: '20px'
 }
 
 const SubTagList = ({data}) => {
@@ -81,28 +86,30 @@ export const Caption = ({data}) => {
 export const captionListStyle = {
     display: 'flex',
     flexWrap: 'wrap',
-    width: '75%'
+    width: '75%',
 }
 
-const minContainerStyle = {
+const mainContainerStyle = {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: currentDevice === 'mobile'?'column':'row',
     justifyContent: 'space-between',
     width: '100%'
 }
 
 const titleStyle ={
     // border: 'solid 1px black',
-    textAlign: 'left',
+    textAlign: currentDevice === 'mobile'?'center':'left',
     // paddingLeft: '17%',
-    paddingLeft: '40%',
+    paddingLeft: currentDevice === 'mobile'?'0%':'40%',
+    width: currentDevice === 'mobile'?'100%':'',
     textTransform: 'uppercase',
     // letterSpacing: '6px',
-    letterSpacing: '20px',
+    letterSpacing: currentDevice === 'mobile'?'2px':'20px',
     fontSize: '30pt'
 }
 
  const PageLeveller = (props) => {
+     console.log(currentDevice);
     const mainTagsList = () => props.langPack.pages.filter(p => p.tags.includes(props.id));
     const subTagList = () => {
         let pages = currentLang.pages.filter(p => p.subtags)
@@ -114,7 +121,7 @@ const titleStyle ={
     const pageList = props.match?subTagList():mainTagsList();
     return <div>
         <h1 style={titleStyle}>{props.match?props.match.params.tag:props.id}</h1>
-        <div style={minContainerStyle}>
+        <div style={mainContainerStyle}>
         {props.match?null:<SubTagList data={props} />}
         <div style={captionListStyle}>
             {pageList.map(
