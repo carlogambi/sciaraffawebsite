@@ -34,7 +34,8 @@ const subTaglistStyle = {
     flexDirection: 'column',
     alignContent: currentDevice==='mobile'?'flex-start':'flex-end',
     alignSelf: currentDevice==='mobile'?'left':'',
-    paddingLeft: '20px'
+    paddingLeft: '20px',
+    paddingRight: currentDevice==='mobile'?'0px':'20px'
 }
 
 const SubTagList = ({data}) => {
