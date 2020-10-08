@@ -95,7 +95,8 @@ export const captionListStyle = {
     display: 'flex',
     flexWrap: 'wrap',
     width: '75%',
-}
+    // border: 'solid 1px black'
+}   
 
 const mainContainerStyle = {
     display: 'flex',
@@ -131,7 +132,7 @@ const titleStyle ={
         <h1 style={titleStyle}>{props.match?props.match.params.tag:props.id}</h1>
         <div style={mainContainerStyle}>
         {props.match?null:<SubTagList data={props} />}
-        <div style={captionListStyle}>
+        <div style={props.match?{...captionListStyle,justifyContent: 'center',width:'100%'}:captionListStyle}>
             {pageList.map(
                 (p,i) =>
                 <Caption data={p} key={i} />
