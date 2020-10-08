@@ -3,6 +3,7 @@ import './App.css';
 
 import MainContainer from './components/main-container/main-contaier'
 import Menu from './components/menu/menu'
+// import placeholder from './components/utility/placeholder.gif'
 
 import {BrowserRouter, Link } from 'react-router-dom'
 
@@ -38,6 +39,7 @@ function App() {
         {currentDevice === 'mobile'?<Title />:null}
         <Menu langPack={langPack} />
         <MainContainer langPack={langPack} />
+        {/* <img src={placeholder} /> */}
     </div>
     </BrowserRouter>
   );

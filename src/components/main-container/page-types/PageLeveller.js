@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import  { currentLang } from '../../../lang-packs/lang-manager';
 import deviceDetector from '../../utility/device-detector';
+import loadingPlaceHolder from './../../utility/placeholder.gif'
 
 const currentDevice = deviceDetector()
 
@@ -64,9 +65,16 @@ export const captionTextContainerStyle = {
 
 export const Caption = ({data}) => {
     const [hover, setHover] = useState(false)
+    const [imgLoad, setImgLoad] = useState(false)
+
+    const captionImg = new Image(100,100);
+    captionImg.src = data.content.images[0]
+    captionImg.onload = () => setImgLoad(true)
+    console.log(imgLoad);
+
     captionStyle = {
         ...captionStyle,
-        backgroundImage: `url(${data.content.images[0]})`,
+        backgroundImage: `url(${imgLoad?captionImg.src:loadingPlaceHolder})`,
         backgroundSize: '150%',
         backgroundPosition: 'center center',
         // opacity: hover?'0.3':'1.0'
@@ -82,7 +90,6 @@ export const Caption = ({data}) => {
         </div>
     </Link>
 }
-
 
 export const captionListStyle = {
     display: 'flex',
