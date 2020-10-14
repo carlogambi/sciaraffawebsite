@@ -33,9 +33,11 @@ let mainMenuStyle;
         mainMenuStyle={
             display: 'flex',
             justifyContent: 'space-around',
-            width: '100%',
+            width: '80%',
             // border: 'solid 1px black',
-            flexWrap: 'wrap'
+            flexWrap: 'wrap',
+            paddingLeft: '10%',
+            paddingRight: '10%',
         }
         break;
 

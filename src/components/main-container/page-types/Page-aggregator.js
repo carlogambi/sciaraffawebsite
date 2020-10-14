@@ -7,7 +7,7 @@ import PortfolioDownload from './PortfolioDownload';
 import Contacts from './Contacts';
 import { currentLang } from '../../../lang-packs/lang-manager';
 
-export default (props) => {
+const PageAggregator = (props) => {
     const id = props.match.params.id;
     const findPage = id => currentLang.pages.find(p => p.id === id)
     
@@ -34,3 +34,5 @@ export default (props) => {
         {currentPage}
     </div>
 }
+
+export default PageAggregator

@@ -7,14 +7,17 @@ export default (props) => {
     let style = {
         ...captionListStyle,
 
-        width:'100%',
+        width:'1000px',
+
         // border: 'solid 1px black',
         justifyContent: 'center'
     }
-    return <div style={style}>
+    return <div style={{width:'100%'}} align='center'>
+        <div style={style}>
     {pages.map(
         (p,i) =>
         <Caption data={p} key={i} />
     )}
+    </div>
 </div>
 }

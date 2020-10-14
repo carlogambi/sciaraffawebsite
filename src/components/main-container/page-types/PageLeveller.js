@@ -48,8 +48,8 @@ const SubTagList = ({data}) => {
 
 let captionStyle = {
     width: '300px',
-    minHeight: '250px',
-    maxHeight: '250px',
+    minHeight: '400px',
+    maxHeight: '400px',
     margin: '10px'
 }
 
@@ -66,16 +66,15 @@ export const captionTextContainerStyle = {
 export const Caption = ({data}) => {
     const [hover, setHover] = useState(false)
     const [imgLoad, setImgLoad] = useState(false)
-
+    
     const captionImg = new Image(100,100);
     captionImg.src = data.content.images[0]
     captionImg.onload = () => setImgLoad(true)
-    console.log(imgLoad);
 
     captionStyle = {
         ...captionStyle,
         backgroundImage: `url(${imgLoad?captionImg.src:loadingPlaceHolder})`,
-        backgroundSize: '150%',
+        backgroundSize: '200%',
         backgroundPosition: 'center center',
         // opacity: hover?'0.3':'1.0'
     }
@@ -105,17 +104,17 @@ const mainContainerStyle = {
     width: '100%'
 }
 
-const titleStyle ={
-    // border: 'solid 1px black',
-    textAlign: currentDevice === 'mobile'?'center':'left',
-    // paddingLeft: '17%',
-    paddingLeft: currentDevice === 'mobile'?'0%':'40%',
-    width: currentDevice === 'mobile'?'100%':'',
-    textTransform: 'uppercase',
-    // letterSpacing: '6px',
-    letterSpacing: currentDevice === 'mobile'?'2px':'20px',
-    fontSize: '30pt'
-}
+// const titleStyle ={
+//     // border: 'solid 1px black',
+//     textAlign: currentDevice === 'mobile'?'center':'left',
+//     // paddingLeft: '17%',
+//     paddingLeft: currentDevice === 'mobile'?'0%':'40%',
+//     width: currentDevice === 'mobile'?'100%':'',
+//     textTransform: 'uppercase',
+//     // letterSpacing: '6px',
+//     letterSpacing: currentDevice === 'mobile'?'2px':'20px',
+//     fontSize: '30pt'
+// }
 
  const PageLeveller = (props) => {
      console.log(currentDevice);
@@ -128,8 +127,9 @@ const titleStyle ={
         return pages;
     } 
     const pageList = props.match?subTagList():mainTagsList();
+    console.log(pageList);
     return <div>
-        <h1 style={titleStyle}>{props.match?props.match.params.tag:props.id}</h1>
+        {/* <h1 style={titleStyle}>{props.match?props.match.params.tag:props.id}</h1> */}
         <div style={mainContainerStyle}>
         {props.match?null:<SubTagList data={props} />}
         <div style={props.match?{...captionListStyle,justifyContent: 'center',width:'100%'}:captionListStyle}>
