@@ -47,9 +47,9 @@ const SubTagList = ({data}) => {
 }
 
 let captionStyle = {
-    width: '300px',
-    minHeight: '400px',
-    maxHeight: '400px',
+    width: currentDevice === 'mobile'?'150px':'300px',
+    minHeight: currentDevice==='mobile'?'200px':'400px',
+    maxHeight: currentDevice==='mobile'?'200px':'400px',
     margin: '10px'
 }
 

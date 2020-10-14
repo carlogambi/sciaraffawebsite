@@ -27,6 +27,8 @@ const publicationsContainerStyle = {
     width: '100%',
     display: 'flex',
     flexWrap: 'wrap',
+    // border: 'solid 1px black',
+    justifyContent: 'center'
 }
 
 export default ({langPack}) => {
