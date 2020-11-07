@@ -18,12 +18,12 @@ const titleStyle = {
   textTransform: 'uppercase', 
   textAlign: 'left', 
   paddingLeft: '20px',
-  border: 'solid 1px black',
+  // border: 'solid 1px black',
   marginBottom: '0px'
 }
 
 const linkStyle = {
-  border: 'solid 1px black',
+  // border: 'solid 1px black',
   textDecoration: 'unset',
   color: 'unset'
 }
