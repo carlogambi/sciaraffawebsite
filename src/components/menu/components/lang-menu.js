@@ -58,7 +58,8 @@ const titleStyle ={
     fontSize: '20pt',
     textTransform: 'uppercase',
     letterSpacing: '15px',
-    cursor: 'context-menu'
+    cursor: 'context-menu',
+    //titolo da centrare
 }
 
 export default () => {
