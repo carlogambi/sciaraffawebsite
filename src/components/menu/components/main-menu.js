@@ -28,16 +28,20 @@ let mainMenuStyle;
         };
         h1Style = {
             paddingLeft: '30px',
-            fontSize: '20px'
+            fontSize: '18px',
+            fontWeight: '300',
         }
         mainMenuStyle={
             display: 'flex',
-            justifyContent: 'space-around',
-            width: '80%',
+            marginLeft: '20px',
+            justifyContent: 'space-between',
+            width: '600px',
             // border: 'solid 1px black',
             flexWrap: 'wrap',
-            paddingLeft: '10%',
-            paddingRight: '10%',
+            textTransform: 'uppercase',
+            // paddingLeft: '3%',
+            // paddingRight: '3%',
+
         }
         break;
 

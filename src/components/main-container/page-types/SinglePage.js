@@ -11,7 +11,10 @@ import loadingplaceholder from './../../utility/loadingimageplaceholder.png'
 const currentDevice = deviceDetector();
 
 let audioStyle, 
-    videoStyle = {}
+    videoStyle,
+    titleStyle,
+    dateStyle,
+subTitleStyle = {}
 
 switch (currentDevice) {
     case 'mobile':
@@ -25,6 +28,9 @@ switch (currentDevice) {
             height: '230px',
             margin: '15px'
         }
+        titleStyle = {}
+        dateStyle = {}
+        subTitleStyle = {}
         break;
 
     default:
@@ -36,8 +42,29 @@ switch (currentDevice) {
         videoStyle = {
             alignSelf: 'center',
             width: '70%',
-            height: '500px',
-            margin: '30px'
+            height: '600px',
+            margin: '30px',
+            // border: 'solid 1px black',
+        }
+        titleStyle = {
+            fontSize: '20px',
+            textTransform: 'uppercase',
+            marginBottom: '0px',
+            width: '70%',
+            textAlign: 'right'
+        }
+        dateStyle = {
+            width: '70%',
+            // border: 'solid 1px black',
+            fontWeight: '300',
+            marginBottom: '0px',
+            textAlign: 'right'
+        }
+        subTitleStyle = {
+            width: '70%',
+            marginTop: '0px',
+            fontWeight: '300',
+            textAlign: 'right'
         }
         break;
 }
@@ -83,16 +110,23 @@ const pageStyle ={
 
 const mainContent = {
     width: currentDevice==='mobile'?'97%':'70%',
-    fontSize: currentDevice==='mobile'?'12pt':'16pt',
+    fontSize: currentDevice==='mobile'?'12pt':'9pt',
+    textAlign: 'justify'
 }
 
 const citStyle = {
-    width: '60%',
-    fontSize: currentDevice==='mobile'?'11pt':'18pt'
+    fontSize: currentDevice==='mobile'?'11pt':'12pt',
+    // border: 'solid 1px black',
+    width: '70%',
+    textAlign: "right"
+    
 }
 const footerStyle ={
-    width: '60%',
-    fontSize: currentDevice==='mobile'?'11pt':'18pt'
+    width: '70%',
+    // border: 'solid 1px black',
+    fontSize: currentDevice==='mobile'?'11pt':'9pt',
+    textAlign: 'justify',
+    // fontStyle: 'italic'
 }
 
 export default (props) => {
@@ -103,13 +137,13 @@ export default (props) => {
     return <div style={pageStyle}>
 
         {page.title && 
-            <h1>{page.title}</h1>}
+            <h5 style={titleStyle}>{page.title}</h5>}
 
         {content.date && 
-            <h4>{content.date}</h4>}
+            <h4 style={dateStyle}>{content.date}</h4>}
 
         {content.subTitle && 
-            <h3>{content.subTitle}</h3>}
+            <h3 style={subTitleStyle}>{content.subTitle}</h3>}
 
         {content.images && 
             <img style={imgStyle} src={content.images[0]} alt='main-img' />}
@@ -125,7 +159,7 @@ export default (props) => {
             <p style={mainContent}>{content.mainContent}</p>}
 
         {content.footer && 
-            <p style={footerStyle}><i>{content.footer}</i></p>}
+            <p style={footerStyle}>{content.footer}</p>}
 
         {content.videos && 
             content.videos
