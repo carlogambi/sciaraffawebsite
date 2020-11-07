@@ -47,7 +47,8 @@ const buttonStyle = {
     backgroundColor: 'white',
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    zIndex: '1'
 }
 
 
