@@ -48,8 +48,8 @@ const SubTagList = ({data}) => {
 
 let captionStyle = {
     width: currentDevice === 'mobile'?'150px':'300px',
-    minHeight: currentDevice==='mobile'?'200px':'400px',
-    maxHeight: currentDevice==='mobile'?'200px':'400px',
+    minHeight: currentDevice==='mobile'?'200px':'150px',
+    maxHeight: currentDevice==='mobile'?'200px':'150px',
     margin: '10px'
 }
 
@@ -57,8 +57,9 @@ export const captionTextContainerStyle = {
     margin: '10px',
     backgroundColor: '#ffffff73',
     position: 'absolute',
+    paddingTop: currentDevice==='mobile'?'unset':'55px',
     top: '0px',bottom: '0px',left: '0px',right: '0px',
-    fontSize: '10pt',
+    fontSize: '5pt',
     maxWidth: '300px',
 }
 
@@ -85,7 +86,7 @@ export const Caption = ({data}) => {
             onMouseEnter={() => setHover(true)}    
             onMouseLeave={() => setHover(false)}    
         >{hover?<div style={captionTextContainerStyle}><h1>{data.title}</h1>
-        <h4 >{data.content.subTitle}</h4></div>:null}
+        <h3 >{data.content.subTitle}</h3></div>:null}
         </div>
     </Link>
 }
