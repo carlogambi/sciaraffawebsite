@@ -6,9 +6,9 @@ da fare:
 <br>
 -inserire dida sotto le foto
 <br>
--MOBILE: - voci menu uppercase e fontWeight -> 300
+-MOBILE: - voci menu textTransform -> uppercase e fontWeight -> 300
 <br>
 
 forse:
 <br>
--inserire gallery width 70% sopra alla griglia delle caption in HOME
+-inserire gallery width -> 70% sopra alla griglia delle caption in HOME
