@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player';
 import langManager from '../../../lang-packs/lang-manager';
 import deviceDetector from '../../utility/device-detector';
 import Audio from '../page-components/Audio';
+import ScrollToTopButton from '../page-components/ScrollToTopButton';
 import loadingplaceholder from './../../utility/loadingimageplaceholder.png'
 
 
@@ -169,6 +170,6 @@ export default (props) => {
             content.images
                 .map((img, i) => <img style={imgStyle} src={img} key={i} alt='main-img' />)}
 
-        {}
+        {(currentDevice === 'desktop') && <ScrollToTopButton/>}
     </div>
 }

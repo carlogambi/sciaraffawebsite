@@ -10,24 +10,28 @@ const currentLangButtonStyle = {
     // border: 'solid 1px black',
     backgroundColor: 'black',
     color: 'white',
-    padding: '5px',
+    padding: '10px',
     textTransform: 'uppercase',
     cursor: 'none',
-    margin: currentDevice==='desktop'?'10px':'unset'
+    margin: currentDevice==='desktop'?'10px':'unset',
+    width: 'fit-content'
 }
 
 const CurrentLangButton = ({langName}) => {
-
-return <span style={currentLangButtonStyle}>{langName}</span>
+    
+    return <span style={currentLangButtonStyle}>{langName}</span>
 }
 
 const langButtonStyle = {
     backgroundColor: 'white',
-    cursor: 'pointer'
+    margin: currentDevice==='desktop'?'10px':'unset',
+    padding: '10px',
+    cursor: 'pointer',
+    width: 'fit-content',
 }
 
 const LangButton = ({langName}) => {
-return <span 
+    return <span 
     style={langButtonStyle}
     onClick={() => changeLang.trigger(langName)}
     >{langName}</span>
@@ -45,27 +49,21 @@ switch(currentDevice){
         break;
     case 'desktop':
         langMenuStyle = {
-            margin: '30px',
+            // margin: '30px',
             display: 'flex',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            // border: 'solid 1px black',
+            width: 'fit-content',
+            height: '60px'
         }
         break;
         default:
         break;
 }
 
-const titleStyle ={
-    fontSize: '20pt',
-    textTransform: 'uppercase',
-    letterSpacing: '15px',
-    cursor: 'context-menu',
-    //titolo da centrare
-}
 
 export default () => {
 return <div style={langMenuStyle}>
-    {currentDevice === 'desktop'?<span style={titleStyle}>Alessandro Sciaraffa</span>:null}
-    <div>
     {langNameList.map(
         (ln,i)=>
         (ln===currentLang.name)?
@@ -73,6 +71,5 @@ return <div style={langMenuStyle}>
         :
         <LangButton langName={ln} key={i} />
     )}
-    </div>
 </div>
 }

@@ -102,20 +102,21 @@ const mainContainerStyle = {
     display: 'flex',
     flexDirection: currentDevice === 'mobile'?'column':'row',
     justifyContent: 'space-between',
-    width: '100%'
+    width: '100%',
+    marginTop: currentDevice === 'mobile'?'0px':'80px'
 }
 
-// const titleStyle ={
-//     // border: 'solid 1px black',
-//     textAlign: currentDevice === 'mobile'?'center':'left',
-//     // paddingLeft: '17%',
-//     paddingLeft: currentDevice === 'mobile'?'0%':'40%',
-//     width: currentDevice === 'mobile'?'100%':'',
-//     textTransform: 'uppercase',
-//     // letterSpacing: '6px',
-//     letterSpacing: currentDevice === 'mobile'?'2px':'20px',
-//     fontSize: '30pt'
-// }
+const titleStyle ={
+    // border: 'solid 1px black',
+    textAlign: currentDevice === 'mobile'?'center':'left',
+    // paddingLeft: '17%',
+    paddingLeft: currentDevice === 'mobile'?'0%':'40%',
+    width: currentDevice === 'mobile'?'100%':'',
+    textTransform: 'uppercase',
+    // letterSpacing: '6px',
+    letterSpacing: currentDevice === 'mobile'?'2px':'20px',
+    fontSize: '30pt'
+}
 
  const PageLeveller = (props) => {
      console.log(currentDevice);
@@ -130,7 +131,7 @@ const mainContainerStyle = {
     const pageList = props.match?subTagList():mainTagsList();
     console.log(pageList);
     return <div>
-        {/* <h1 style={titleStyle}>{props.match?props.match.params.tag:props.id}</h1> */}
+        {props.match && (<h1 style={titleStyle}>{props.match.params.tag}</h1>)}
         <div style={mainContainerStyle}>
         {props.match?null:<SubTagList data={props} />}
         <div style={props.match?{...captionListStyle,justifyContent: 'center',width:'100%'}:captionListStyle}>

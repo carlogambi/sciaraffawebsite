@@ -27,16 +27,14 @@ let mainMenuStyle;
             textAlign: 'left',
         };
         h1Style = {
-            paddingLeft: '30px',
+            // paddingLeft: '30px',
             fontSize: '18px',
             fontWeight: '300',
         }
         mainMenuStyle={
             display: 'flex',
-            marginLeft: '20px',
             justifyContent: 'space-between',
-            width: '600px',
-            // border: 'solid 1px black',
+            width: '98%',
             flexWrap: 'wrap',
             textTransform: 'uppercase',
             // paddingLeft: '3%',
@@ -53,17 +51,16 @@ let mainMenuStyle;
 
 export default ({langPack, setOpen}) => {
     return <div style={mainMenuStyle}>
-        <Link 
-            style={linkStyle} to='/'><h1 style={h1Style}>home</h1></Link>
         {langPack.pages.filter(
             (page) => 
             page.tags.includes('mainmenu')
         ).map((p,i) =>
-                <Link to={`mainpage${p.id}`} style={linkStyle} key={i}>
+                (<Link to={`mainpage${p.id}`} style={linkStyle} key={i}>
                     <h1 style={h1Style}
                         onClick={() => currentDevice === 'mobile'?setOpen(false):null}
                     >{p.title}</h1>
-                </Link>
+                </Link>)
+            
         )}
     </div>
 }
