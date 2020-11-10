@@ -6,7 +6,7 @@ da fare:
 <br>
 -inserire dida sotto le foto
 <br>
--MOBILE: - voci menu uppercase e fontWeight -> 30
+-MOBILE: - voci menu uppercase e fontWeight -> 300
 <br>
 
 forse:
