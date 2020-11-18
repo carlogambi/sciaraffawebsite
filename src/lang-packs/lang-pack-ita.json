@@ -36,39 +36,7 @@
           ],
           "content":"exhibitions content ITA"
        },
-       {
-          "id":"publications",
-          "title":"Press",
-          "tags":[
-             "mainmenu"
-          ],
-          "content":[
-             {
-                "title":"title publication 1",
-                "author":"name author publication 1",
-                "magazine":"magazine name publication 1",
-                "link":"https://www.fakelink.com"
-             },
-             {
-                "title":"title publication 2",
-                "author":"name author publication 2",
-                "magazine":"magazine name publication 2",
-                "link":"https://www.fakelink.com"
-             },
-             {
-                "title":"title publication 3",
-                "author":"name author publication 3",
-                "magazine":"magazine name publication 3",
-                "link":"https://www.fakelink.com"
-             },
-             {
-                "title":"title publication 4",
-                "author":"name author publication 4",
-                "magazine":"magazine name publication 4",
-                "link":"https://www.fakelink.com"
-             }
-          ]
-       },
+      
        {
           "id":"bio",
           "title":"bio",
@@ -642,7 +610,7 @@
           }
        }
     ],
-    "optional":{
+    "optional":[{
        "id":"portfoliodownload",
        "title":"download portfolio ITA",
        "tags":[
@@ -659,5 +627,39 @@
           "buttonText":"scarica portfolio",
           "url":"download/useless.pdf"
        }
-    }
+    },
+    {
+      "id":"publications",
+      "title":"Press",
+      "tags":[
+         "mainmenu"
+      ],
+      "content":[
+         {
+            "title":"title publication 1",
+            "author":"name author publication 1",
+            "magazine":"magazine name publication 1",
+            "link":"https://www.fakelink.com"
+         },
+         {
+            "title":"title publication 2",
+            "author":"name author publication 2",
+            "magazine":"magazine name publication 2",
+            "link":"https://www.fakelink.com"
+         },
+         {
+            "title":"title publication 3",
+            "author":"name author publication 3",
+            "magazine":"magazine name publication 3",
+            "link":"https://www.fakelink.com"
+         },
+         {
+            "title":"title publication 4",
+            "author":"name author publication 4",
+            "magazine":"magazine name publication 4",
+            "link":"https://www.fakelink.com"
+         }
+      ]
+   }
+   ]
  }
