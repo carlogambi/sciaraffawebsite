@@ -96,7 +96,8 @@ const VimeoVideo = ({url}) => {
 const imgStyle={
     width: (currentDevice === 'mobile')?'100%':'70%',
     alignSelf: 'center',
-    margin: (currentDevice === 'mobile')?'15px':'30px'
+    margin: (currentDevice === 'mobile')?'15px':'30px',
+    marginBottom: '3px'
 
 }
 
@@ -130,6 +131,14 @@ const footerStyle ={
     // fontStyle: 'italic'
 }
 
+const didaStyle = {
+    // border: 'solid 1px black', 
+    fontSize: '8pt', 
+    width: '70%',
+    textAlign: 'right',
+    marginTop: '0px'
+}
+
 export default (props) => {
     const pageId = props.match.params.id;
     const page = langManager.currentLang.pages.find(p => p.id === pageId);
@@ -147,7 +156,11 @@ export default (props) => {
             <h3 style={subTitleStyle}>{content.subTitle}</h3>}
 
         {content.images && 
-            <img style={imgStyle} src={content.images[0]} alt='main-img' />}
+                    <>
+                        <img style={imgStyle} src={content.imgAnteprima} alt='anteprima-img-single-page' />
+                        {content.images[0].dida && (<i style={didaStyle}>{content.images[0].dida}</i>)}
+                    </>
+        }
 
         {content.audios && 
             content.audios
@@ -168,7 +181,12 @@ export default (props) => {
 
         {content.images && 
             content.images
-                .map((img, i) => <img style={imgStyle} src={img} key={i} alt='main-img' />)}
+                .map((img, i) => (
+                    <>
+                        <img style={imgStyle} src={img.img} key={i} alt={img.dida?img.dida:'single-page-img'} />
+                        {img.dida && (<i style={didaStyle}>{img.dida}</i>)}
+                    </>
+                ))}
 
         {(currentDevice === 'desktop') && <ScrollToTopButton/>}
     </div>

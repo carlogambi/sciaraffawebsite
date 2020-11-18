@@ -1,10 +1,10 @@
 import langPackIta from './lang-pack-ita.json'
-import langPackEng from './lang-pack-eng.json'
+// import langPackEng from './lang-pack-eng.json'
 
 const defaultLang = 'ita';
 
 export const langList = [
-    langPackEng,
+    // langPackEng,
     langPackIta
 ]
 

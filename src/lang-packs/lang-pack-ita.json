@@ -1,460 +1,663 @@
 {
-    "name": "ita",
-    "tagReference": [
-        {
-        "mainTagName": "works",
-        "subtags": ["special projects", "performances", "sound sculptures"]
-        },
-        {
-        "mainTagName": "exhibitions",
-        "subtags": ["2014", "2017", "2019", "2020"]
-        }
+    "name":"ita",
+    "tagReference":[
+       {
+          "mainTagName":"works",
+          "subtags":[
+             "special projects",
+             "performances",
+             "sound sculptures"
+          ]
+       },
+       {
+          "mainTagName":"exhibitions",
+          "subtags":[
+             "2014",
+             "2017",
+             "2019",
+             "2020"
+          ]
+       }
     ],
-    "pages": [
-
-        {
-            "id": "works",
-            "title": "Works",
-            "tags": ["mainmenu"],
-            "content": "works content ITA"
-        },
-        {
-            "id": "exhibitions",
-            "title": "Exhibitions",
-            "tags": ["mainmenu"],
-            "content": "exhibitions content ITA"
-        },
-
-        {
-            "id": "publications",
-            "title": "Press",
-            "tags": ["mainmenu"],
-            "content": [
+    "pages":[
+       {
+          "id":"works",
+          "title":"Works",
+          "tags":[
+             "mainmenu"
+          ],
+          "content":"works content ITA"
+       },
+       {
+          "id":"exhibitions",
+          "title":"Exhibitions",
+          "tags":[
+             "mainmenu"
+          ],
+          "content":"exhibitions content ITA"
+       },
+       {
+          "id":"publications",
+          "title":"Press",
+          "tags":[
+             "mainmenu"
+          ],
+          "content":[
+             {
+                "title":"title publication 1",
+                "author":"name author publication 1",
+                "magazine":"magazine name publication 1",
+                "link":"https://www.fakelink.com"
+             },
+             {
+                "title":"title publication 2",
+                "author":"name author publication 2",
+                "magazine":"magazine name publication 2",
+                "link":"https://www.fakelink.com"
+             },
+             {
+                "title":"title publication 3",
+                "author":"name author publication 3",
+                "magazine":"magazine name publication 3",
+                "link":"https://www.fakelink.com"
+             },
+             {
+                "title":"title publication 4",
+                "author":"name author publication 4",
+                "magazine":"magazine name publication 4",
+                "link":"https://www.fakelink.com"
+             }
+          ]
+       },
+       {
+          "id":"bio",
+          "title":"bio",
+          "tags":[
+             "mainmenu"
+          ],
+          "content":{
+             "subTitle":"ALESSANDRO SCIARAFFA",
+             "mainContent":"Si laurea in Architettura al Politecnico di Torino, studia alla Fondazione Banna e si diploma alla Domus Academy di Milano. Vincitore di numerosi premi nazionali e internazionali fra cui il Premio Cairo nel 2012.",
+             "footer":"Fra le molteplici mostre si menzionano: Ti porto il mare, Merz Foundation, Turin (2011); Vitrine - Civic Gallery of Modern and Contemporary Art, Turin (2012); Greater Turin, Sandretto Re Rebaudengo Foundation (2013); The Lunatici speak to the moon, Galleria Giorgio Persano, Turin (2014); Mari, Oceanographic Museum of Monaco (Monte-Carlo) (2015); Fontanella, Galerie Italienne, Paris (2016); Between a dusk and a dawn there is an eclipse, Galerie Mazzoli, Berlin (2017); Medio Acqua, Base SubMarine Bordeaux (2018); The Winter Symphony, Hermitage Museum, St. Petersburg (2019) and Ground Moscow, Moscow (2019); Cosmonautica - GAM Castello di Costiglilole d’Asti (2019); De Umbris Idearum, San Severo al Pendino, Napoli (2019), Totem, Galerie Mazzoli Dusseldorf (2019), Aurora, Luci D’Artista XXII, Torino (2019)",
+             "images":[
+               "images/bio/bio.jpg"
+             ]
+          }
+       },
+       {
+          "id":"contacts",
+          "title":"Contacts",
+          "tags":[
+             "mainmenu"
+          ],
+          "content":{
+             "mainContent":"main content ITA",
+             "image":"images/contacts/placeholder.jpg",
+             "spaceInfo":{
+                "name":"ALESSANDRO SCIARAFFA",
+                "address":"mail@Sciaraffa.net"
+             },
+             "contacts":[
                 {
-                    "title": "title publication 1",
-                    "author": "name author publication 1",
-                    "magazine": "magazine name publication 1",
-                    "link": "https://www.linkacaso.com"
-
+                   "role":"Torino",
+                   "name":"Galleria Giorgio Persano",
+                   "mail":"info@giorgiopersano.org",
+                   "phone":"http://www.giorgiopersano.org/"
                 },
                 {
-                    "title": "title publication 2",
-                    "author": "name author publication 2",
-                    "magazine": "magazine name publication 2",
-                    "link": "https://www.linkacaso.com"
-
+                   "role":"Paris",
+                   "name":"Galerie Italienne",
+                   "mail":"info@galerieitalienne.com",
+                   "phone":"http://www.galerieitalienne.com/"
                 },
                 {
-                    "title": "title publication 3",
-                    "author": "name author publication 3",
-                    "magazine": "magazine name publication 3",
-                    "link": "https://www.linkacaso.com"
-
-                },
-                {
-                    "title": "title publication 4",
-                    "author": "name author publication 4",
-                    "magazine": "magazine name publication 4",
-                    "link": "https://www.linkacaso.com"
-
+                   "role":"Berlin",
+                   "name":"Galerie Mazzoli",
+                   "mail":"info@galeriemazzoli.com",
+                   "phone":"https://www.galleriamazzoli.com/"
                 }
-            ]
-        },
-        {
-            "id": "bio",
-            "title": "bio",
-            "tags": ["mainmenu"],
-            "content": {
-                "subTitle": "ALESSANDRO SCIARAFFA",
-                "mainContent": "Si laurea in Architettura al Politecnico di Torino, studia alla Fondazione Banna e si diploma alla Domus Academy di Milano. Vincitore di numerosi premi nazionali e internazionali fra cui il Premio Cairo nel 2012.",
-                "footer": "Fra le molteplici mostre si menzionano: Ti porto il mare, Merz Foundation, Turin (2011); Vitrine - Civic Gallery of Modern and Contemporary Art, Turin (2012); Greater Turin, Sandretto Re Rebaudengo Foundation (2013); The Lunatici speak to the moon, Galleria Giorgio Persano, Turin (2014); Mari, Oceanographic Museum of Monaco (Monte-Carlo) (2015); Fontanella, Galerie Italienne, Paris (2016); Between a dusk and a dawn there is an eclipse, Galerie Mazzoli, Berlin (2017); Medio Acqua, Base SubMarine Bordeaux (2018); The Winter Symphony, Hermitage Museum, St. Petersburg (2019) and Ground Moscow, Moscow (2019); Cosmonautica - GAM Castello di Costiglilole d’Asti (2019); De Umbris Idearum, San Severo al Pendino, Napoli (2019), Totem, Galerie Mazzoli Dusseldorf (2019), Aurora, Luci D’Artista XXII, Torino (2019)",
-                "images": [
-                    "images/bio/bio.jpg"
-                ]
-            }
-        },
-        {
-            "id": "contacts",
-            "title": "Contacts",
-            "tags": ["mainmenu"],
-            "content": {
-                "mainContent": "main content ITA",
-                "image": "images/contacts/placeholder.jpg",
-                "spaceInfo":{
-                    "name": "ALESSANDRO SCIARAFFA",
-                    "address": "mail@Sciaraffa.net"
+             ]
+          }
+       },
+       {
+          "id":"lunatici",
+          "title":"I Lunatici parlano alla Luna",
+          "tags":[
+             "exhibitions"
+          ],
+          "subtags":[
+             "2014"
+          ],
+          "content":{
+             "imgAnteprima":"images/exhibitions/lunatici/anteprimalunatici.jpg",
+             "subTitle":"Galleria Giorgio Persano, Torino, Italy ",
+             "date":"14 marzo | 17 maggio 2014",
+             "cit":{
+                "text":" ''Chi ama la Luna davvero non si contenta di contemplarla come un’immagine convenzionale.Vuole entrare in un rapporto più stretto con lei, vuole vedere di più nella Luna, vuole che la Luna dica di più'' ",
+                "author":"Italo Calvino"
+             },
+             "mainContent":"I lunatici parlano alla Luna è il lavoro sonoro di Alessandro Sciaraffa, fulcro della mostra personale dell’artista alla galleria Giorgio Persano. Grazie al collegamento in streaming con il Radio Telescopio dell’Osservatorio Astronomico Val Pellice, al pubblico che interviene all’evento inaugurale è data la possibilità di parlare con la Luna. Una trasmissione radio EME (Earth-Moon-Earth) permetterà di riflettere sulla superficie lunare la voce dei presenti ed ascoltarne l’eco. I partecipanti saranno invITAti ad entrare in una sorta di intima ‘capsula spaziale’, una tenda di 3 metri di diametro per 7 di altezza, così, isolati dallo spazio circostante, possono urlare, sussurrare, ululare i propri sogni, le proprie istanze, le proprie odi a quel misterioso satellite che per secoli tanto ha incantato poeti, pensatori e scienziati. L’intenzione dell’artista è di “offrire in un’esperienza diretta, fruibile da tutti, la voce come estensione di noi stessi proiettata verso l’altrove. Un gesto che indica uno sguardo verticale, un nuovo orizzonte misurato dalla distanza con un riflesso, vuole indicare una diversa prospettiva dello sguardo. La costruzione di un’esperienza di senso, capace di superare gli ostacoli delle sovrastrutture che ci tITAono ancorati alla sola superficie del suolo, prende la forma di una medITAzione sulla nostra condizione”. Le parole, le frasi, i suoni protagonisti di questo dialogo con la Luna, registrati il 14 marzo – giorno dell’evento partecipativo, saranno il sottofondo sonoro per tutta la durata della mostra.",
+             "footer":" Le opere esposte sono tutte ideate come un omaggio al nostro satellite, la cui superficie è impressa idealmente nell’immaginario collettivo come nei lavori di Sciaraffa la ritroviamo impressa sulla pelle di tamburi o sulla carta fotografica. Photo Courtesy of Galleria Giorgio Persano",
+             "images":[
+                {
+                   "dida":"photo Paolo Pellion – Courtesy Galleria Giorgio Persano",
+                   "img":"images/exhibitions/lunatici/lunatici1d.png"
                 },
-                "contacts": [
-                    {
-                        "role": "Torino",
-                        "name": "Galleria Giorgio Persano",
-                        "mail": "info@giorgiopersano.org",
-                        "phone": "http://www.giorgiopersano.org/"
-                    },
-                    {
-                        "role": "Paris",
-                        "name": "Galerie Italienne",
-                        "mail": "info@galerieitalienne.com",
-                        "phone": "http://www.galerieitalienne.com/"
-                    },
-                    {
-                        "role": "Berlin",
-                        "name": "Galerie Mazzoli",
-                        "mail": "info@galeriemazzoli.com",
-                        "phone": "https://www.galleriamazzoli.com/"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "lunatici",
-            "title": "I Lunatici parlano alla Luna",
-            "tags": [ "exhibitions"],
-            "subtags": ["2014"],
-            "content": {
-                "subTitle": " Galleria Giorgio Persano, Torino, Italy ",
-                "date": "14 marzo | 17 maggio 2014",
-                "cit": {
-                    "text": " ''Chi ama la Luna davvero non si contenta di contemplarla come un’immagine convenzionale.Vuole entrare in un rapporto più stretto con lei, vuole vedere di più nella Luna, vuole che la Luna dica di più'' ",
-                    "author": "Italo Calvino"
+                {
+                   "img":"images/exhibitions/lunatici/lunatici2d.jpg"
                 },
-                "mainContent": "I lunatici parlano alla Luna è il lavoro sonoro di Alessandro Sciaraffa, fulcro della mostra personale dell’artista alla galleria Giorgio Persano. Grazie al collegamento in streaming con il Radio Telescopio dell’Osservatorio Astronomico Val Pellice, al pubblico che interviene all’evento inaugurale è data la possibilità di parlare con la Luna. Una trasmissione radio EME (Earth-Moon-Earth) permetterà di riflettere sulla superficie lunare la voce dei presenti ed ascoltarne l’eco. I partecipanti saranno invITAti ad entrare in una sorta di intima ‘capsula spaziale’, una tenda di 3 metri di diametro per 7 di altezza, così, isolati dallo spazio circostante, possono urlare, sussurrare, ululare i propri sogni, le proprie istanze, le proprie odi a quel misterioso satellite che per secoli tanto ha incantato poeti, pensatori e scienziati. L’intenzione dell’artista è di “offrire in un’esperienza diretta, fruibile da tutti, la voce come estensione di noi stessi proiettata verso l’altrove. Un gesto che indica uno sguardo verticale, un nuovo orizzonte misurato dalla distanza con un riflesso, vuole indicare una diversa prospettiva dello sguardo. La costruzione di un’esperienza di senso, capace di superare gli ostacoli delle sovrastrutture che ci tITAono ancorati alla sola superficie del suolo, prende la forma di una medITAzione sulla nostra condizione”. Le parole, le frasi, i suoni protagonisti di questo dialogo con la Luna, registrati il 14 marzo – giorno dell’evento partecipativo, saranno il sottofondo sonoro per tutta la durata della mostra.",
-                "footer": " Le opere esposte sono tutte ideate come un omaggio al nostro satellite, la cui superficie è impressa idealmente nell’immaginario collettivo come nei lavori di Sciaraffa la ritroviamo impressa sulla pelle di tamburi o sulla carta fotografica. Photo Courtesy of Galleria Giorgio Persano",
-                "images": [
-                    "images/exhibitions/lunatici/4.png",
-                    "images/exhibitions/lunatici/1.jpg",
-                    "images/exhibitions/lunatici/2.png",
-                    "images/exhibitions/lunatici/3.png",
-                    "images/exhibitions/lunatici/5.png",
-                    "images/exhibitions/lunatici/6.png",
-                    "images/exhibitions/lunatici/7.png"
-                ],
-                "videos": [
-                    "https://vimeo.com/207813559"
-                ],
-                "audios": []  
-            }
-        },
-        {
-            "id": "totemopera",
-            "title": "Between a dusk and a dwan there is an eclipse",
-            "tags": [ "exhibitions"],
-            "subtags": ["2017"],
-            "content": {
-                "subTitle": "Galerie Mazzoli, Berlin, Germany",
-                "date": "23 Giugno | 29 Luglio 2017",
-                "cit": {
-                    "text": " ''Quando la Luna risponde...'' ",
-                    "author": ""
+                {
+                   "img":"images/exhibitions/lunatici/lunatici3d.jpg"
                 },
-                "mainContent": "Per Galerie Mazzoli, Sciaraffa ha messo in atto un articolato progetto - in più tappe - dedicato alle risonanze che la Luna sembra avere sul nostra percezione (ed immaginazione). utta una serie di opere preparano ed accompagnano il salto messo in campo nella personale del 2014 (“I Lunatici parlano alla Luna”). Dalle stampe dei Tattoo Moon -ovvero tramite una serie di tamburelli impressionati dall’immagine della luna - forme tatuate (direttamente con la luce lunare) su pelli naturali - ecco che ci si avvicina ad un sinestetico sentire e descrivere quelle forze che il corpo celeste pare emanare:  voler assorbire con la pelle la Luna riporta ad una dimensione quasi ancestrale, dove la pur gigantesca distanza si raccorcia e materializza nella presenza dell’impressione di forme su materiale organico, quasi come in una marchiatura astrologica. Procedendo con un’osservazione a tutto campo, sono poi ancora altri passaggi essenziali i lavori che scandiscono un dialogo fra il nostro globo terracqueo e la maestosa atmosfera selenica: tracce che inequivocabilmente emergono dall’impressione di raggi lunari (còlti direttamente dall’oculare di un telescopio ottico - così come in Catturare il riflesso della Luna in un assolo di chitarra elettrica - 2012) in immagini lunari impresse direttamente su carta emulsionata all’argento, fino all’emergere e scomparire della faccia oscura della Luna - presenza incisa su lastra di cristallo verniciata con vernice a cristalli liquidi di color nero i quali - al variare della temperatura circostante (fra i 25°-30° C) - diventando trasparenti (in Cool Moon), lasciando emergere la faccia nascosta della Luna, incisa sul lato opposto del vetro. Proprio nel vasto progetto de I lunatici (2014), Sciaraffa arriva ad immaginare e materializzare uno scambio fra dimensione terrestre e celeste attraverso un potenziamento delle possibilità dei mezzi di radio-trasmissione. Grazie ai segnali raccolti da un microfono posto nel cuore dello spazio espositivo e tramite un collegamento in streaming dalla galleria, i dati radio-trasmessi (via radiotelescopio)  trasmettono i segnali selezionati in direzione della Luna. Data la potenza delle microonde impiegate, i suoni così viaggiano e rimbalzano indietro verso la Terra, coprendo una distanza di 768.800 Km in appena 2 secondi e mezzo… un lasso di tempo, minimo e immenso allo stesso tempo, che manifesta e sostanzia un senso di salto, di vuoto che è forza tangibile, quasi materializzazione di una distanza siderale. Ecco così la Luna diventare una sorta di immenso strumento musicale e specchio, in grado di ricreare nuovi suoni: la ben nota capacità di riflettere la luce del sole sembra sollecitare l’immaginazione dell’artista che utilizza l’ampio spettro di suoni raccolti dal pubblico (canti, parole, melodie suonate, e via enumerando…) nella performance partecipativa verso una totale ridefinizione del possibile rapporto fra presenze terrestri e corpi celesti.  Nell’instaurare un’ipotesi di rapporto possibile, una sorta di comunicazione con la vasta materia risonante di un pianeta, la Luna assurge ora a paradigma di rispecchiamento - immenso bacino di proiezione in grado di restituirci un insieme di suoni che, fra echi, delays e rintocchi, sono la materializzazione di un sogno forse antico quanto l’umanità - ritrovare una presenza “gemella”.",
-                "footer": "estratto da scritto di Franz Berardinelli",
-                "images": [
-                    "images/exhibitions/lunatici/4.png",
-                    "images/exhibitions/lunatici/1.jpg",
-                    "images/exhibitions/lunatici/2.png",
-                    "images/exhibitions/lunatici/3.png",
-                    "images/exhibitions/lunatici/5.png",
-                    "images/exhibitions/lunatici/6.png",
-                    "images/exhibitions/lunatici/7.png"
-                ],
-                "videos": [],
-                "audios": []  
-            }
-        },
-        {
-            "id": "fontanelle",
-            "title": "fontanelle",
-            "tags": ["exhibitions"],
-            "subtags": ["2017", "sound sculptures"],
-            "content": {
-                "subTitle": "Galerie Italienne, Paris, France",
-                "date": "1 dicembre 2016 - 21 gennaio 2017",
-                "cit": {
-                    "text": "L'acqua cerca sempre l'acqua",
-                    "author": "Alessandro Sciaraffa"
+                {
+                   "img":"images/exhibitions/lunatici/lunatici4d.jpg"
                 },
-                "mainContent": "Distribuita su tutto lo spazio della galleria, “Fontanella Secca” presenta i lavori del ciclo ‘Fontanelle' riuniti per la prima volta. Il lavoro di Sciaraffa è sempre stato incentrato sul suono. Le opere in mostra sono un lavoro intorno al rumore dell'acqua. Grazie al dialogo tra le diverse sculture sonore, realizzate appositamente per il nuovo spazio espositivo della Galleria Italienne, lo spettatore è immerso in un'esperienza sinestetica in cui il suono e il visivo intendono creare un'opera a sé stante. Con questo nuovo ciclo Alessandro Sciaraffa porta l'esperienza tecnologica al limite per mettere in relazione il suono dell'acqua, l'architettura, la natura e gli strumenti musicali. Legno, acciaio e ottone sono stati utilizzati per le loro diverse proprietà fisiche, quando messi insieme, la miscela genera un lavoro unico. Photo Courtesy of Galerie Italienne",
-                "footer": null,
-                "images": [
-                    "images/exhibitions/fontanelle/1.png",
-                    "images/exhibitions/fontanelle/2.png",
-                    "images/exhibitions/fontanelle/3.jpg",
-                    "images/exhibitions/fontanelle/4.png",
-                    "images/exhibitions/fontanelle/5.png",
-                    "images/exhibitions/fontanelle/6.png",
-                    "images/exhibitions/fontanelle/7.png"
-                ],
-                "videos": [],
-                "audios": []  
-            }
-        },
-        {
-            "id": "cosmonautica",
-            "title": "Cosmonautica",
-            "tags": ["exhibitions"],
-            "subtags": ["2019"],
-            "content": {
-                "subTitle": "Castello di Costigliole d'Asti, Asti, Italia",
-                "date": "6 Luglio | 29 settembre 2019",
-                "cit": {
-                    "text": "Mostra promossa e realizzata dal Comune di Costigliole d’Asti e Fondazione Torino Musei",
-                    "author": "a cura di Sara d’Alessandro Manozzo"
+                {
+                   "img":"images/exhibitions/lunatici/lunatici5d.jpg"
                 },
-                "mainContent": "La mostra Cosmonautica, presenta al Castello di Costigliole sculture e installazioni, alcune delle quali appositamente realizzate per la mostra: un vero e proprio viaggio in un universo sonoro e visivo inesplorato, che trasforma il visitatore in astronauta. Il suono è l’elemento ricorrente: è un linguaggio universale, che avvicina ciò che è lontano, crea una continuità tra uomo, macchina, natura, cosmo. Il suono e la musica sono  l’immagine della vita umana nella sua completezza, parte di un tutto: la singola nota è solo una nota, ma in una melodia essa acquista un senso: contiene in sé la precedente e anticipa quella che verrà. Per questo molte opere cercano attivamente la partecipazione del pubblico: l’opera deve essere aperta a chi la osserva, che può farla propria.La vibrazione percepita di fronte ai Totem, gong che invadono lo spazio con le loro basse frequenze, trasforma l’ascolto in un’esperienza fisica, immersiva e sinestetica. Il suono ci mette in contatto con lo spazio siderale, in un viaggio verso luoghi che possiamo solo immaginare: la Luna, il satellite che regola il mare e il ciclo della natura, e il Sole, la nostra stella, che permette la vita. Con la Luna dialoga Speakermoon, antenna parabolica che invia onde radio che si riflettono sulla Luna per poi tornare sulla terra. Super Natural Garden dialoga invece con il Sole: una serie di sensori catturano radiofrequenze molto basse, dette VLF, e traducono in rumori le diverse intensità delle eruzioni solari, restituendoci il suono della nostra stella. Le ombre del mare è uno strumento musicale magico, che riproduce il suono delle onde senza bisogno di essere toccato, perché “attivato” dai gesti dell’osservatore. Il campo nero monocromo di Akasha è invece costituito da pannelli di cristalli liquidi il cui colore si modifica con il variare della temperatura superficiale: il pubblico è chiamato a disegnare con l’acqua. I Catarifrangenti sono pitture su fondo nero, invisibili, che appaiono al pubblico solo quando il flash di una macchina fotografica le illumina. ",
-                "footer": null,
-                "images": [                    
-                    "images/exhibitions/cosmonautica/1.jpg",
-                    "images/exhibitions/cosmonautica/2.jpg"                
-                ],
-                "videos": [],
-                "audios": []  
-            }
-        },
-        {
-            "id": "wintersymphony",
-            "title": "The Winter Symphony",
-            "tags": ["exhibitions"],
-            "subtags": ["2019"],
-            "content": {
-                "subTitle": "Hermitage, Youth Education Center at the State Hermitage, San Pietroburgo, Russia",
-                "date": "31 gennaio | 3 Febbraio 2019",
-                "cit": {
-                    "text": "a cura di Valentino Catricalà",
-                    "author": "Presentato da Youth Education Center at the State Hermitage e CYLAND MediaArtLab International - Media Art Festival CYFEST-12"
+                {  
+                   "img":"images/exhibitions/lunatici/lunatici6d.jpg"
+               }
+             ],
+             "videos":[
+                "https://vimeo.com/207813559"
+             ],
+             "audios":[
+                
+             ]
+          }
+       },
+       {
+          "id":"between",
+          "title":"Between a Dusk and a Dawn there is an Eclipse",
+          "tags":[
+             "exhibitions"
+          ],
+          "subtags":[
+             "2017"
+          ],
+          "content":{
+             "imgAnteprima":"images/exhibitions/duskdawn/betwweenaduskanteprima.jpg",
+             "subTitle":"Galerie Mazzoli, Berlin, Germany",
+             "date":"23 Giugno | 29 Luglio 2017",
+             "cit":{
+                "text":" ''Quando la Luna risponde...'' ",
+                "author":""
+             },
+             "mainContent":"Per Galerie Mazzoli, Sciaraffa ha messo in atto un articolato progetto - in più tappe - dedicato alle risonanze che la Luna sembra avere sul nostra percezione (ed immaginazione). utta una serie di opere preparano ed accompagnano il salto messo in campo nella personale del 2014 (“I Lunatici parlano alla Luna”). Dalle stampe dei Tattoo Moon -ovvero tramite una serie di tamburelli impressionati dall’immagine della luna - forme tatuate (direttamente con la luce lunare) su pelli naturali - ecco che ci si avvicina ad un sinestetico sentire e descrivere quelle forze che il corpo celeste pare emanare:  voler assorbire con la pelle la Luna riporta ad una dimensione quasi ancestrale, dove la pur gigantesca distanza si raccorcia e materializza nella presenza dell’impressione di forme su materiale organico, quasi come in una marchiatura astrologica. Procedendo con un’osservazione a tutto campo, sono poi ancora altri passaggi essenziali i lavori che scandiscono un dialogo fra il nostro globo terracqueo e la maestosa atmosfera selenica: tracce che inequivocabilmente emergono dall’impressione di raggi lunari (còlti direttamente dall’oculare di un telescopio ottico - così come in Catturare il riflesso della Luna in un assolo di chitarra elettrica - 2012) in immagini lunari impresse direttamente su carta emulsionata all’argento, fino all’emergere e scomparire della faccia oscura della Luna - presenza incisa su lastra di cristallo verniciata con vernice a cristalli liquidi di color nero i quali - al variare della temperatura circostante (fra i 25°-30° C) - diventando trasparenti (in Cool Moon), lasciando emergere la faccia nascosta della Luna, incisa sul lato opposto del vetro. Proprio nel vasto progetto de I lunatici (2014), Sciaraffa arriva ad immaginare e materializzare uno scambio fra dimensione terrestre e celeste attraverso un potenziamento delle possibilità dei mezzi di radio-trasmissione. Grazie ai segnali raccolti da un microfono posto nel cuore dello spazio espositivo e tramite un collegamento in streaming dalla galleria, i dati radio-trasmessi (via radiotelescopio)  trasmettono i segnali selezionati in direzione della Luna. Data la potenza delle microonde impiegate, i suoni così viaggiano e rimbalzano indietro verso la Terra, coprendo una distanza di 768.800 Km in appena 2 secondi e mezzo… un lasso di tempo, minimo e immenso allo stesso tempo, che manifesta e sostanzia un senso di salto, di vuoto che è forza tangibile, quasi materializzazione di una distanza siderale. Ecco così la Luna diventare una sorta di immenso strumento musicale e specchio, in grado di ricreare nuovi suoni: la ben nota capacità di riflettere la luce del sole sembra sollecitare l’immaginazione dell’artista che utilizza l’ampio spettro di suoni raccolti dal pubblico (canti, parole, melodie suonate, e via enumerando…) nella performance partecipativa verso una totale ridefinizione del possibile rapporto fra presenze terrestri e corpi celesti.  Nell’instaurare un’ipotesi di rapporto possibile, una sorta di comunicazione con la vasta materia risonante di un pianeta, la Luna assurge ora a paradigma di rispecchiamento - immenso bacino di proiezione in grado di restituirci un insieme di suoni che, fra echi, delays e rintocchi, sono la materializzazione di un sogno forse antico quanto l’umanità - ritrovare una presenza “gemella”.",
+             "footer":"estratto da scritto di Franz Berardinelli",
+             "images":[
+                {
+                   "img":"images/exhibitions/duskdawn/betwweenadusk1dm.jpg"
                 },
-                "mainContent": "The Winter Symphony si fa portatrice di un’esperienza coinvolgente attraverso la perfetta congiunzione tra l’artificiosità della macchina e la naturalezza degli elementi costitutivi dell’opera, volgendo lo sguardo a una più sottile volontà di confronto con il mondo che ci circondain un’epoca in cui l’etica e la morale si scontrano con l’iper-tecnologizzazione. I gesti fugaci dei visITAtori si poseranno su ombre impalpabili e creeranno sculture fatte di vibrazioni rimodulate dall’interazione umana attraverso gli strumenti tecnologici dell’installazione, offrendo una nuova prospettiva dell’intelligenza artificiale. Intento dell’artista è quello di ricongiungere l’uomo di oggi a quel profondo rapporto con gli elementi che da sempre dominano il nostro universo rendendo visibile l’invisibile, come direbbe Paul Klee. Da dove siamo partiti e dove ci stiamo dirigendo: analogico e tecnologico insieme in un’unica opera per dar vITA alle suggestioni concettuali che Sciaraffa intende comunicarci con i suoi lavori e che aprono la strada a un nuovo modo di esplorare l’ancora troppo invisibile Natura. In un scambio simbiotico tra vibranti sculture, luci, ombre e suoni, l’installazione The Winter Symphony riconsolida il rapporto tra uomo e natura mediante l’ausilio di tecnologie supportate dall’intelligenza artificiale. L’installazione è stata realizzata grazie al supporto della residenza NCCA a Kronstadt, fondata nel 2010. La struttura ospITA artisti nazionali e internazionali al fine di rafforzare le relazioni interculturali nel campo artistico, promuovendo e sostenendo progetti di arte contemporanea in Russia.",
-                "footer": null,
-                "images": [                    
-                    "images/exhibitions/wintersymphony/1.jpg",
-                    "images/exhibitions/wintersymphony/2.jpg",
-                    "images/exhibitions/wintersymphony/3.jpg",
-                    "images/exhibitions/wintersymphony/4.jpg",
-                    "images/exhibitions/wintersymphony/5.jpg",
-                    "images/exhibitions/wintersymphony/6.jpg",
-                    "images/exhibitions/wintersymphony/7.jpg"                ],
-                "videos": [],
-                "audios": []  
-            }
-        },
-        {
-            "id": "deumbrisidearum",
-            "title": "De Umbris Idearum",
-            "tags": ["exhibitions"],
-            "subtags": ["2019"],
-            "content": {
-                "subTitle": "Complesso Monumentale di San Severo al Pendino, Napoli",
-                "date": "5 ottobre | 28 ottobre 2019",
-                "cit": {
-                    "text": "a cura di Marina Guida",
-                    "author": "in collaborazione con Galleria Giorgio Persano"
+                {
+                   "img":"images/exhibitions/duskdawn/betwweenadusk2dm.jpg"
                 },
-                "mainContent": "Il progetto site – specific, immersivo e multisensoriale, ha come obiettivo cambiare il punto di vista che ciascuno di noi ha delle cose del mondo e dell’universo che ci circonda. Con la scelta di raggruppare tre simboli napoletani, il mare, la luce e la mistica, Sciaraffa omaggia la città che lo ospITA. Nella visione dell’artista questi elementi sono da considerarsi un unico corpo, un universo organicamente formato, per così dire “un ordine mirabile” come appunto lo definì lo stesso Giordano Bruno nel suo scritto, con una precisa armonia che sostiene ogni singola opera e la connette con tutte le altre. In questo modo la mente umana, che ha in sé non le idee ma bensì le ombre delle idee, può avvicinarsi alla vera conoscenza e cogliere il nesso che connette ogni cosa con le altre, al di là della molteplicità degli elementi e del loro mutare nel tempo. Si tratta di cercare di ottenere un metodo conoscitivo esperienziale, che colga la complessità del reale, fino ad intuire la struttura ideale che sostiene il tutto. La complementarità inseparabile della luce e dell’ombra, che sono all’interno della mostra scorporate e rimodellate dall’artista, vITAono utilizzate per generare nuove sonorità che conducono alla contemplazione e alla medITAzione. L’architettura stessa che ospITA l’esposizione non è un semplice contenitore, ma un amplificatore risonante di suono, di luci e ombre, all’interno della quale le opere sono posizionate in punti specifici, creando così un disegno musicale ben preciso. Lo spettatore, muovendosi all’interno dello spazio espositivo, interagisce con esso attraverso le installazioni che, essendo state concepite come strumenti sciamanici musicali, sono in grado di proiettarlo in un altro stato della coscienza, da esplorare e sperimentare. L’intervento d’installazione si compone di tre opere: “I Totem”, “Le ombre del mare” e “I Flash drawings”.",
-                "footer": "immagini: (all) Alessandro Sciaraffa, «De Umbris Idearum»; installation view – Chiesa di San Severo al Pendino, 2019, Photo Angelo Marra, Courtesy l’Artista e Galleria Giorgio Persano",
-                "images": [                    
-                    "images/exhibitions/deumbrisidearum/1.jpg",
-                    "images/exhibitions/deumbrisidearum/2.jpg",
-                    "images/exhibitions/deumbrisidearum/3.jpg",
-                    "images/exhibitions/deumbrisidearum/4.jpg",
-                    "images/exhibitions/deumbrisidearum/5.jpg",
-                    "images/exhibitions/deumbrisidearum/6.jpg",
-                    "images/exhibitions/deumbrisidearum/7.jpg",
-                    "images/exhibitions/deumbrisidearum/8.jpg",
-                    "images/exhibitions/deumbrisidearum/9.jpg"
-                    ],
-                "videos": [],
-                "audios": []  
-            }
-        },
-        {
-            "id": "auroraopera",
-            "title": "Aurora",
-            "tags": ["works"],
-            "subtags": [ "special projects", "2019", "2020"],
-            "content": {
-                "subTitle": "Nell'ambito di Luci d'Artista 2019 ",
-                "date": "da 7 Dicembre 2019 a 11 Gennaio 2020",
-                "cit": {
-                    "text": "a cura di Riccardo Passoni",
-                    "author": "Stele del Torino Outlet Village"
+                {
+                   "img":"images/exhibitions/duskdawn/betwweenadusk3dm.jpg"
                 },
-                "mainContent": "Per la XXII edizione di Luci d’Artista, Aurora, una nuova opera luminosa e sonora realizzata apposITAmente per la Stele del Torino Outlet Village. Attraverso l’utilizzo di videomapping ed effetti sonori, Alessandro Sciaraffa plasma un’aurora boreale sulla stele del Torino Outlet Village, trasformandola in una fronda splendente e prodigiosa che rischiara il cielo notturno, diventando richiamo e punto di partenza per una connessione spirituale, politica e sociale tra individuo e universo. La Stele del Torino Outlet Village, realizzata - come l’intera struttura - dall’architetto Claudio Silvestrin, è alta 88 metri e svetta visibile da più punti della area di Torino e di Settimo Torinese. Nel 2017, al termine dei lavori, l’architetto aveva dichiarato “Ho pensato a un’architettura che fa da ponte per nuovi cieli e nuove terre”. Accogliendo questa intenzione, Sciaraffa la declina riproducendo un fenomeno naturale di luoghi lontani, un evento prodigioso che unisce suono, luce e vibrazioni ondulatorie in una visione cosmica che utilizza la luce per ricucire il tessuto urbano. Aurora è visibile dalla città, dal treno e dall’autostrada, ma anche dall’aereo e dalla Stazione Spaziale Internazionale. Il termine aurora boreale è stato attribuito all’imponente fenomeno luminoso naturale da Galileo Galilei nel 1619. Aurora è anche il nome della divinità romana dell’alba, che viaggiava dall’est all’ovest annunciando il sorgere del sole, e sono proprio gli sciami di particelle solari che, spinte a grande velocità contro il campo magnetico terrestre urtano gli atomi presenti nell’atmosfera rarefatta, che si caricano di energia diventando luminosi. Le aurore generano luce scintillante dai toni prevalentemente verdastri, con infinite sfumature di forme e colori, spesso accompagnate da suoni simili a sibili, crepitii, cinguettii, oppure inudibili se non attraverso apparecchiature capaci di captare le basse frequenze generate da questa manifestazione luminosa. Con questa installazione Alessandro Sciaraffa racconta anche sé stesso e il suo percorso artistico, caratterizzato dalla presenza simbiotica di suono, tecnologia e natura, e in questo caso è la sua personale esperienza, al cospetto di una aurora boreale, ad essere narrata",
-                "footer": "Le immagini e i suoni registrati durante la sua permanenza a Tiriberka di Murmansk in Russia sono stati tradotti sulla stele di Torino Outlet Village, dando vITA a una corrispondenza tra suono visibile e luce sonora. Captati alle basse frequenze, i suoni dell’aurora boreale vITAono tradotti in un grafico multicolore che ne riverbera visivamente le sempre mutevoli, e altrimenti impercettibili, sfumature. Le immagini “noise” in movimento restituiscono i contorni mobili dell’aurora e gli effetti acustici sulla stele del Torino Outlet Village.",
-                "images": [
-                    "images/archivio-lavori/placeholder.jpg",
-                    "images/archivio-lavori/placeholder.jpg",
-                    "images/archivio-lavori/placeholder.jpg"
-                ],
-                "videos": [],
-                "audios": [
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
-                ]  
-            }
-        },
-        {
-            "id": "flashdrawingsopera",
-            "title": "Flashdrawings",
-            "tags": ["works"],
-            "subtags": ["sound sculptures"],
-            "content": {
-                "subTitle": "2019 ",
-                "mainContent": "Leggerissime tele di colore nero nascondono disegni catarifrangenti, visibili soltanto utilizzando la macchina fotografica con il flash. L’immagine digitale catturata dalla luce flash indica una diversa modalità di visualizzazione dell’immagine stessa enfatizzando ciò che è reale e ciò che non si vede...",
-                "footer": "Materiali: Vernice catarinfrangente, cartoncino",
-                "images": [
-                    "images/archivio-lavori/tiportoalmare/1.png",
-                    "images/archivio-lavori/tiportoalmare/2.png",
-                    "images/archivio-lavori/tiportoalmare/3.png",
-                    "images/archivio-lavori/tiportoalmare/4.png"
-                ],
-                "videos": [
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768"
-                ],
-                "audios": [
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
-                ]  
-            }
-        },
-        {
-            "id": "tattomoonopera",
-            "title": "TATTOMOON",
-            "tags": ["works"],
-            "subtags": ["paintings"],
-            "content": {
-                "subTitle": "2014 ",
-                "mainContent": "Una serie di tamburelli impressionati dall’immagine della luna - forme tatuate (direttamente con la luce lunare) su pelli naturali: voler assorbire con la pelle la Luna riporta ad una dimensione quasi ancestrale, dove la pur gigantesca distanza si raccorcia e materializza nella presenza dell’impressione di forme su materiale organico, quasi come in una marchiatura astrologica...",
-                "footer": "Materiali: pelle, legno, vernice",
-                "images": [
-                    "images/archivio-lavori/tiportoalmare/1.png",
-                    "images/archivio-lavori/tiportoalmare/2.png",
-                    "images/archivio-lavori/tiportoalmare/3.png",
-                    "images/archivio-lavori/tiportoalmare/4.png"
-                ],
-                "videos": [
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768"
-                ],
-                "audios": [
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
-                ]  
-            }
-        },
-        {
-            "id": "leombredelmareopera",
-            "title": "LE OMBRE DEL MARE",
-            "tags": ["works"],
-            "subtags": ["sound sculptures", "special projects"],
-            "content": {
-                "subTitle": "2017 ",
-                "mainContent": " '' Le ombre del mare, uno strumento altamente tecnologico in grado di fruttare la complicità della Luce e dell’Ombra per produrre il suone del mare che è in ogn’uno di noi...'' ",
-                "footer": "Materiali: Onice, Legno, Fotoresistenze, Vetro, Elettronica, Speaker",
-                "images": [ "images/archivio-lavori/tiportoalmare/1.png" ],
-                "videos": [
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768"
-                ],
-                "audios": [
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
-                ]  
-            }
-        },
-        {
-            "id": "akashaopera",
-            "title": "AKASHA",
-            "tags": ["works"],
-            "subtags": ["performances"],
-            "content": {
-                "subTitle": "2011 ",
-                "mainContent": "Akasha è un installazione interattiva costituita da una serie di pannelli di cristalli liquidi assemblati a muro sino a sagomare completamente l’ambiente. Materia protagonista di Akasha è il plasma, il quarto stato della materia, non liquido, non solido, non gassoso e prossimo alla struttura delle stelle. Mediante un processo termico di alterazione del grado di temperatura esercitato dall’intervento dei visitatori mediante schizzi d’acqua diretti verso la superficie di Akasha, la monocromia iniziale dei cristalli liquidi muta colore e identità, aprendo sotto gli occhi dello spettatore un paesaggio visivo metamorfico, la cartografia imprevedibile di maelstrom virtuali in continua evoluzione sulla composizione molecolare del plasma. Restituzione artistica di un universo mai uguale a se stesso, di un microcosmo artificialmente eccitato di energie e flussi naturali, l’opera di Sciaraffa dispiega uno scenario dove la visione non è più scindibile dagli altri stimoli percettivi e l’unico strumento di ricognizione è una sintesi sensoriale capace di tradurre gli impulsi interattivi in emozioni reali. Protagonista è il segno pittorico del pubblico, che negli schizzi e nelle gocce scagliate sui cristalli attiva la deflagrazione di un big-bang figurale, consumando nello spazio dell’impatto tra liquido e solido, tra cromie e temperature, un gesto di natura sacrale antichissimo ed ancestrale, quello dell’acqua trasformata in fonte di vita e di evoluzione. ",
-                "footer": "Materiali: cristalli liquidi, acciaio, generatore di frequenza 40 Hz, resistenza ceramica. sensori",
-                "images": ["images/archivio-lavori/tiportoalmare/1.png" ],
-                "videos": [
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768"
-                ],
-                "audios": [
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
-                ]  
-            }
-        },
-          {
-            "id": "tiportoilmareopera",
-            "title": "Ti porto il mare",
-            "tags": ["works"],
-            "subtags": ["sound sculptures"],
-            "content": {
-                "subTitle": "Fondazione Merz, Torino, 2011 ",
-                "mainContent": "TI PORTO IL MARE è un’installazione sonora che combina industriosità e magia: dieci grandi tamburi fluttuano leggiadri sulle teste dei fruitori, ondeggiano sospesi grazie a un meccanismo di cavi metallici e riproducono il rumore del mare, evocato da migliaia di piccole sfere d’acciaio che rotolano all’interno di ogni tamburo, vibrando sulla pelle tesa. Il movimento ipnotico sublima lo spirito e ridesta la fantasia del visitatore.",
-                "footer": "nell'ambito di Meteorite in Giardino 4, Fondazione Merz. Materiali: tamburi, sfere di accaio, cavi d'acciaio, motori",
-                "images": [
-                    "images/archivio-lavori/tiportoalmare/1.png",
-                    "images/archivio-lavori/tiportoalmare/2.png",
-                    "images/archivio-lavori/tiportoalmare/3.png",
-                    "images/archivio-lavori/tiportoalmare/4.png"
-                ],
-                "videos": [
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768"
-                ],
-                "audios": [
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
-                ]  
-            }
-        },
-        {
-            "id": "totemopera",
-            "title": "Totem",
-            "tags": ["works"],
-            "subtags": ["sound sculptures"],
-            "content": {
-                "subTitle": "2018 ",
-                "mainContent": "Grandi gong producono musiche mistiche generate dalla misteriosa energia invisibile della risonanza sonora palesandosi attraverso il corpo metallico. Grazie a l'interattività del pubblico con l'intelligenza artificiale della macchina, il totem plasma lo spazio con il suono, trasportando lo spettatore in un viaggio mistico multisensoriale.",
-                "footer": "footer",
-                "images": [
-                    "images/archivio-lavori/placeholder.jpg"
-                ],
-                "videos": [
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768",
-                    "https://vimeo.com/207792768"
-                ],
-                "audios": [
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2",
-                    "https://soundcloud.com/herbiehancockmusic/cantaloupe-island-2"
-                ]  
-            }
-        }
-
+                {
+                   "img":"images/exhibitions/duskdawn/betwweenadusk4dm.jpg"
+                },
+                {
+                   "img":"images/exhibitions/duskdawn/betwweenadusk5dm.jpg"
+                },
+                {
+                   "img":"images/exhibitions/duskdawn/betwweenadusk6dm.jpg"
+                },
+                {
+                   "img":"images/exhibitions/duskdawn/betwweenadusk7dm.jpg"
+                },
+                {
+                   "img":"images/exhibitions/duskdawn/betwweenadusk8dm.jpg"
+                },
+                {
+                   "img":"images/exhibitions/duskdawn/betwweenadusk9dm.jpg"
+                }
+             ],
+             "videos":[
+                
+             ],
+             "audios":[
+                
+             ]
+          }
+       },
+       {
+          "id":"fontanelle",
+          "title":"fontanelle",
+          "tags":[
+             "exhibitions"
+          ],
+          "subtags":[
+             "2017",
+             "sound sculptures"
+          ],
+          "content":{
+             "imgAnteprima":"images/exhibitions/fontanelle/anteprimafontanelle.jpg",
+             "subTitle":"Galerie Italienne, Paris, France",
+             "date":"1 dicembre 2016 - 21 gennaio 2017",
+             "cit":{
+                "text":"L'acqua cerca sempre l'acqua",
+                "author":"Alessandro Sciaraffa"
+             },
+             "mainContent":"Distribuita su tutto lo spazio della galleria, “Fontanella Secca” presenta i lavori del ciclo ‘Fontanelle' riuniti per la prima volta. Il lavoro di Sciaraffa è sempre stato incentrato sul suono. Le opere in mostra sono un lavoro intorno al rumore dell'acqua. Grazie al dialogo tra le diverse sculture sonore, realizzate appositamente per il nuovo spazio espositivo della Galleria Italienne, lo spettatore è immerso in un'esperienza sinestetica in cui il suono e il visivo intendono creare un'opera a sé stante. Con questo nuovo ciclo Alessandro Sciaraffa porta l'esperienza tecnologica al limite per mettere in relazione il suono dell'acqua, l'architettura, la natura e gli strumenti musicali. Legno, acciaio e ottone sono stati utilizzati per le loro diverse proprietà fisiche, quando messi insieme, la miscela genera un lavoro unico. Photo Courtesy of Galerie Italienne",
+             "footer":null,
+             "images":[
+                {
+                   "dida":"Courtesy Galerie Italienne",
+                   "img":"images/exhibitions/fontanelle/fontanelle1d.png"
+                },
+                {
+                   "img":"images/exhibitions/fontanelle/fontanelle2d.png"
+                },
+                {
+                   "img":"images/exhibitions/fontanelle/fontanelle3d.jpg"
+                },
+                {
+                   "img":"images/exhibitions/fontanelle/fontanelle4d.png"
+                },
+                {
+                   "img":"images/exhibitions/fontanelle/fontanelle5d.png"
+                },
+                {
+                   "img":"images/exhibitions/fontanelle/fontanelle6d.png"
+                }
+             ],
+             "videos":[
+                
+             ],
+             "audios":[
+                
+             ]
+          }
+       },
+       {
+          "id":"cosmonautica",
+          "title":"Cosmonautica",
+          "tags":[
+             "exhibitions"
+          ],
+          "subtags":[
+             "2019"
+          ],
+          "content":{
+             "imgAnteprima":"images/exhibitions/cosmonautica/anteprimacosmonautica.jpg",
+             "subTitle":"Castello di Costigliole d'Asti, Asti, Italia",
+             "date":"6 Luglio | 29 settembre 2019",
+             "cit":{
+                "text":"Mostra promossa e realizzata dal Comune di Costigliole d’Asti e Fondazione Torino Musei",
+                "author":"a cura di Sara d’Alessandro Manozzo"
+             },
+             "mainContent":"La mostra Cosmonautica, presenta al Castello di Costigliole sculture e installazioni, alcune delle quali appositamente realizzate per la mostra: un vero e proprio viaggio in un universo sonoro e visivo inesplorato, che trasforma il visitatore in astronauta. Il suono è l’elemento ricorrente: è un linguaggio universale, che avvicina ciò che è lontano, crea una continuità tra uomo, macchina, natura, cosmo. Il suono e la musica sono  l’immagine della vita umana nella sua completezza, parte di un tutto: la singola nota è solo una nota, ma in una melodia essa acquista un senso: contiene in sé la precedente e anticipa quella che verrà. Per questo molte opere cercano attivamente la partecipazione del pubblico: l’opera deve essere aperta a chi la osserva, che può farla propria.La vibrazione percepita di fronte ai Totem, gong che invadono lo spazio con le loro basse frequenze, trasforma l’ascolto in un’esperienza fisica, immersiva e sinestetica. Il suono ci mette in contatto con lo spazio siderale, in un viaggio verso luoghi che possiamo solo immaginare: la Luna, il satellite che regola il mare e il ciclo della natura, e il Sole, la nostra stella, che permette la vita. Con la Luna dialoga Speakermoon, antenna parabolica che invia onde radio che si riflettono sulla Luna per poi tornare sulla terra. Super Natural Garden dialoga invece con il Sole: una serie di sensori catturano radiofrequenze molto basse, dette VLF, e traducono in rumori le diverse intensità delle eruzioni solari, restituendoci il suono della nostra stella. Le ombre del mare è uno strumento musicale magico, che riproduce il suono delle onde senza bisogno di essere toccato, perché “attivato” dai gesti dell’osservatore. Il campo nero monocromo di Akasha è invece costituito da pannelli di cristalli liquidi il cui colore si modifica con il variare della temperatura superficiale: il pubblico è chiamato a disegnare con l’acqua. I Catarifrangenti sono pitture su fondo nero, invisibili, che appaiono al pubblico solo quando il flash di una macchina fotografica le illumina. ",
+             "footer":null,
+             "images":[
+                {
+                   "img":"images/exhibitions/cosmonautica/Cosmonautica1dm.jpg"
+                },
+                {
+                   "img":"images/exhibitions/cosmonautica/Cosmonautica2dm.jpg"
+                },
+                {
+                  "img":"images/exhibitions/cosmonautica/Cosmonautica3dm.jpg"
+               },
+                {
+                  "img":"images/exhibitions/cosmonautica/Cosmonautica4dm.jpg"
+               },
+                {
+                  "img":"images/exhibitions/cosmonautica/Cosmonautica5dm.jpg"
+               },
+               {
+                  "img":"images/exhibitions/cosmonautica/Cosmonautica6dm.jpg"
+               }, {
+                  "img":"images/exhibitions/cosmonautica/Cosmonautica7dm.jpg"
+               }, {
+                  "img":"images/exhibitions/cosmonautica/Cosmonautica8dm.jpg"
+               }
+             ],
+             "videos":[
+                
+             ],
+             "audios":[
+                
+             ]
+          }
+       },
+       {
+          "id":"wintersymphony",
+          "title":"The Winter Symphony",
+          "tags":[
+             "exhibitions"
+          ],
+          "subtags":[
+             "2019"
+          ],
+          "content":{
+             "imgAnteprima":"images/exhibitions/wintersymphony/anteprimawintersymphony.jpg",
+             "subTitle":"Hermitage, Youth Education Center at the State Hermitage, San Pietroburgo, Russia",
+             "date":"31 gennaio | 3 Febbraio 2019",
+             "cit":{
+                "text":"a cura di Valentino Catricalà",
+                "author":"Presentato da Youth Education Center at the State Hermitage e CYLAND MediaArtLab International - Media Art Festival CYFEST-12"
+             },
+             "mainContent":"The Winter Symphony si fa portatrice di un’esperienza coinvolgente attraverso la perfetta congiunzione tra l’artificiosità della macchina e la naturalezza degli elementi costitutivi dell’opera, volgendo lo sguardo a una più sottile volontà di confronto con il mondo che ci circondain un’epoca in cui l’etica e la morale si scontrano con l’iper-tecnologizzazione. I gesti fugaci dei visITAtori si poseranno su ombre impalpabili e creeranno sculture fatte di vibrazioni rimodulate dall’interazione umana attraverso gli strumenti tecnologici dell’installazione, offrendo una nuova prospettiva dell’intelligenza artificiale. Intento dell’artista è quello di ricongiungere l’uomo di oggi a quel profondo rapporto con gli elementi che da sempre dominano il nostro universo rendendo visibile l’invisibile, come direbbe Paul Klee. Da dove siamo partiti e dove ci stiamo dirigendo: analogico e tecnologico insieme in un’unica opera per dar vITA alle suggestioni concettuali che Sciaraffa intende comunicarci con i suoi lavori e che aprono la strada a un nuovo modo di esplorare l’ancora troppo invisibile Natura. In un scambio simbiotico tra vibranti sculture, luci, ombre e suoni, l’installazione The Winter Symphony riconsolida il rapporto tra uomo e natura mediante l’ausilio di tecnologie supportate dall’intelligenza artificiale. L’installazione è stata realizzata grazie al supporto della residenza NCCA a Kronstadt, fondata nel 2010. La struttura ospITA artisti nazionali e internazionali al fine di rafforzare le relazioni interculturali nel campo artistico, promuovendo e sostenendo progetti di arte contemporanea in Russia.",
+             "footer":null,
+             "images":[
+                {
+                   "img":"images/exhibitions/wintersymphony/Hermitage1.jpg"
+                },
+                {
+                   "img":"images/exhibitions/wintersymphony/Hermitage2.jpg"
+                },
+                {
+                   "img":"images/exhibitions/wintersymphony/Hermitage3.jpg"
+                },
+                {
+                   "img":"images/exhibitions/wintersymphony/Hermitage4.jpg"
+                },
+                {
+                   "img":"images/exhibitions/wintersymphony/Hermitage5.jpg"
+                },
+                {
+                   "img":"images/exhibitions/wintersymphony/Hermitage6.jpg"
+                },
+                {
+                   "img":"images/exhibitions/wintersymphony/Hermitage7.jpg"
+                },
+                {
+                  "img":"images/exhibitions/wintersymphony/Hermitage8.jpg"
+               },   {
+                  "img":"images/exhibitions/wintersymphony/Hermitage9.jpg"
+               },
+               {
+                  "img":"images/exhibitions/wintersymphony/Hermitage10.jpg"
+               }
+             ],
+             "videos":[
+                "https://vimeo.com/322238650",
+                "https://vimeo.com/322227278"
+             ],
+             "audios":[
+                
+             ]
+          }
+       },
+       {
+          "id":"deumbrisidearum",
+          "title":"De Umbris Idearum",
+          "tags":[
+             "exhibitions"
+          ],
+          "subtags":[
+             "2019"
+          ],
+          "content":{
+             "imgAnteprima":"images/exhibitions/deumbrisidearum/deumbrisanteprima.jpg",
+             "subTitle":"Complesso Monumentale di San Severo al Pendino, Napoli",
+             "date":"5 ottobre | 28 ottobre 2019",
+             "cit":{
+                "text":"a cura di Marina Guida",
+                "author":"in collaborazione con Galleria Giorgio Persano"
+             },
+             "mainContent":"Il progetto site – specific, immersivo e multisensoriale, ha come obiettivo cambiare il punto di vista che ciascuno di noi ha delle cose del mondo e dell’universo che ci circonda. Con la scelta di raggruppare tre simboli napoletani, il mare, la luce e la mistica, Sciaraffa omaggia la città che lo ospITA. Nella visione dell’artista questi elementi sono da considerarsi un unico corpo, un universo organicamente formato, per così dire “un ordine mirabile” come appunto lo definì lo stesso Giordano Bruno nel suo scritto, con una precisa armonia che sostiene ogni singola opera e la connette con tutte le altre. In questo modo la mente umana, che ha in sé non le idee ma bensì le ombre delle idee, può avvicinarsi alla vera conoscenza e cogliere il nesso che connette ogni cosa con le altre, al di là della molteplicità degli elementi e del loro mutare nel tempo. Si tratta di cercare di ottenere un metodo conoscitivo esperienziale, che colga la complessità del reale, fino ad intuire la struttura ideale che sostiene il tutto. La complementarità inseparabile della luce e dell’ombra, che sono all’interno della mostra scorporate e rimodellate dall’artista, vITAono utilizzate per generare nuove sonorità che conducono alla contemplazione e alla medITAzione. L’architettura stessa che ospITA l’esposizione non è un semplice contenitore, ma un amplificatore risonante di suono, di luci e ombre, all’interno della quale le opere sono posizionate in punti specifici, creando così un disegno musicale ben preciso. Lo spettatore, muovendosi all’interno dello spazio espositivo, interagisce con esso attraverso le installazioni che, essendo state concepite come strumenti sciamanici musicali, sono in grado di proiettarlo in un altro stato della coscienza, da esplorare e sperimentare. L’intervento d’installazione si compone di tre opere: “I Totem”, “Le ombre del mare” e “I Flash drawings”.",
+             "footer":"immagini: (all) Alessandro Sciaraffa, «De Umbris Idearum»; installation view – Chiesa di San Severo al Pendino, 2019, Photo Angelo Marra, Courtesy l’Artista e Galleria Giorgio Persano",
+             "images":[
+                {
+                   "img":"images/exhibitions/deumbrisidearum/deumbris1.jpg"
+                },
+                {
+                   "img":"images/exhibitions/deumbrisidearum/deumbris2.jpg"
+                },
+                {
+                   "img":"images/exhibitions/deumbrisidearum/deumbris3.jpg"
+                },
+                {
+                   "img":"images/exhibitions/deumbrisidearum/deumbris4.jpg"
+                },
+                {
+                   "img":"images/exhibitions/deumbrisidearum/deumbris5.jpg"
+                }
+             ],
+             "videos":[
+                
+             ],
+             "audios":[
+                
+             ]
+          }
+       },
+       {
+          "id":"auroraopera",
+          "title":"Aurora",
+          "tags":[
+             "works"
+          ],
+          "subtags":[
+             "special projects",
+             "2019",
+             "2020"
+          ],
+          "content":{
+             "imgAnteprima":"images/archivio-lavori/aurora/anteprimaaurora.jpg",
+             "subTitle":"Nell'ambito di Luci d'Artista 2019 ",
+             "date":"da 7 Dicembre 2019 a 11 Gennaio 2020",
+             "cit":{
+                "text":"a cura di Riccardo Passoni",
+                "author":"Stele del Torino Outlet Village"
+             },
+             "mainContent":"Per la XXII edizione di Luci d’Artista, Aurora, una nuova opera luminosa e sonora realizzata apposITAmente per la Stele del Torino Outlet Village. Attraverso l’utilizzo di videomapping ed effetti sonori, Alessandro Sciaraffa plasma un’aurora boreale sulla stele del Torino Outlet Village, trasformandola in una fronda splendente e prodigiosa che rischiara il cielo notturno, diventando richiamo e punto di partenza per una connessione spirituale, politica e sociale tra individuo e universo. La Stele del Torino Outlet Village, realizzata - come l’intera struttura - dall’architetto Claudio Silvestrin, è alta 88 metri e svetta visibile da più punti della area di Torino e di Settimo Torinese. Nel 2017, al termine dei lavori, l’architetto aveva dichiarato “Ho pensato a un’architettura che fa da ponte per nuovi cieli e nuove terre”. Accogliendo questa intenzione, Sciaraffa la declina riproducendo un fenomeno naturale di luoghi lontani, un evento prodigioso che unisce suono, luce e vibrazioni ondulatorie in una visione cosmica che utilizza la luce per ricucire il tessuto urbano. Aurora è visibile dalla città, dal treno e dall’autostrada, ma anche dall’aereo e dalla Stazione Spaziale Internazionale. Il termine aurora boreale è stato attribuito all’imponente fenomeno luminoso naturale da Galileo Galilei nel 1619. Aurora è anche il nome della divinità romana dell’alba, che viaggiava dall’est all’ovest annunciando il sorgere del sole, e sono proprio gli sciami di particelle solari che, spinte a grande velocità contro il campo magnetico terrestre urtano gli atomi presenti nell’atmosfera rarefatta, che si caricano di energia diventando luminosi. Le aurore generano luce scintillante dai toni prevalentemente verdastri, con infinite sfumature di forme e colori, spesso accompagnate da suoni simili a sibili, crepitii, cinguettii, oppure inudibili se non attraverso apparecchiature capaci di captare le basse frequenze generate da questa manifestazione luminosa. Con questa installazione Alessandro Sciaraffa racconta anche sé stesso e il suo percorso artistico, caratterizzato dalla presenza simbiotica di suono, tecnologia e natura, e in questo caso è la sua personale esperienza, al cospetto di una aurora boreale, ad essere narrata",
+             "footer":"Le immagini e i suoni registrati durante la sua permanenza a Tiriberka di Murmansk in Russia sono stati tradotti sulla stele di Torino Outlet Village, dando vITA a una corrispondenza tra suono visibile e luce sonora. Captati alle basse frequenze, i suoni dell’aurora boreale vITAono tradotti in un grafico multicolore che ne riverbera visivamente le sempre mutevoli, e altrimenti impercettibili, sfumature. Le immagini “noise” in movimento restituiscono i contorni mobili dell’aurora e gli effetti acustici sulla stele del Torino Outlet Village.",
+             "images":[
+                {
+                   "dida":"Video, Traccia Sonora, Aurora Boreale",
+                   "img":"images/archivio-lavori/aurora/aurora1.jpg"
+                },
+                {
+                   "img":"images/archivio-lavori/aurora/aurora2.jpg"
+                },
+                {
+                   "img":"images/archivio-lavori/aurora/aurora3.jpg"
+                },
+                {
+                  "img":"images/archivio-lavori/aurora/aurora4.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/aurora/aurora5.jpg"
+               }
+             ],
+             "videos":[
+                "https://vimeo.com/477600943",
+                "https://vimeo.com/480929582"
+             ],
+             "audios":[
+             ]
+          }
+       },
+       {
+          "id":"flashdrawingsopera",
+          "title":"Flashdrawings",
+          "tags":[
+             "works"
+          ],
+          "subtags":[
+             "sound sculptures"
+          ],
+          "content":{
+             "imgAnteprima":"images/archivio-lavori/flashdrawings/anteprimaflashdrawings.jpg",
+             "subTitle":"2019 ",
+             "mainContent":"Leggerissime tele di colore nero nascondono disegni catarifrangenti, visibili soltanto utilizzando la macchina fotografica con il flash. L’immagine digitale catturata dalla luce flash indica una diversa modalità di visualizzazione dell’immagine stessa enfatizzando ciò che è reale e ciò che non si vede...",
+             "footer":"Materiali: Vernice catarinfrangente, cartoncino. Dimensioni Variabili.",
+             "images":[
+                {
+                   "img":"images/archivio-lavori/flashdrawings/flashdrawings1.jpg"
+                },
+                {
+                   "img":"images/archivio-lavori/flashdrawings/flashdrawings2.jpg"
+                },
+                {
+                   "img":"images/archivio-lavori/flashdrawings/flashdrawings3.jpg"
+                },
+                {
+                   "img":"images/archivio-lavori/flashdrawings/flashdrawings4.jpg"
+                },
+                {
+                  "img":"images/archivio-lavori/flashdrawings/flashdrawings5.jpg"
+               }
+             ],
+             "videos":[
+             ],
+             "audios":[
+             ]
+          }
+       },
+       {
+          "id":"tattomoonopera",
+          "title":"TATTOMOON",
+          "tags":[
+             "works"
+          ],
+          "subtags":[
+             "paintings"
+          ],
+          "content":{
+             "imgAnteprima":"images/archivio-lavori/tattoomoon/tattomoonanteprima.jpg",
+             "subTitle":"2014 ",
+             "mainContent":"Una serie di tamburelli impressionati dall’immagine della luna - forme tatuate (direttamente con la luce lunare) su pelli naturali: voler assorbire con la pelle la Luna riporta ad una dimensione quasi ancestrale, dove la pur gigantesca distanza si raccorcia e materializza nella presenza dell’impressione di forme su materiale organico, quasi come in una marchiatura astrologica...",
+             "footer":"Materiali: pelle, legno, vernice",
+             "images":[
+                {
+                   "img":"images/archivio-lavori/tattoomoon/tattoomoon1.jpg"
+                },
+                {
+                   "img":"images/archivio-lavori/tattoomoon/tattoomoon2.jpg"
+                },
+                {
+                   "img":"images/archivio-lavori/tattoomoon/tattoomoon3.jpg"
+                },
+                {
+                   "img":"images/archivio-lavori/tattoomoon/tattoomoon4.jpg"
+                }
+             ],
+             "videos":[
+             ],
+             "audios":[
+             ]
+          }
+       },
+       {
+          "id":"leombredelmareopera",
+          "title":"LE OMBRE DEL MARE",
+          "tags":[
+             "works"
+          ],
+          "subtags":[
+             "sound sculptures",
+             "special projects"
+          ],
+          "content":{
+             "imgAnteprima":"images/archivio-lavori/leombredelmare/leombredelmareanteprima.jpg",
+             "subTitle":"2017 ",
+             "mainContent":" '' Le ombre del mare, uno strumento altamente tecnologico in grado di fruttare la complicità della Luce e dell’Ombra per produrre il suone del mare che è in ogn’uno di noi...'' ",
+             "footer":"Materiali: Onice, Legno, Fotoresistenze, Vetro, Elettronica, Speaker",
+             "images":[
+                {
+                   "img":"images/archivio-lavori/leombredelmare/leombredelmare1dm.jpg"
+                },
+                {
+                  "img":"images/archivio-lavori/leombredelmare/leombredelmare2dm.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/leombredelmare/leombredelmare3dm.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/leombredelmare/leombredelmare4dm.jpg"
+               }
+             ],
+             "videos":[
+             ],
+             "audios":[
+             ]
+          }
+       },
+       {
+          "id":"tiportoilmareopera",
+          "title":"Ti porto il mare",
+          "tags":[
+             "works"
+          ],
+          "subtags":[
+             "sound sculptures"
+          ],
+          "content":{
+             "imgAnteprima":"images/archivio-lavori/tiportoilmare/tiportoilmareanteprima.jpg",
+             "subTitle":"Fondazione Merz, Torino, 2011 ",
+             "mainContent":"TI PORTO IL MARE è un’installazione sonora che combina industriosità e magia: dieci grandi tamburi fluttuano leggiadri sulle teste dei fruitori, ondeggiano sospesi grazie a un meccanismo di cavi metallici e riproducono il rumore del mare, evocato da migliaia di piccole sfere d’acciaio che rotolano all’interno di ogni tamburo, vibrando sulla pelle tesa. Il movimento ipnotico sublima lo spirito e ridesta la fantasia del visitatore.",
+             "footer":"nell'ambito di Meteorite in Giardino 4, Fondazione Merz. Materiali: tamburi, sfere di accaio, cavi d'acciaio, motori",
+             "images":[
+                {
+                   "img":"images/archivio-lavori/tiportoailmare/tiportoilmare1dm.png"
+                },
+                {
+                   "img":"images/archivio-lavori/tiportoilmare/tiportoilmare2dm.png"
+                },
+                {
+                   "img":"images/archivio-lavori/tiportoalmare/tiportoilmare3dm.png"
+                }
+             ],
+             "videos":[
+             ],
+             "audios":[
+             ]
+          }
+       },
+       {
+          "id":"totemopera",
+          "title":"Totem",
+          "tags":[
+             "works"
+          ],
+          "subtags":[
+             "sound sculptures"
+          ],
+          "content":{
+             "imgAnteprima":"images/archivio-lavori/totemopera/totemoperaanteprima.jpg",
+             "subTitle":"2018 ",
+             "mainContent":"Grandi gong producono musiche mistiche generate dalla misteriosa energia invisibile della risonanza sonora palesandosi attraverso il corpo metallico. Grazie a l'interattività del pubblico con l'intelligenza artificiale della macchina, il totem plasma lo spazio con il suono, trasportando lo spettatore in un viaggio mistico multisensoriale.",
+             "footer":"footer",
+             "images":[
+                {
+                   "dida":"Gong, Subwoofer, Traccia Sonora, Elettronica. Dimensioni variabili",
+                   "img":"images/archivio-lavori/totemopera/totem1dm.jpg"
+                },
+                {
+                  "img":"images/archivio-lavori/totemopera/totem2dm.jpg"
+               }
+             ],
+             "videos":[
+                "https://vimeo.com/477584864",
+                "https://vimeo.com/477583209"
+             ],
+             "audios":[
+             ]
+          }
+       }
     ],
     "optional":{
-        "id": "portfoliodownload",
-        "title": "download portfolio ITA",
-        "tags": [],
-        "content": {
-            "image": "images/portfoliodownload/placeholder.jpg",
-            "mainContent": "ITA home main content",
-            "password": ["prova123456789", "seconda password"],
-            "psswButtonText": "inserisci password",
-            "buttonText": "scarica portfolio",
-            "url": "download/useless.pdf"
-        }
+       "id":"portfoliodownload",
+       "title":"download portfolio ITA",
+       "tags":[
+          
+       ],
+       "content":{
+          "image":"images/portfoliodownload/placeholder.jpg",
+          "mainContent":"ITA home main content",
+          "password":[
+             "prova123456789",
+             "seconda password"
+          ],
+          "psswButtonText":"inserisci password",
+          "buttonText":"scarica portfolio",
+          "url":"download/useless.pdf"
+       }
     }
-}
+ }

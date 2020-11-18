@@ -69,7 +69,7 @@ export const Caption = ({data}) => {
     const [imgLoad, setImgLoad] = useState(false)
     
     const captionImg = new Image(100,100);
-    captionImg.src = data.content.images[0]
+    captionImg.src = data.content.imgAnteprima;
     captionImg.onload = () => setImgLoad(true)
 
     captionStyle = {
