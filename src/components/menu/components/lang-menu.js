@@ -63,7 +63,7 @@ switch(currentDevice){
 
 
 export default () => {
-return <div style={langMenuStyle}>
+return (langNameList.length > 1)?(<div style={langMenuStyle}>
     {langNameList.map(
         (ln,i)=>
         (ln===currentLang.name)?
@@ -71,5 +71,5 @@ return <div style={langMenuStyle}>
         :
         <LangButton langName={ln} key={i} />
     )}
-</div>
+</div>):(<></>)
 }
