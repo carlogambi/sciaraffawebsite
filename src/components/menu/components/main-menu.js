@@ -64,4 +64,5 @@ const MainMenu = ({langPack, setOpen}) => {
     </div>
 }
 
+
 export default MainMenu
