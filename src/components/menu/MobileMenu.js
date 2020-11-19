@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LangMenu from './components/lang-menu';
 import MainMenu from './components/main-menu';
+import  {Link} from 'react-router-dom';
 
 
 const menuStyle = {
@@ -34,12 +35,7 @@ const MenuContainer = ({langPack, open, setOpen}) => {
 }
 
 const dontSelectThis = {
-    userSelect: 'none',
-    WebkitUserSelect: 'none',
-    msUserSelect: 'none',
-    WebkitTouchCallout: 'none',
-    OUserSelect: 'none',
-    MozUserSelect: 'none',
+
 }
 
 const buttonStyle = {
@@ -87,7 +83,9 @@ const MobileMenu = (props) => {
     const bttnTxt = open?'>':'='
 
     return <React.Fragment>
+        <Link to='/' style={{ textDecoration: 'none', color: 'black', textAlign: 'left'}}>
         <h2 style={titleStyle}>{'alessandro sciaraffa'.toUpperCase()}</h2>
+        </Link>
         <ToggleButton 
             text={bttnTxt} 
             openClose={state => setOpen(state)}

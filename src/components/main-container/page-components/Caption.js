@@ -63,7 +63,9 @@ export const Caption = ({data}) => {
         <div
             style={captionStyle}
             onMouseEnter={() => setHover(true)}    
+            onTouchStart={() => setHover(true)}    
             onMouseLeave={() => setHover(false)}    
+            onTouchEnd={() => setHover(false)}    
         >{
             // hover&&
             <div style={captionTextContainerStyle}>
