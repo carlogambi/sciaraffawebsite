@@ -59,7 +59,7 @@
              "mainmenu"
           ],
           "content":{
-             "mainContent":"main content ITA",
+             "mainContent":"",
              "image":"images/bio/bio.jpg",
              "spaceInfo":{
                 "name":"ALESSANDRO SCIARAFFA",
@@ -374,7 +374,7 @@
                    "img":"images/exhibitions/deumbrisidearum/deumbris1.jpg"
                 },
                 {
-                   "img":"images/exhibitions/deumbrisidearum/deumbris2.jpg"
+                   "img":"images/exhibitions/deumbrisidearum/deumbris2.jpeg"
                 },
                 {
                    "img":"images/exhibitions/deumbrisidearum/deumbris3.jpg"
@@ -503,7 +503,7 @@
                    "img":"images/archivio-lavori/tattoomoon/tattoomoon3.jpg"
                 },
                 {
-                   "img":"images/archivio-lavori/tattoomoon/tattoomoon4.jpg"
+                   "img":"images/archivio-lavori/tattoomoon/tattomoon4.JPG"
                 }
              ],
              "videos":[
@@ -563,13 +563,13 @@
              "footer":"nell'ambito di Meteorite in Giardino 4, Fondazione Merz. Materiali: tamburi, sfere di accaio, cavi d'acciaio, motori",
              "images":[
                 {
-                   "img":"images/archivio-lavori/tiportoailmare/tiportoilmare1dm.png"
+                   "img":"images/archivio-lavori/tiportoilmare/tiportoilmare1dm.png"
                 },
                 {
                    "img":"images/archivio-lavori/tiportoilmare/tiportoilmare2dm.png"
                 },
                 {
-                   "img":"images/archivio-lavori/tiportoalmare/tiportoilmare3dm.png"
+                   "img":"images/archivio-lavori/tiportoilmare/tiportoilmare3dm.png"
                 }
              ],
              "videos":[

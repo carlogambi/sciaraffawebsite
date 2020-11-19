@@ -40,14 +40,14 @@ export default ({langPack}) => {
     );
     console.log(page);
     return <div>
-        {langPack.title?<h1>{langPack.title}</h1>:null}
+        {langPack.title && <h1>{langPack.title.toUpperCase()}</h1>}
         {page.mainContent?
             <p style={mainContentStyle}>{page.mainContent}</p>
             :null
             }
-        {page.image?
+        {page.image&& 
             <Image style={imgStyle} src={`/${page.image}`} alt='contacts-img' />
-            :null
+            
         }
         {page.spaceInfo?
             <div style={spaceInfoStyle}>

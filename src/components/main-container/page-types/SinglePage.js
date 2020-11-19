@@ -182,10 +182,10 @@ export default (props) => {
         {content.images && 
             content.images
                 .map((img, i) => (
-                    <>
-                        <img style={imgStyle} src={img.img} key={i} alt={img.dida?img.dida:'single-page-img'} />
+                    <React.Fragment key={i}>
+                        <img style={imgStyle} src={img.img}  alt={img.dida?img.dida:'single-page-img'} />
                         {img.dida && (<i style={didaStyle}>{img.dida}</i>)}
-                    </>
+                    </React.Fragment>
                 ))}
 
         {(currentDevice === 'desktop') && <ScrollToTopButton/>}

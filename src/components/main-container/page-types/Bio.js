@@ -15,7 +15,8 @@ const bioSectionText = {
     width: '600px',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center'
+    alignItems: 'center',
+    padding: '10px'
 }
 const subTitleStyle = {
     width: 'fit-content'
@@ -46,10 +47,10 @@ export default ({langPack}) => {
         {images}
         </div>
         <div style={bioSectionText}>
-        <h1>bio</h1>
-        {page.subTitle?<h4 style={subTitleStyle}>{page.subTitle}</h4>:null}
-        {page.mainContent?<p style={mainContentStyle}>{page.mainContent}</p>:null}
-        {page.footer?<p style={footerStyle}>{page.footer}</p>:null}
+        <h1>BIO</h1>
+        {page.subTitle && <h4 style={subTitleStyle}>{page.subTitle}</h4>}
+        {page.mainContent && <p style={mainContentStyle}>{page.mainContent}</p>}
+        {page.footer && <p style={footerStyle}>{page.footer}</p>}
         </div>
     </div>
 }

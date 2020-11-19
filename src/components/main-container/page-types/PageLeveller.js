@@ -58,6 +58,8 @@ export const captionTextContainerStyle = {
     backgroundColor: '#ffffff73',
     position: 'absolute',
     paddingTop: currentDevice==='mobile'?'unset':'55px',
+    paddingLeft: currentDevice==='mobile'?'unset':'10px',
+    paddingRight: currentDevice==='mobile'?'unset':'10px',
     top: '0px',bottom: '0px',left: '0px',right: '0px',
     fontSize: '5pt',
     maxWidth: '300px',
