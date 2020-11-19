@@ -71,7 +71,7 @@ const Download = ({info}) => {
         </div>
 }
 
-export default ({langPack}) => {
+const PortfolioDownload = ({langPack}) => {
     const info= langPack.content;
     const psswList = info.password;
     const [psswCorrect, setPsswCorrect] = useState(false);
@@ -98,3 +98,4 @@ export default ({langPack}) => {
 }
 
 
+export default PortfolioDownload

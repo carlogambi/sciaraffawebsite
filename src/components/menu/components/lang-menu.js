@@ -62,7 +62,7 @@ switch(currentDevice){
 }
 
 
-export default () => {
+const LangMenu = () => {
 return (langNameList.length > 1)?(<div style={langMenuStyle}>
     {langNameList.map(
         (ln,i)=>
@@ -73,3 +73,4 @@ return (langNameList.length > 1)?(<div style={langMenuStyle}>
     )}
 </div>):(<></>)
 }
+export default LangMenu

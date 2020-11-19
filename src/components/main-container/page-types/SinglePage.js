@@ -139,7 +139,7 @@ const didaStyle = {
     marginTop: '0px'
 }
 
-export default (props) => {
+const SinglePage = (props) => {
     const pageId = props.match.params.id;
     const page = langManager.currentLang.pages.find(p => p.id === pageId);
     const content = page.content;
@@ -191,3 +191,5 @@ export default (props) => {
         {(currentDevice === 'desktop') && <ScrollToTopButton/>}
     </div>
 }
+
+export default SinglePage

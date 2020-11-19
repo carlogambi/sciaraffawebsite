@@ -36,9 +36,8 @@ const imgStyle = {
 
 
 
-export default ({langPack}) => {
+const Bio = ({langPack}) => {
     const page = langPack.content;
-    console.log(langPack);
     const images = page.images.map(
         (img,i) => <Image src={img} style={imgStyle} key={i} />);
 
@@ -54,3 +53,4 @@ export default ({langPack}) => {
         </div>
     </div>
 }
+export default Bio

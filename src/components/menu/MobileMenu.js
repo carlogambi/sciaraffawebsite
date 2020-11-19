@@ -5,9 +5,9 @@ import MainMenu from './components/main-menu';
 
 const menuStyle = {
     position: "fixed",
-    top: '120px',
-    transition: 'right 1s',
-    width: '350px',
+    top: '15%',
+    transition: 'left 1s',
+    width: '100%',
     backgroundColor: 'white',
     zIndex: '10'
 
@@ -15,15 +15,15 @@ const menuStyle = {
 
 const visibleMenu = {
     ...menuStyle,
-    border: 'solid 1px black',
-    right: "10px"
+    // border: 'solid 1px black',
+    left: "0px"
 
 }
 
 const hiddenMenu = {
     ...menuStyle,
-    border: 'solid 1px black',
-    right: '-500px'
+    // border: 'solid 1px black',
+    left: '700px'
 }
 
 const MenuContainer = ({langPack, open, setOpen}) => {
@@ -33,22 +33,33 @@ const MenuContainer = ({langPack, open, setOpen}) => {
         </div>
 }
 
+const dontSelectThis = {
+    userSelect: 'none',
+    WebkitUserSelect: 'none',
+    msUserSelect: 'none',
+    WebkitTouchCallout: 'none',
+    OUserSelect: 'none',
+    MozUserSelect: 'none',
+}
+
 const buttonStyle = {
     position: 'fixed',
-    top: '10px',
+    top: '0.2%',
     right: '10px',
     fontSize: '30pt',
-    border:'solid 1px black',
+    // border:'solid 1px black',
     borderRadius:'100%',
     minHeight:'60px',
     maxHeight: '60px',
     width:'60px',
     cursor:'pointer',
-    backgroundColor: 'white',
+    // backgroundColor: 'white',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex: '1'
+    zIndex: '11',
+    fontWeight: '800',
+    ...dontSelectThis
 }
 
 
@@ -63,11 +74,20 @@ const ToggleButton = (props) => {
     </div>
 }
 
-export default (props) => {
+const titleStyle = {
+    // border: 'solid black 1px',
+    textAlign: 'left',
+    paddingLeft: '3px',
+    width: 'fit-content',
+    maxWidth: '80%'
+}
+
+const MobileMenu = (props) => {
     const [open, setOpen] = useState(false);
     const bttnTxt = open?'>':'='
 
     return <React.Fragment>
+        <h2 style={titleStyle}>{'alessandro sciaraffa'.toUpperCase()}</h2>
         <ToggleButton 
             text={bttnTxt} 
             openClose={state => setOpen(state)}
@@ -82,3 +102,4 @@ export default (props) => {
 
     
 }
+export default MobileMenu

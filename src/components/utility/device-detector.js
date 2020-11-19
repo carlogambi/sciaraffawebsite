@@ -1,4 +1,4 @@
-export default () => {
+const deviceDetector = () => {
     const ua = navigator.userAgent;
     if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
       return "tablet";
@@ -12,3 +12,5 @@ export default () => {
     }
     return "desktop";
   };
+
+  export default deviceDetector

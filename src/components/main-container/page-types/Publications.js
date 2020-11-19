@@ -31,7 +31,7 @@ const publicationsContainerStyle = {
     justifyContent: 'center'
 }
 
-export default ({langPack}) => {
+const Publications = ({langPack}) => {
     let page = langPack.content
     page = [...page, ...page, ...page]
     console.log(page);
@@ -42,3 +42,4 @@ export default ({langPack}) => {
         </div>
     </div>
 }
+export default Publications

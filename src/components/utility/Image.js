@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import loadingplaceholder from './../utility/loadingimageplaceholder.png'
 
-export default ({src, style, alt}) => {
+const Image =({src, style, alt}) => {
 
     const [isLoad, setisLoad] = useState(false)
-    console.log(isLoad);
     return <img 
             style={style} 
             src={isLoad?src:loadingplaceholder} 
@@ -12,3 +11,5 @@ export default ({src, style, alt}) => {
             alt={alt?alt:'img'} 
             />
 }
+
+export default Image

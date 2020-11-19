@@ -33,12 +33,11 @@ const Contact = ({info}) => {
     </div>
 }
 
-export default ({langPack}) => {
+const Contacts = ({langPack}) => {
     const page = langPack.content;
     const contactsList = page.contacts.map(
         (c,i) => <Contact info={c} key={i} />
     );
-    console.log(page);
     return <div>
         {langPack.title && <h1>{langPack.title.toUpperCase()}</h1>}
         {page.mainContent?
@@ -64,3 +63,4 @@ export default ({langPack}) => {
         {contactsList}
     </div>
 }
+export default Contacts

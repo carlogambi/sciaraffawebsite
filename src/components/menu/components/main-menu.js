@@ -48,8 +48,7 @@ let mainMenuStyle;
 }
 
 
-
-export default ({langPack, setOpen}) => {
+const MainMenu = ({langPack, setOpen}) => {
     return <div style={mainMenuStyle}>
         {langPack.pages.filter(
             (page) => 
@@ -64,3 +63,5 @@ export default ({langPack, setOpen}) => {
         )}
     </div>
 }
+
+export default MainMenu

@@ -4,7 +4,7 @@ import DesktopMenu from './DesktopMenu';
 import MobileMenu from './MobileMenu';
 
 
-export default (props) => {
+const Menu = (props) => {
 
     switch (deviceDetector()) {
         case 'desktop':
@@ -18,3 +18,4 @@ export default (props) => {
     }
 
 }
+export default Menu

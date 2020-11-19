@@ -17,7 +17,8 @@ export const setLang = (langName) => {
         if(newLang)currentLang=newLang;
     }
 
-export default {
+const langManager ={
     setLang,
     currentLang
     }
+export default langManager
