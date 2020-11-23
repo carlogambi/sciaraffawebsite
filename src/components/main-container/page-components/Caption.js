@@ -23,6 +23,8 @@ let captionStyle = {
     width: currentDevice === 'mobile'?'150px':'300px',
     minHeight: currentDevice==='mobile'?'200px':'150px',
     maxHeight: currentDevice==='mobile'?'200px':'150px',
+    backgroundSize: currentDevice==='mobile'?'300%':'200%',
+    backgroundPosition: 'center center',
     margin: '10px'
 }
 
@@ -50,8 +52,6 @@ export const Caption = ({data}) => {
     captionStyle = {
         ...captionStyle,
         backgroundImage: `url(${imgLoad?captionImg.src:loadingPlaceHolder})`,
-        backgroundSize: '200%',
-        backgroundPosition: 'center center',
         // opacity: hover?'0.3':'1.0'
     }
     captionTextContainerStyle = {

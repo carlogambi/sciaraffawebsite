@@ -17,7 +17,7 @@ const ChangePageEffect = () => {
         <Route exact path='/' component={Home} />
         <Route exact path='/mainpage:id' component={PageAggregator}/>
         <Route exact path='/singlePage:id' component={SinglePage}/>
-        <Route exact path='/subTagAggregator:tag' component={PageLeveller} subTagRef={true}/>
+        <Route exact path='/subTagAggregator:tag/:prev' component={PageLeveller}/>
     </div>)
 }
 

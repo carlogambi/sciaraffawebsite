@@ -6,11 +6,12 @@ import  {Link} from 'react-router-dom';
 
 const menuStyle = {
     position: "fixed",
-    top: '15%',
+    top: '10%',
     transition: 'left 1s',
     width: '100%',
     backgroundColor: 'white',
-    zIndex: '10'
+    zIndex: '10',
+    fontWeight: '300'
 
 }
 
@@ -24,7 +25,7 @@ const visibleMenu = {
 const hiddenMenu = {
     ...menuStyle,
     // border: 'solid 1px black',
-    left: '700px'
+    left: '100%'
 }
 
 const MenuContainer = ({langPack, open, setOpen}) => {
@@ -75,7 +76,8 @@ const titleStyle = {
     textAlign: 'left',
     paddingLeft: '3px',
     width: 'fit-content',
-    maxWidth: '80%'
+    maxWidth: '80%',
+    fontWeight: '500',
 }
 
 const MobileMenu = (props) => {

@@ -17,7 +17,11 @@ let mainMenuStyle;
         };
         h1Style = {
             paddingLeft: '30px',
-            fontSize: '20pt'
+            fontSize: '20pt',
+            fontWeight: '400',
+            textTransform: 'uppercase',
+            margin : '0px'
+            // border: 'solid 1px black'
         }
         break;
     case 'desktop':
@@ -30,6 +34,7 @@ let mainMenuStyle;
             // paddingLeft: '30px',
             fontSize: '18px',
             fontWeight: '300',
+
         }
         mainMenuStyle={
             display: 'flex',
@@ -48,15 +53,16 @@ let mainMenuStyle;
 }
 
 
-const MainMenu = ({langPack, setOpen}) => {
+const MainMenu = (props) => {
+
     return <div style={mainMenuStyle}>
-        {langPack.pages.filter(
+        
+        {props.langPack.pages.filter(
             (page) => 
             page.tags.includes('mainmenu')
-        ).map((p,i) =>
-                (<Link to={`mainpage${p.id}`} style={linkStyle} key={i}>
+        ).map((p,i) =>(<Link to={`../mainpage${p.id}`} style={linkStyle} key={i}>
                     <h1 style={h1Style}
-                        onClick={() => currentDevice === 'mobile'?setOpen(false):null}
+                        onClick={() => currentDevice === 'mobile'?props.setOpen(false):null}
                     >{p.title}</h1>
                 </Link>)
             

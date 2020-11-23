@@ -8,7 +8,7 @@ let a = document.querySelector('#custom-event-dispatcher');
 //     }
 // }
 
-export default {
+const langManager =  {
     trigger: (lang) => {
         setLang(lang)
         a.dispatchEvent(
@@ -26,3 +26,5 @@ export default {
         })
     }
 }
+
+export default langManager

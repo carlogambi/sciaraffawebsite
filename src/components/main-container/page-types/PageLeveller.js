@@ -3,14 +3,22 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import  { currentLang } from '../../../lang-packs/lang-manager';
 import deviceDetector from '../../utility/device-detector';
-import Caption, {linkStyle} from './../page-components/Caption'
+import Caption, {linkStyle} from './../page-components/Caption';
 
 const currentDevice = deviceDetector()
 
-
+const subTagStyle=  {
+    ...linkStyle, 
+    textAlign: currentDevice==='mobile'?'left':'center',
+    margin: currentDevice==='mobile'?'20px':'unset',
+    marginBottom: currentDevice==='mobile'?'0px':'unset',
+    marginTop: currentDevice==='mobile'?'0px':'unset',
+    cursor: 'pointer'
+}
 
 const SubTag = ({tag}) => {
-    return <Link style={{...linkStyle, textAlign: currentDevice==='mobile'?'left':'right'}} to={`subTagAggregator${tag}`}>
+    const link = `subTagAggregator${tag}${window.location.pathname.replace('mainpage', '')}`
+    return <Link style={subTagStyle} to={link}>
            {tag}
         </Link>
 }
@@ -21,12 +29,14 @@ const subTaglistStyle = {
     flexWrap: 'wrap',
     lineHeight: '40px',
     height: 'fit-content',
-    width:currentDevice==='mobile'?'70%':'17%',
-    flexDirection: 'column',
-    alignContent: currentDevice==='mobile'?'flex-start':'flex-end',
+    width:currentDevice==='mobile'?'100%':'17%',
+    flexDirection: currentDevice==='mobile'?'row':'column',
+    alignContent: currentDevice==='mobile'?'center':'flex-end',
+    justifyContent: currentDevice==='mobile'?'center':'unset',
     alignSelf: currentDevice==='mobile'?'left':'',
-    paddingLeft: '20px',
-    paddingRight: currentDevice==='mobile'?'0px':'20px'
+    // paddingLeft: '20px',
+    paddingRight: currentDevice==='mobile'?'0px':'20px',
+    
 }
 
 const SubTagList = ({data}) => {
@@ -43,14 +53,16 @@ export const captionListStyle = {
     flexWrap: 'wrap',
     maxWidth: currentDevice === 'mobile'?'100%':'75%',
     minWidth: currentDevice === 'mobile'?'100%':'20%',
-    // border: 'solid 1px black'
+    justifyContent: 'center'
 }   
 
 const mainContainerStyle = {
     display: 'flex',
     flexDirection: currentDevice === 'mobile'?'column':'row',
+    alignItems: 'top',
     justifyContent: 'space-between',
     width: '100%',
+    // border: 'solid 1px black',
     marginTop: currentDevice === 'mobile'?'0px':'80px'
 }
 
@@ -62,11 +74,12 @@ const titleStyle ={
     width: currentDevice === 'mobile'?'100%':'',
     textTransform: 'uppercase',
     // letterSpacing: '6px',
-    letterSpacing: currentDevice === 'mobile'?'2px':'20px',
-    fontSize: '30pt'
+    letterSpacing: currentDevice === 'mobile'?'5px':'20px',
+    fontSize: '18pt',
+    fontWeight: '700',
 }
 
- const PageLeveller = (props) => {
+const PageLeveller = (props) => {
     const mainTagsList = () => props.langPack.pages.filter(p => p.tags.includes(props.id));
     const subTagList = () => {
         let pages = currentLang.pages.filter(p => p.subtags)
@@ -76,10 +89,18 @@ const titleStyle ={
         return pages;
     } 
     const pageList = props.match?subTagList():mainTagsList();
-    return <div>
+    return <div
+            style={{
+                // border: 'solid 1px black',
+                width: '100%'
+            }}
+        >
+        {props.match && props.match.params.prev && currentDevice === 'mobile' &&
+            (<span style={subTagStyle}  onClick={() => props.history.goBack()} >  {props.match.params.prev.replace('mainpage', '')} </span>)}
         {props.match && (<h1 style={titleStyle}>{props.match.params.tag}</h1>)}
+        {props.id && (<h1 style={{...titleStyle, marginTop:'0px'}}>{props.id}</h1>)}
         <div style={mainContainerStyle}>
-        {props.match?null:<SubTagList data={props} />}
+        {!props.match&&<SubTagList data={props} />}
         <div style={props.match?{...captionListStyle,justifyContent: 'center',width:'100%'}:captionListStyle}>
             {pageList.map(
                 (p,i) =>

@@ -145,7 +145,6 @@ const SinglePage = (props) => {
     const content = page.content;
     console.log(page);
     return <div style={pageStyle}>
-
         {page.title && 
             <h5 style={titleStyle}>{page.title}</h5>}
 
