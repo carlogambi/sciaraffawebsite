@@ -30,9 +30,9 @@ const PageAggregator = (props) => {
             break;
         }
         
-    return <div>
+    return <>
         {currentPage}
-    </div>
+    </>
 }
 
 export default PageAggregator

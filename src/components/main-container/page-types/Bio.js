@@ -7,9 +7,11 @@ import deviceDetector from '../../utility/device-detector';
 const currentDevice = deviceDetector()
 
 const bioPageStyle ={
+    width:'100%',
     display:'flex',
     justifyContent: 'space-around',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    flexDirection: currentDevice ==='mobile'?'column':'row',
 };
 const bioSection = {
     margin: '20px',
@@ -23,21 +25,25 @@ const bioSectionText = {
     flexDirection: 'column',
     alignItems: 'center',
     padding: currentDevice ==='mobile'?'5px':'10px',
-    textAlign: currentDevice ==='mobile'?'justify':'unset'
+    textAlign: 'justify'
 }
 const subTitleStyle = {
-    width: 'fit-content'
+    width: 'fit-content',
+    fontWeight: '500',
+    letterSpacing: '10px'
 };
 const mainContentStyle = {
+    fontWeight: '400',
     width: 'fit-content'
-
+    
 };
 const footerStyle = {
+    fontWeight: '300',
     fontStyle: 'italic',
     width: 'fit-content'
 };
 const imgStyle = {
-    width: '100%'
+    width: currentDevice ==='mobile'?'100%':'700px'
 }
 
 
@@ -53,8 +59,7 @@ const Bio = ({langPack}) => {
         {images}
         </div>
         <div style={bioSectionText}>
-        <h1>BIO</h1>
-        {page.subTitle && <h4 style={subTitleStyle}>{page.subTitle}</h4>}
+        {page.subTitle && <h1 style={subTitleStyle}>{page.subTitle}</h1>}
         {page.mainContent && <p style={mainContentStyle}>{page.mainContent}</p>}
         {page.footer && <p style={footerStyle}>{page.footer}</p>}
         </div>

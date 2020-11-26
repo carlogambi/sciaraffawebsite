@@ -55,9 +55,8 @@ const Contacts = ({langPack}) => {
     );
     return <div style={{width: '100%'}}>
         {langPack.title && <h1>{langPack.title.toUpperCase()}</h1>}
-        {page.mainContent?
+        {page.mainContent && 
             <p style={mainContentStyle}>{page.mainContent}</p>
-            :null
             }
         {page.image&& 
             <Image style={imgStyle} src={`/${page.image}`} alt='contacts-img' />
