@@ -63,26 +63,26 @@
              "image":"images/bio/bio.jpg",
              "spaceInfo":{
                 "name":"ALESSANDRO SCIARAFFA",
-                "address":"mail@Sciaraffa.net"
+                "address":""
              },
              "contacts":[
                 {
                    "role":"Torino",
                    "name":"Galleria Giorgio Persano",
                    "mail":"info@giorgiopersano.org",
-                   "phone":"http://www.giorgiopersano.org/"
+                   "phone":"https://www.giorgiopersano.org"
                 },
                 {
                    "role":"Paris",
                    "name":"Galerie Italienne",
                    "mail":"info@galerieitalienne.com",
-                   "phone":"http://www.galerieitalienne.com/"
+                   "phone":"https://www.galerieitalienne.com"
                 },
                 {
                    "role":"Berlin",
                    "name":"Galerie Mazzoli",
                    "mail":"info@galeriemazzoli.com",
-                   "phone":"https://www.galleriamazzoli.com/"
+                   "phone":"https://www.galleriamazzoli.com"
                 }
              ]
           }
@@ -105,10 +105,10 @@
                 "author":"Italo Calvino"
              },
              "mainContent":"I lunatici parlano alla Luna è il lavoro sonoro di Alessandro Sciaraffa, fulcro della mostra personale dell’artista alla galleria Giorgio Persano. Grazie al collegamento in streaming con il Radio Telescopio dell’Osservatorio Astronomico Val Pellice, al pubblico che interviene all’evento inaugurale è data la possibilità di parlare con la Luna. Una trasmissione radio EME (Earth-Moon-Earth) permetterà di riflettere sulla superficie lunare la voce dei presenti ed ascoltarne l’eco. I partecipanti saranno invITAti ad entrare in una sorta di intima ‘capsula spaziale’, una tenda di 3 metri di diametro per 7 di altezza, così, isolati dallo spazio circostante, possono urlare, sussurrare, ululare i propri sogni, le proprie istanze, le proprie odi a quel misterioso satellite che per secoli tanto ha incantato poeti, pensatori e scienziati. L’intenzione dell’artista è di “offrire in un’esperienza diretta, fruibile da tutti, la voce come estensione di noi stessi proiettata verso l’altrove. Un gesto che indica uno sguardo verticale, un nuovo orizzonte misurato dalla distanza con un riflesso, vuole indicare una diversa prospettiva dello sguardo. La costruzione di un’esperienza di senso, capace di superare gli ostacoli delle sovrastrutture che ci tITAono ancorati alla sola superficie del suolo, prende la forma di una medITAzione sulla nostra condizione”. Le parole, le frasi, i suoni protagonisti di questo dialogo con la Luna, registrati il 14 marzo – giorno dell’evento partecipativo, saranno il sottofondo sonoro per tutta la durata della mostra.",
-             "footer":" Le opere esposte sono tutte ideate come un omaggio al nostro satellite, la cui superficie è impressa idealmente nell’immaginario collettivo come nei lavori di Sciaraffa la ritroviamo impressa sulla pelle di tamburi o sulla carta fotografica. Photo Courtesy of Galleria Giorgio Persano",
+             "footer":" Le opere esposte sono tutte ideate come un omaggio al nostro satellite, la cui superficie è impressa idealmente nell’immaginario collettivo come nei lavori di Sciaraffa la ritroviamo impressa sulla pelle di tamburi o sulla carta fotografica. photo Paolo Pellion; Photo Courtesy of Galleria Giorgio Persano",
              "images":[
                 {
-                   "dida":"photo Paolo Pellion – Courtesy Galleria Giorgio Persano",
+                   "dida":"I lunatici parlano alla Luna - Exhibition View",
                    "img":"images/exhibitions/lunatici/lunatici1d.png"
                 },
                 {

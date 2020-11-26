@@ -1,5 +1,11 @@
 import React from 'react';
 import Image from './../../utility/Image'
+
+import deviceDetector from '../../utility/device-detector';
+
+
+const currentDevice = deviceDetector()
+
 const bioPageStyle ={
     display:'flex',
     justifyContent: 'space-around',
@@ -7,16 +13,17 @@ const bioPageStyle ={
 };
 const bioSection = {
     margin: '20px',
-    width: '600px'
+    width: '100%'
 };
 const bioSectionText = {
     ...bioSection,
     border: 'solid 1px black',
-    width: '600px',
+    width: currentDevice ==='mobile'?'100%':'600px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: '10px'
+    padding: currentDevice ==='mobile'?'5px':'10px',
+    textAlign: currentDevice ==='mobile'?'justify':'unset'
 }
 const subTitleStyle = {
     width: 'fit-content'

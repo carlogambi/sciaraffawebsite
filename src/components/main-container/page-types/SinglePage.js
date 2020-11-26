@@ -124,7 +124,7 @@ const citStyle = {
     
 }
 const footerStyle ={
-    width: '70%',
+    width: '83%',
     // border: 'solid 1px black',
     fontSize: currentDevice==='mobile'?'11pt':'9pt',
     textAlign: 'justify',
@@ -156,7 +156,7 @@ const SinglePage = (props) => {
 
         {content.images && 
                     <>
-                        <img style={imgStyle} src={content.imgAnteprima} alt='anteprima-img-single-page' />
+                        <img style={imgStyle} src={content.images[0].img} alt='anteprima-img-single-page' />
                         {content.images[0].dida && (<i style={didaStyle}>{content.images[0].dida}</i>)}
                     </>
         }
@@ -180,6 +180,7 @@ const SinglePage = (props) => {
 
         {content.images && 
             content.images
+                .filter((img, indx) => indx !== 0)
                 .map((img, i) => (
                     <React.Fragment key={i}>
                         <img style={imgStyle} src={img.img}  alt={img.dida?img.dida:'single-page-img'} />
