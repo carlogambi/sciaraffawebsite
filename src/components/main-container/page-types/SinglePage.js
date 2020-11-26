@@ -111,7 +111,7 @@ const pageStyle ={
 }
 
 const mainContent = {
-    width: currentDevice==='mobile'?'97%':'70%',
+    width: currentDevice==='mobile'?'83%':'70%',
     fontSize: currentDevice==='mobile'?'12pt':'9pt',
     textAlign: 'justify'
 }

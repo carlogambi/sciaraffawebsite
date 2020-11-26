@@ -59,7 +59,7 @@ export const Caption = ({data}) => {
         transition: 'opacity 0.5s',
         opacity: hover?'1':'0',
     }
-    return <Link style={linkStyle}to={`singlePage${data.id}`}>
+    return <Link style={linkStyle}to={`../singlePage${data.id}`}>
         <div
             style={captionStyle}
             onMouseEnter={() => setHover(true)}    
