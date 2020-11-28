@@ -124,7 +124,7 @@ const citStyle = {
     
 }
 const footerStyle ={
-    width: '83%',
+    width: currentDevice==='mobile'?'83%':'70%',
     // border: 'solid 1px black',
     fontSize: currentDevice==='mobile'?'11pt':'9pt',
     textAlign: 'justify',
@@ -155,10 +155,10 @@ const SinglePage = (props) => {
             <h3 style={subTitleStyle}>{content.subTitle}</h3>}
 
         {content.images && 
-                    <>
-                        <img style={imgStyle} src={content.images[0].img} alt='anteprima-img-single-page' />
-                        {content.images[0].dida && (<i style={didaStyle}>{content.images[0].dida}</i>)}
-                    </>
+            <>
+                <img style={imgStyle} src={content.images[0].img} alt='anteprima-img-single-page' />
+                {content.images[0].dida && (<i style={didaStyle}>{content.images[0].dida}</i>)}
+            </>
         }
 
         {content.audios && 

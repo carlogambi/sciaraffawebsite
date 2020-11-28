@@ -70,7 +70,7 @@ const titleStyle ={
     // border: 'solid 1px black',
     textAlign: currentDevice === 'mobile'?'center':'left',
     // paddingLeft: '17%',
-    paddingLeft: currentDevice === 'mobile'?'0%':'40%',
+    paddingLeft: currentDevice === 'mobile'?'0%':'30%',
     width: currentDevice === 'mobile'?'100%':'',
     textTransform: 'uppercase',
     // letterSpacing: '6px',
@@ -89,6 +89,17 @@ const PageLeveller = (props) => {
         return pages;
     } 
     const pageList = props.match?subTagList():mainTagsList();
+    const subTagPageStyle = {
+        ...captionListStyle,
+        justifyContent: 'center',
+        minWidth: currentDevice === 'mobile'?'100%':'70%',
+        // backgroundColor: 'red'
+    }
+    const subTagMainContainerStyle = {
+        // backgroundColor: 'green',
+        display:'flex',
+        justifyContent: 'center'      
+    }
     return <div
             style={{
                 // border: 'solid 1px black',
@@ -99,9 +110,9 @@ const PageLeveller = (props) => {
             (<span style={subTagStyle}  onClick={() => props.history.goBack()} >  {props.match.params.prev.replace('mainpage', '')} </span>)}
         {props.match && (<h1 style={titleStyle}>{props.match.params.tag}</h1>)}
         {props.id && (<h1 style={{...titleStyle, marginTop:'0px'}}>{props.id}</h1>)}
-        <div style={mainContainerStyle}>
+        <div style={props.match?subTagMainContainerStyle:mainContainerStyle}>
         {!props.match&&<SubTagList data={props} />}
-        <div style={props.match?{...captionListStyle,justifyContent: 'center',width:'100%'}:captionListStyle}>
+        <div style={props.match?subTagPageStyle:captionListStyle}>
             {pageList.map(
                 (p,i) =>
                 <Caption data={p} key={i} />

@@ -19,14 +19,16 @@ const ScrollToTopButton = () => {
         }else{
             setVisible(false)
         }
+        return () => {}
     }, [scroll])
+    const clickHandler = () => window.scrollTo({top: 0, behavior: 'smooth'})
     return (
-        (visible && <div 
+        <div 
             style={sButtonStyle}
-            onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+            onClick={() => clickHandler()}
         >
-            ^
-        </div>)
+            {visible && '^'}
+        </div>
     )
 }
 
