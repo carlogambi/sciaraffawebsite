@@ -63,14 +63,15 @@ const mainContainerStyle = {
     justifyContent: 'space-between',
     width: '100%',
     // border: 'solid 1px black',
-    marginTop: currentDevice === 'mobile'?'0px':'80px'
+    marginTop: currentDevice === 'mobile'?'0px':'20px'
 }
 
 const titleStyle ={
     // border: 'solid 1px black',
-    textAlign: currentDevice === 'mobile'?'center':'left',
+    textAlign: currentDevice === 'mobile'?'center':'center',
     // paddingLeft: '17%',
-    paddingLeft: currentDevice === 'mobile'?'0%':'30%',
+    paddingTop: currentDevice === 'mobile'?'0%':'3%',
+    paddingBottom: currentDevice === 'mobile'?'0%':'%',
     width: currentDevice === 'mobile'?'100%':'',
     textTransform: 'uppercase',
     // letterSpacing: '6px',
