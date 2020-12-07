@@ -53,10 +53,7 @@ const Video = ({url}) => {
                 width='100%'
                 style={videoStyle}
                 url={url} 
-                onReady={() => {
-                    console.log('video ready')
-                    setLoaded(true)
-                }}
+                onReady={() => setLoaded(true)}
                 />
             {!loaded && (<img 
                 style={placeHolderStyle} 

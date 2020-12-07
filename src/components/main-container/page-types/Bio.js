@@ -46,10 +46,11 @@ switch (currentDevice) {
             bioPageStyle ={
                 ...bioPageStyle,
                 flexDirection: 'column',
+                alignItems:'center'
             }
             textContainer = {
                 ...textContainer,
-                width: '100%',
+                width: '85%',
                 padding: '5px',
             }
             imgStyle = {

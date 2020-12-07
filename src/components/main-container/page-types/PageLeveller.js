@@ -182,9 +182,18 @@ const PageLeveller = (props) => {
     const pageList = props.match?subTagList():mainTagsList();
 
     return <div style={{ width: '100%' }} >
-        {props.match && props.match.params.prev && currentDevice === 'mobile' &&
-            (<span style={subTagStyle}  onClick={() => props.history.goBack()} >  {props.match.params.prev.replace('mainpage', '')} </span>)}
-        {props.match && (<h1 style={titleStyle}>{props.match.params.tag}</h1>)}
+        {props.match && (
+            <h1 style={titleStyle}>
+                <span 
+                    style={{cursor: 'pointer', fontWeight: '300'}}
+                    onClick={() => props.history.goBack()}
+                >
+                    {props.match.params.prev}/
+                </span>
+                {currentDevice==='mobile' && (<br/>)}
+                {props.match.params.tag}
+            </h1>
+            )}
         {props.id && (<h1 style={{...titleStyle, marginTop:'0px'}}>{props.id}</h1>)}
         <div style={props.match?subTagMainContainerStyle:mainContainerStyle}>
         {!props.match&&<SubTagList data={props} />}
