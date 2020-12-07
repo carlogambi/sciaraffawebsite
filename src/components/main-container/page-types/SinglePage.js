@@ -1,107 +1,42 @@
-import React, {useState} from 'react';
-import ReactPlayer from 'react-player';
+import React from 'react';
 import langManager from '../../../lang-packs/lang-manager';
 import deviceDetector from '../../utility/device-detector';
 import Audio from '../page-components/Audio';
 import ScrollToTopButton from '../page-components/ScrollToTopButton';
-import loadingplaceholder from './../../utility/loadingimageplaceholder.png'
-
-
-
+import Video from '../page-components/Video';
 
 const currentDevice = deviceDetector();
 
-let audioStyle, 
-    videoStyle,
-    titleStyle,
-    dateStyle,
-subTitleStyle = {}
-
-switch (currentDevice) {
-    case 'mobile':
-        audioStyle={
-            minWidth: '100%',
-            margin: '10px'
-        }
-        videoStyle = {
-            alignSelf: 'center',
-            width: '100%',
-            height: '230px',
-            margin: '15px'
-        }
-        titleStyle = {}
-        dateStyle = {}
-        subTitleStyle = {}
-        break;
-
-    default:
-        audioStyle = {
-            margin: '10px',
-            alignSelf: 'center',
-            width: "70%"
-        }
-        videoStyle = {
-            alignSelf: 'center',
-            width: '70%',
-            height: '600px',
-            margin: '30px',
-            // border: 'solid 1px black',
-        }
-        titleStyle = {
-            fontSize: '20px',
-            textTransform: 'uppercase',
-            marginBottom: '0px',
-            width: '70%',
-            textAlign: 'right'
-        }
-        dateStyle = {
-            width: '70%',
-            // border: 'solid 1px black',
-            fontWeight: '300',
-            marginBottom: '0px',
-            textAlign: 'right'
-        }
-        subTitleStyle = {
-            width: '70%',
-            marginTop: '0px',
-            fontWeight: '300',
-            textAlign: 'right'
-        }
-        break;
+let audioStyle= {
+    margin: '10px',
+}
+let titleStyle= {
+    fontSize: '20px',
+    textTransform: 'uppercase',
+    marginBottom: '0px',
+    width: '70%',
+    textAlign: 'right'
+}
+let dateStyle= {
+    width: '70%',
+    // border: 'solid 1px black',
+    fontWeight: '300',
+    marginBottom: '0px',
+    textAlign: 'right'
+}
+let subTitleStyle = {
+    width: '70%',
+    marginTop: '0px',
+    fontWeight: '300',
+    textAlign: 'right'
 }
 
-const VimeoVideo = ({url}) => {
-    const [loaded, setloaded] = useState(false)
-
-    return (
-        loaded
-            ?
-            <ReactPlayer 
-                height={videoStyle.height}
-                width={videoStyle.width}
-                style={videoStyle}
-                url={url} 
-                />
-            :
-            <img 
-                style={videoStyle} 
-                src={loadingplaceholder} 
-                onLoad = {() => setloaded(true)}
-                alt='laoding-img' 
-                />
-            )
-        
-    }
-
-const imgStyle={
-    width: (currentDevice === 'mobile')?'100%':'70%',
+let imgStyle={
     alignSelf: 'center',
-    margin: (currentDevice === 'mobile')?'15px':'30px',
     marginBottom: '3px'
-
 }
 
-const pageStyle ={
+let pageStyle ={
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -110,40 +45,88 @@ const pageStyle ={
     pagging: '0%'
 }
 
-const mainContent = {
-    width: currentDevice==='mobile'?'83%':'70%',
-    fontSize: currentDevice==='mobile'?'12pt':'9pt',
+let mainContent = {
     textAlign: 'justify'
 }
 
-const citStyle = {
-    fontSize: currentDevice==='mobile'?'11pt':'12pt',
-    // border: 'solid 1px black',
+let citStyle = {
     width: '70%',
     textAlign: "right"
     
 }
-const footerStyle ={
-    width: currentDevice==='mobile'?'83%':'70%',
-    // border: 'solid 1px black',
-    fontSize: currentDevice==='mobile'?'11pt':'9pt',
+let footerStyle ={
     textAlign: 'justify',
-    // fontStyle: 'italic'
 }
 
-const didaStyle = {
-    // border: 'solid 1px black', 
+let didaStyle = {
     fontSize: '8pt', 
     width: '70%',
     textAlign: 'right',
     marginTop: '0px'
 }
 
+switch (currentDevice) {
+    case 'mobile':
+        audioStyle= {
+            ...audioStyle,
+            minWidth: '100%',
+        }
+        mainContent = {
+        ...mainContent, 
+            width: '83%',
+            fontSize: '12pt',
+        }
+        
+        citStyle = {
+        ...citStyle, 
+            fontSize: '11pt',            
+        }
+        footerStyle = {
+        ...footerStyle,
+            width: '83%',
+            fontSize: '11pt',
+        }
+        imgStyle=  {
+        ...imgStyle,
+                width: '100%',
+                margin: '15px',
+            }
+        break;
+
+    default: //desktop
+        audioStyle ={
+        ...audioStyle, 
+            alignSelf: 'center',
+            width: "70%"
+        }
+        mainContent ={
+        ...mainContent, 
+            width: '70%',
+            fontSize: '9pt',
+        }
+        citStyle ={
+        ...citStyle, 
+            fontSize: '12pt',            
+        }
+        footerStyle ={
+        ...footerStyle,
+            width: '70%',
+            fontSize: '9pt',
+        }
+        imgStyle= {
+        ...imgStyle,
+                width: '70%',
+                margin: '30px',
+            }
+        break;
+}
+
+
 const SinglePage = (props) => {
     const pageId = props.match.params.id;
     const page = langManager.currentLang.pages.find(p => p.id === pageId);
     const content = page.content;
-    console.log(page);
+    
     return <div style={pageStyle}>
         {page.title && 
             <h5 style={titleStyle}>{page.title}</h5>}
@@ -176,7 +159,7 @@ const SinglePage = (props) => {
 
         {content.videos && 
             content.videos
-                .map((v, i) => <VimeoVideo key={i} url={v} />)}
+                .map((v, i) => <Video key={i} url={v} />)}
 
         {content.images && 
             content.images

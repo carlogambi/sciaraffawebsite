@@ -9,6 +9,21 @@ let h1Style;
 let mainMenuStyle;
 
  switch (currentDevice) {
+    case 'tablet':
+        linkStyle ={
+            textDecoration: 'none',
+            color: 'black',
+            textAlign: 'left',
+        };
+        h1Style = {
+            paddingLeft: '30px',
+            fontSize: '25pt',
+            fontWeight: '500',
+            textTransform: 'uppercase',
+            margin : '20px'
+            // border: 'solid 1px black'
+        }
+        break;
     case 'mobile':
         linkStyle ={
             textDecoration: 'none',
@@ -62,7 +77,10 @@ const MainMenu = (props) => {
             page.tags.includes('mainmenu')
         ).map((p,i) =>(<Link to={`../mainpage${p.id}`} style={linkStyle} key={i}>
                     <h1 style={h1Style}
-                        onClick={() => currentDevice === 'mobile'?props.setOpen(false):null}
+                        onClick={() => 
+                            ((currentDevice === 'mobile' ||
+                            currentDevice === 'tablet') &&
+                             props.setOpen(false))}
                     >{p.title}</h1>
                 </Link>)
             

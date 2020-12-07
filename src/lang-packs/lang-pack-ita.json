@@ -70,19 +70,19 @@
                    "role":"Torino",
                    "name":"Galleria Giorgio Persano",
                    "mail":"info@giorgiopersano.org",
-                   "phone":"https://www.giorgiopersano.org"
+                   "phone":"http://www.giorgiopersano.org/"
                 },
                 {
                    "role":"Paris",
                    "name":"Galerie Italienne",
                    "mail":"info@galerieitalienne.com",
-                   "phone":"https://www.galerieitalienne.com"
+                   "phone":"http://www.galerieitalienne.com/"
                 },
                 {
                    "role":"Berlin",
                    "name":"Galerie Mazzoli",
                    "mail":"info@galeriemazzoli.com",
-                   "phone":"https://www.galleriamazzoli.com"
+                   "phone":"https://www.galleriamazzoli.com/"
                 }
              ]
           }
@@ -396,7 +396,7 @@
        },
        {
           "id":"auroraopera",
-          "title":"Aurora",
+          "title":"AURORA",
           "tags":[
              "works"
           ],
@@ -407,17 +407,17 @@
           ],
           "content":{
              "imgAnteprima":"images/archivio-lavori/aurora/anteprimaaurora.jpg",
-             "subTitle":"Nell'ambito di Luci d'Artista 2019 ",
-             "date":"da 7 Dicembre 2019 a 11 Gennaio 2020",
+             "subTitle":"nell'ambito di Luci d'Artista 2019 ",
+             "date":"7 Dicembre 2019 - 11 Gennaio 2020",
              "cit":{
                 "text":"a cura di Riccardo Passoni",
                 "author":"Stele del Torino Outlet Village"
              },
-             "mainContent":"Per la XXII edizione di Luci d’Artista, Aurora, una nuova opera luminosa e sonora realizzata apposITAmente per la Stele del Torino Outlet Village. Attraverso l’utilizzo di videomapping ed effetti sonori, Alessandro Sciaraffa plasma un’aurora boreale sulla stele del Torino Outlet Village, trasformandola in una fronda splendente e prodigiosa che rischiara il cielo notturno, diventando richiamo e punto di partenza per una connessione spirituale, politica e sociale tra individuo e universo. La Stele del Torino Outlet Village, realizzata - come l’intera struttura - dall’architetto Claudio Silvestrin, è alta 88 metri e svetta visibile da più punti della area di Torino e di Settimo Torinese. Nel 2017, al termine dei lavori, l’architetto aveva dichiarato “Ho pensato a un’architettura che fa da ponte per nuovi cieli e nuove terre”. Accogliendo questa intenzione, Sciaraffa la declina riproducendo un fenomeno naturale di luoghi lontani, un evento prodigioso che unisce suono, luce e vibrazioni ondulatorie in una visione cosmica che utilizza la luce per ricucire il tessuto urbano. Aurora è visibile dalla città, dal treno e dall’autostrada, ma anche dall’aereo e dalla Stazione Spaziale Internazionale. Il termine aurora boreale è stato attribuito all’imponente fenomeno luminoso naturale da Galileo Galilei nel 1619. Aurora è anche il nome della divinità romana dell’alba, che viaggiava dall’est all’ovest annunciando il sorgere del sole, e sono proprio gli sciami di particelle solari che, spinte a grande velocità contro il campo magnetico terrestre urtano gli atomi presenti nell’atmosfera rarefatta, che si caricano di energia diventando luminosi. Le aurore generano luce scintillante dai toni prevalentemente verdastri, con infinite sfumature di forme e colori, spesso accompagnate da suoni simili a sibili, crepitii, cinguettii, oppure inudibili se non attraverso apparecchiature capaci di captare le basse frequenze generate da questa manifestazione luminosa. Con questa installazione Alessandro Sciaraffa racconta anche sé stesso e il suo percorso artistico, caratterizzato dalla presenza simbiotica di suono, tecnologia e natura, e in questo caso è la sua personale esperienza, al cospetto di una aurora boreale, ad essere narrata",
-             "footer":"Le immagini e i suoni registrati durante la sua permanenza a Tiriberka di Murmansk in Russia sono stati tradotti sulla stele di Torino Outlet Village, dando vITA a una corrispondenza tra suono visibile e luce sonora. Captati alle basse frequenze, i suoni dell’aurora boreale vITAono tradotti in un grafico multicolore che ne riverbera visivamente le sempre mutevoli, e altrimenti impercettibili, sfumature. Le immagini “noise” in movimento restituiscono i contorni mobili dell’aurora e gli effetti acustici sulla stele del Torino Outlet Village.",
+             "mainContent":"",
+             "footer":"Materiali: Video, Traccia Sonora, VLF Aurora Boreale",
              "images":[
                 {
-                   "dida":"Video, Traccia Sonora, Aurora Boreale",
+                   "dida":"",
                    "img":"images/archivio-lavori/aurora/aurora1.jpg"
                 },
                 {
@@ -453,8 +453,8 @@
           "content":{
              "imgAnteprima":"images/archivio-lavori/flashdrawings/anteprimaflashdrawings.jpg",
              "subTitle":"2019 ",
-             "mainContent":"Leggerissime tele di colore nero nascondono disegni catarifrangenti, visibili soltanto utilizzando la macchina fotografica con il flash. L’immagine digitale catturata dalla luce flash indica una diversa modalità di visualizzazione dell’immagine stessa enfatizzando ciò che è reale e ciò che non si vede...",
-             "footer":"Materiali: Vernice catarinfrangente, cartoncino. Dimensioni Variabili.",
+             "mainContent":"",
+             "footer":"Materiali: Vernice catarifrangente, cartoncino. Dimensioni Variabili.",
              "images":[
                 {
                    "img":"images/archivio-lavori/flashdrawings/flashdrawings1.jpg"
@@ -490,7 +490,7 @@
           "content":{
              "imgAnteprima":"images/archivio-lavori/tattoomoon/tattomoonanteprima.jpg",
              "subTitle":"2014 ",
-             "mainContent":"Una serie di tamburelli impressionati dall’immagine della luna - forme tatuate (direttamente con la luce lunare) su pelli naturali: voler assorbire con la pelle la Luna riporta ad una dimensione quasi ancestrale, dove la pur gigantesca distanza si raccorcia e materializza nella presenza dell’impressione di forme su materiale organico, quasi come in una marchiatura astrologica...",
+             "mainContent":"",
              "footer":"Materiali: pelle, legno, vernice",
              "images":[
                 {
@@ -524,24 +524,37 @@
           ],
           "content":{
              "imgAnteprima":"images/archivio-lavori/leombredelmare/leombredelmareanteprima.jpg",
-             "subTitle":"2017 ",
-             "mainContent":" '' Le ombre del mare, uno strumento altamente tecnologico in grado di fruttare la complicità della Luce e dell’Ombra per produrre il suone del mare che è in ogn’uno di noi...'' ",
+             "subTitle":"2016-2020",
+             "mainContent":" ",
              "footer":"Materiali: Onice, Legno, Fotoresistenze, Vetro, Elettronica, Speaker",
              "images":[
-                {
-                   "img":"images/archivio-lavori/leombredelmare/leombredelmare1dm.jpg"
-                },
-                {
-                  "img":"images/archivio-lavori/leombredelmare/leombredelmare2dm.jpg"
-               },
-               {
-                  "img":"images/archivio-lavori/leombredelmare/leombredelmare3dm.jpg"
-               },
-               {
-                  "img":"images/archivio-lavori/leombredelmare/leombredelmare4dm.jpg"
-               }
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare1.jpg",
+                  "dida":"Le Ombre del Mare | 2018 | Materiali: Legno, Fotoresistenze, Intelligenza Artificiale, Cassa Acustica, Circuiti"},
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare2.jpg"},
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare3.jpg"}, 
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare4.jpg"}, 
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare5.jpg"},
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare6.jpg"}, 
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare7.jpg",
+                  "dida":"Le Ombre del Mare - Marte | 2018 | Materiali: Onice, Fotoresistenze, Intelligenza Artificiale, Cassa Acustica, Circuiti"},
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare8.jpg"}, 
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare9.jpg"}, 
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare10.jpg"},
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare11.png,",
+                  "dida":"Le Ombre del Mare - Giove | 2019 | Materiali: Legno, Fotoresistenze, Intelligenza Artificiale, Cassa Acustica, Circuiti"},
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare12.png"}, 
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare13.png"}, 
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare14.png"}, 
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare15.png"}, 
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare16.png"},
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare17.jpg",
+                  "dida":"Le Ombre del Mare - Disegni"},
+                {"img":"images/archivio-lavori/leombredelmare/leombredelmare18.jpg"}
+            
              ],
-             "videos":[
+             "videos":["https://youtu.be/z-7U6-W-og8",
+               "https://youtu.be/K10OkYLoCoM",
+               "https://youtu.be/LjNOZgqxTTE"
              ],
              "audios":[
              ]
@@ -560,12 +573,12 @@
              "imgAnteprima":"images/archivio-lavori/tiportoilmare/tiportoilmareanteprima.jpg",
              "subTitle":"Fondazione Merz, Torino, 2011 ",
              "mainContent":"TI PORTO IL MARE è un’installazione sonora che combina industriosità e magia: dieci grandi tamburi fluttuano leggiadri sulle teste dei fruitori, ondeggiano sospesi grazie a un meccanismo di cavi metallici e riproducono il rumore del mare, evocato da migliaia di piccole sfere d’acciaio che rotolano all’interno di ogni tamburo, vibrando sulla pelle tesa. Il movimento ipnotico sublima lo spirito e ridesta la fantasia del visitatore.",
-             "footer":"nell'ambito di Meteorite in Giardino 4, Fondazione Merz. Materiali: tamburi, sfere di accaio, cavi d'acciaio, motori",
+             "footer":"Materiali: tamburi, sfere di accaio, cavi d'acciaio, motori",
              "images":[
                 {
                    "img":"images/archivio-lavori/tiportoilmare/tiportoilmare1dm.png"
                 },
-                {
+                {  "dida":"nell'ambito di Meteorite in Giardino 4, Fondazione Merz.",
                    "img":"images/archivio-lavori/tiportoilmare/tiportoilmare2dm.png"
                 },
                 {
@@ -573,11 +586,330 @@
                 }
              ],
              "videos":[
+               "https://vimeo.com/35693873"
              ],
              "audios":[
              ]
           }
        },
+       {
+         "id":"playmobilopera",
+         "title":"Playmobil",
+         "tags":[
+            "works"
+         ],
+         "subtags":[
+            "sound sculptures"
+         ],
+         "content":{
+            "imgAnteprima":"images/archivio-lavori/playmobil/anteprimaplaymobil.jpg",
+            "subTitle":"2008",
+            "mainContent":"",
+            "footer":"Materiali: fono valigie, magnetofoni, vinile, cavi elettrici",
+            "images":[
+               {
+                  "dida":"",
+                  "img":"images/archivio-lavori/playmobil/Playmobilopera1.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/playmobil/Playmobilopera2.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/playmobil/Playmobilopera3.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/playmobil/Playmobilopera4.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/playmobil/Playmobilopera5.jpg"
+               },
+               {
+                  "dida":"Progetto WHYOFF in collaborazione con Balletto Esperia",
+                  "img":"images/archivio-lavori/playmobil/Playmobilopera6.jpg"
+               },
+               {  "dida":"Progetto WHYOFF in collaborazione con Balletto Esperia",
+                  "img":"images/archivio-lavori/playmobil/Playmobilopera7.jpg"
+               }
+            ],
+            "videos":[
+              "https://vimeo.com/4866444"
+            ],
+            "audios":[
+            ]
+         }
+      },
+      {
+         "id":"belltoweropera",
+         "title":"Belltower",
+         "tags":[
+            "works"
+         ],
+         "subtags":[
+            "sound sculptures"
+         ],
+         "content":{
+            "imgAnteprima":"images/archivio-lavori/belltower/anteprimabelltower.jpg",
+            "subTitle":"2008",
+            "mainContent":"",
+            "footer":"Materiali: ottone, elettrobattenti, centralina elettronica, acciaio, martelli. Dimensione: 250x250 cm",
+            "images":[
+               {
+                  "dida":"",
+                  "img":"images/archivio-lavori/belltower/belltower1.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/belltower/belltower2.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/belltower/belltower3.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/belltower/belltower4.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/belltower/belltower5.jpg"
+               }
+            ],
+            "videos":[
+              "https://vimeo.com/18021427",
+              "https://youtu.be/Xkyr1TXUgHI"
+            ],
+            "audios":[
+            ]
+         }
+      },
+      {
+         "id":"akashaopera",
+         "title":"AKASHA",
+         "tags":[
+            "works"
+         ],
+         "subtags":[
+            "sound sculptures"
+         ],
+         "content":{
+            "imgAnteprima":"images/archivio-lavori/akasha/anteprimaakasha.jpg",
+            "subTitle":"2008",
+            "mainContent":"",
+            "footer":"Materiali: Cristalli liquidi su pvc, legno, lampade ad infrarossi, sistema di nebulizzazione, acqua, centralina elettronica, cavi elettrici, ventilatore",
+            "images":[
+               {
+                  "img":"images/archivio-lavori/akasha/Akasha1.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/akasha/Akasha2.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/akasha/Akasha3.jpg"
+               },
+               { "dida":"AKASHA - DODECAEDRO. Materiali: Cristalli liquidi su pvc, legno, lampade ad infrarossi, sistema di nebulizzazione, acqua, centralina elettronica, cavi elettrici, ventilatore",
+                  "img":"images/archivio-lavori/akasha/Akasha4.jpg"
+               }
+            ],
+            "videos":[
+              "https://youtu.be/oImOJmqWiHg"
+            ],
+            "audios":[
+            ]
+         }
+      },
+      {
+         "id":"landscapetownopera",
+         "title":"LANDSCAPE TOWN",
+         "tags":[
+            "works"
+         ],
+         "subtags":[
+            "sound sculptures"
+         ],
+         "content":{
+            "imgAnteprima":"images/archivio-lavori/landscapetown/anteprimalandscapetown.jpg",
+            "subTitle":"2008",
+            "mainContent":"",
+            "footer":"Materiali: Bottiglie, phon, tubo di plastica, centralina, cavi elettrici, essenza profumata",
+            "images":[
+               {
+                  "dida":"",
+                  "img":"images/archivio-lavori/landscapetown/landscapetown1.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/landscapetown/landscapetown2.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/landscapetown/landscapetown3.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/landscapetown/landscapetown4.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/landscapetown/landscapetown5.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/landscapetown/landscapetown6.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/landscapetown/landscapetown7.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/landscapetown/landscapetown8.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/landscapetown/landscapetown9.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/landscapetown/landscapetown10.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/landscapetown/landscapetown11.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/landscapetown/landscapetown12.jpg"
+               }
+            ],
+            "videos":[
+              "https://vimeo.com/4865508"
+            ],
+            "audios":[
+            ]
+         }
+      },
+      {
+         "id":"shapingshadowopera",
+         "title":"SHAPING THE SHADOW",
+         "tags":[
+            "works"
+         ],
+         "subtags":[
+            "sound sculptures", "performances"
+         ],
+         "content":{
+            "imgAnteprima":"images/archivio-lavori/shapingshadow/anteprimashapingshadow.jpg",
+            "subTitle":"2010",
+            "mainContent":"",
+            "footer":"Materiali: Foglio in alluminio, geesso, motore elettrico, piezo elettrici, cavi elettrici. Dimensioni 160x200 cm",
+            "images":[
+               {
+                  "dida":"",
+                  "img":"images/archivio-lavori/shapingshadow/shapingshadow1.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/shapingshadow/shapingshadow2.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/shapingshadow/shapingshadow3.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/shapingshadow/shapingshadow4.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/shapingshadow/shapingshadow5.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/shapingshadow/shapingshadow6.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/shapingshadow/shapingshadow7.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/shapingshadow/shapingshadow8.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/shapingshadow/shapingshadow9.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/shapingshadow/shapingshadow10.jpg"
+               }
+            ],
+            "videos":[
+              "https://www.youtube.com/watch?v=G6R4h86DPko&t=72s",
+              "https://youtu.be/mr-P9DlWEs4"
+            ],
+            "audios":[
+            ]
+         }
+      },
+      {
+         "id":"speakermoonopera",
+         "title":"SPEAKER MOON",
+         "tags":[
+            "works"
+         ],
+         "subtags":[
+            "sound sculptures", "performances"
+         ],
+         "content":{
+            "imgAnteprima":"images/archivio-lavori/speakermoon/anteprimaspeakermoon.jpg",
+            "subTitle":"2015",
+            "mainContent":"",
+            "footer":"Materiali: Parabola metallica, centralina, pannello solare, elettronica, traccia sonora",
+            "images":[
+               {
+                  "dida":"nell'ambito di Arti alle Corti - Palazzo Costa di Carrù Torino - 2015",
+                  "img":"images/archivio-lavori/speakermoon/speakermoon1.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/speakermoon/speakermoon2.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/speakermoon/speakermoon3.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/speakermoon/speakermoon4.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/speakermoon/speakermoon4b.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/speakermoon/speakermoon5.jpg"
+               },
+               {
+                  "dida":"performing con Ivan Bert e Marco Benz Gentile",
+                  "img":"images/archivio-lavori/speakermoon/speakermoon6.jpg"
+               }
+            ],
+            "videos":[
+              ""
+            ],
+            "audios":[
+            ]
+         }
+      },
+      {
+         "id":"supernaturalopera",
+         "title":"SUPERNATURAL",
+         "tags":[
+            "works"
+         ],
+         "subtags":[
+            "sound sculptures"
+         ],
+         "content":{
+            "imgAnteprima":"images/archivio-lavori/supernatural/anteprimasupernatural.jpg",
+            "subTitle":"2013",
+            "mainContent":"",
+            "footer":"Materiali: Onde Radio VLF, piezo elettrici, ottone, alluminio, circuiti elettronici",
+            "images":[
+               {
+                  "dida":"nell'ambito di Greater Torino - Fondazione Sandretto Re Rebaudengo - 2013",
+                  "img":"images/archivio-lavori/supernatural/supernatural1.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/supernatural/supernatural2.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/supernatural/supernatural3.jpg"
+               },
+               {
+                  "img":"images/archivio-lavori/supernatural/supernatural4.jpg"
+               }
+            ],
+            "videos":[
+              "https://vimeo.com/484524136"
+            ],
+            "audios":[
+            ]
+         }
+      },
        {
           "id":"totemopera",
           "title":"Totem",
@@ -590,11 +922,11 @@
           "content":{
              "imgAnteprima":"images/archivio-lavori/totemopera/totemoperaanteprima.jpg",
              "subTitle":"2018 ",
-             "mainContent":"Grandi gong producono musiche mistiche generate dalla misteriosa energia invisibile della risonanza sonora palesandosi attraverso il corpo metallico. Grazie a l'interattività del pubblico con l'intelligenza artificiale della macchina, il totem plasma lo spazio con il suono, trasportando lo spettatore in un viaggio mistico multisensoriale.",
-             "footer":"footer",
+             "mainContent":"",
+             "footer":"Materiali: Gong, Subwoofer, Traccia Sonora, Elettronica. Dimensioni variabili",
              "images":[
                 {
-                   "dida":"Gong, Subwoofer, Traccia Sonora, Elettronica. Dimensioni variabili",
+                   "dida":"",
                    "img":"images/archivio-lavori/totemopera/totem1dm.jpg"
                 },
                 {
@@ -603,13 +935,16 @@
              ],
              "videos":[
                 "https://vimeo.com/477584864",
-                "https://vimeo.com/477583209"
+                "https://vimeo.com/477583209",
+                "https://vimeo.com/268879503"
+
              ],
              "audios":[
              ]
           }
        }
     ],
+    
     "optional":[{
        "id":"portfoliodownload",
        "title":"download portfolio ITA",

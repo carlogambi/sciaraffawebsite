@@ -6,14 +6,33 @@ import  {currentLang} from './../../../lang-packs/lang-manager'
 
 const currentDevice = deviceDetector()
 
+let style = {
+    ...captionListStyle,
+    justifyContent: 'center'
+}
+switch(currentDevice){
+    case 'tablet':
+        style = {
+            ...style,
+            minWidth: '100%',
+        }
+    break
+    case 'mobile':
+        style = {
+            ...style,
+            width: '100%'
+        }
+    break
+    default:
+        style = {
+            ...style,
+            minWidth: '75%',
+            width: '100px'
+        }
+
+}
  const Home = () => {
     const pages = currentLang.pages.filter(p => !(p.tags.includes('mainmenu')));
-    let style = {
-        ...captionListStyle,
-
-        width:currentDevice==='mobile'?'100%':'1000px',
-        justifyContent: 'center'
-    }
     return <div style={style} align='center'>
     {pages.map(
         (p,i) =>

@@ -10,7 +10,8 @@ const ChangePageEffect = () => {
     const effectStyle={
         width: '100%', 
         display: 'flex', 
-        justifyContent: 'center'
+        justifyContent: 'center',
+        boder: 'solid 1px red'
     }
     
     return (<div style={effectStyle}>

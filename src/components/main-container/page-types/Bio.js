@@ -6,25 +6,22 @@ import deviceDetector from '../../utility/device-detector';
 
 const currentDevice = deviceDetector()
 
-const bioPageStyle ={
+let bioPageStyle ={
     width:'100%',
     display:'flex',
     justifyContent: 'space-around',
     flexWrap: 'wrap',
-    flexDirection: currentDevice ==='mobile'?'column':'row',
 };
-const bioSection = {
+const imgContainer = {
     margin: '20px',
-    width: '100%'
+    width: 'fit-content'
 };
-const bioSectionText = {
-    ...bioSection,
+let textContainer = {
+    ...imgContainer,
     border: 'solid 1px black',
-    width: currentDevice ==='mobile'?'100%':'600px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: currentDevice ==='mobile'?'5px':'10px',
     textAlign: 'justify'
 }
 const subTitleStyle = {
@@ -42,8 +39,54 @@ const footerStyle = {
     fontStyle: 'italic',
     width: 'fit-content'
 };
-const imgStyle = {
-    width: currentDevice ==='mobile'?'100%':'700px'
+let imgStyle = {}
+
+switch (currentDevice) {
+    case 'mobile':
+            bioPageStyle ={
+                ...bioPageStyle,
+                flexDirection: 'column',
+            }
+            textContainer = {
+                ...textContainer,
+                width: '100%',
+                padding: '5px',
+            }
+            imgStyle = {
+                width: '100%'
+            }
+        break;
+
+    case 'tablet':
+        bioPageStyle ={
+            ...bioPageStyle,
+            flexDirection: 'column',
+            alignItems: 'center'
+        }
+        textContainer = {
+            ...textContainer,
+            width: '80%',
+            padding: '10px',
+        }
+        imgStyle = {
+            width: '100%'
+        }
+        break;
+        
+        default:
+            bioPageStyle ={
+                ...bioPageStyle,
+                flexDirection: 'row',
+            }
+            textContainer = {
+                ...textContainer,
+                width: '600px',
+                padding: '10px',
+            }
+            imgStyle = {
+                width: '700px'
+            }
+        break;
 }
 
 
@@ -55,10 +98,10 @@ const Bio = ({langPack}) => {
         (img,i) => <Image src={img} style={imgStyle} key={i} />);
 
     return <div style={bioPageStyle}>
-        <div style={bioSection}>
+        <div style={imgContainer}>
         {images}
         </div>
-        <div style={bioSectionText}>
+        <div style={textContainer}>
         {page.subTitle && <h1 style={subTitleStyle}>{page.subTitle}</h1>}
         {page.mainContent && <p style={mainContentStyle}>{page.mainContent}</p>}
         {page.footer && <p style={footerStyle}>{page.footer}</p>}

@@ -17,14 +17,12 @@ const menuStyle = {
 
 const visibleMenu = {
     ...menuStyle,
-    // border: 'solid 1px black',
     left: "0px"
 
 }
 
 const hiddenMenu = {
     ...menuStyle,
-    // border: 'solid 1px black',
     left: '100%'
 }
 
@@ -35,28 +33,21 @@ const MenuContainer = ({langPack, open, setOpen}) => {
         </div>
 }
 
-const dontSelectThis = {
-
-}
-
 const buttonStyle = {
     position: 'fixed',
     top: '0.2%',
     right: '10px',
     fontSize: '30pt',
-    // border:'solid 1px black',
     borderRadius:'100%',
     minHeight:'60px',
     maxHeight: '60px',
     width:'60px',
     cursor:'pointer',
-    // backgroundColor: 'white',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: '11',
     fontWeight: '800',
-    ...dontSelectThis
 }
 
 

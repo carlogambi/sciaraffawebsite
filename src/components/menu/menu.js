@@ -13,8 +13,11 @@ const Menu = (props) => {
         case 'mobile':
             return <MobileMenu langPack={props.langPack} />
         
-        default:
+        case 'tablet':
             return <MobileMenu langPack={props.langPack} />
+        
+        default:
+            return <DesktopMenu langPack={props.langPack} />
     }
 
 }

@@ -19,7 +19,9 @@ const ScrollToTopButton = () => {
         }else{
             setVisible(false)
         }
-        return () => {}
+        return () => {
+            window.onscroll = () => {}
+        }
     }, [scroll])
     const clickHandler = () => window.scrollTo({top: 0, behavior: 'smooth'})
     return (
