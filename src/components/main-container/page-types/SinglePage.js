@@ -4,7 +4,7 @@ import deviceDetector from '../../utility/device-detector';
 import Audio from '../page-components/Audio';
 import ScrollToTopButton from '../page-components/ScrollToTopButton';
 import Video from '../page-components/Video';
-
+import Image from './../../utility/Image'
 const currentDevice = deviceDetector();
 
 let audioStyle= {
@@ -139,7 +139,7 @@ const SinglePage = (props) => {
 
         {content.images && 
             <>
-                <img style={imgStyle} src={content.images[0].img} alt='anteprima-img-single-page' />
+                <Image style={imgStyle} src={content.images[0].img} alt='anteprima-img-single-page' />
                 {content.images[0].dida && (<i style={didaStyle}>{content.images[0].dida}</i>)}
             </>
         }
@@ -166,7 +166,7 @@ const SinglePage = (props) => {
                 .filter((img, indx) => indx !== 0)
                 .map((img, i) => (
                     <React.Fragment key={i}>
-                        <img style={imgStyle} src={img.img}  alt={img.dida?img.dida:'single-page-img'} />
+                        <Image style={imgStyle} src={img.img}  alt={img.dida?img.dida:'single-page-img'} />
                         {img.dida && (<i style={didaStyle}>{img.dida}</i>)}
                     </React.Fragment>
                 ))}
