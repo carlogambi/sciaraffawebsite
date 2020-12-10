@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import ReactPlayer from 'react-player';
 import deviceDetector from '../../utility/device-detector';
 import loadingplaceholder from './../../utility/loadingimageplaceholder.png'
+import loadingplaceholderGif from './../../utility/placeholder.gif'
 
 const currentDevice = deviceDetector();
 
@@ -57,7 +58,7 @@ const Video = ({url}) => {
                 />
             {!loaded && (<img 
                 style={placeHolderStyle} 
-                src={loadingplaceholder} 
+                src={loadingplaceholderGif} 
                 alt='laoding-img' 
                 />)}
             </div>
