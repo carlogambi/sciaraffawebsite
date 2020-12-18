@@ -3,6 +3,7 @@ import langManager from '../../../lang-packs/lang-manager';
 import deviceDetector from '../../utility/device-detector';
 import Audio from '../page-components/Audio';
 import ScrollToTopButton from '../page-components/ScrollToTopButton';
+import Text from '../page-components/Text';
 import Video from '../page-components/Video';
 import Image from './../../utility/Image'
 const currentDevice = deviceDetector();
@@ -149,13 +150,13 @@ const SinglePage = (props) => {
                 .map((v, i) => <Audio key={i} url={v} style={audioStyle}/>)}
 
         {content.cit && 
-            <p style={citStyle}><i>{content.cit.text}</i><br/>{content.cit.author}</p>}
+            <p style={citStyle}><i><Text content={content.cit.text}/></i><br/>{content.cit.author}</p>}
 
         {content.mainContent && 
-            <p style={mainContent}>{content.mainContent}</p>}
+            <p style={mainContent}><Text content={content.mainContent}/></p>}
 
         {content.footer && 
-            <p style={footerStyle}>{content.footer}</p>}
+            <p style={footerStyle}><Text content={content.footer}/></p>}
 
         {content.videos && 
             content.videos
