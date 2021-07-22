@@ -1,76 +1,72 @@
 import React from 'react';
 import changeLang from '../../../custom-events/change-lang';
 import deviceDetector from '../../utility/device-detector';
-import {langNameList, currentLang} from './../../../lang-packs/lang-manager'
+import { langNameList, currentLang } from './../../../lang-packs/lang-manager';
+import styled, { css } from 'styled-components';
 
 const currentDevice = deviceDetector();
 
+const CurrentLangButton = styled.span`
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: none;
+  width: fit-content;
+  margin: ${currentDevice === 'desktop' ? '10px' : 'unset'};
+`;
 
-const currentLangButtonStyle = {
+const LangButton = styled.span`
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+  width: fit-content;
+  margin: ${currentDevice === 'desktop' ? '10px' : 'unset'};
+`;
+
+let LangMenuContainer;
+switch (currentDevice) {
+  case 'mobile':
+    LangMenuContainer = css`
+      margin: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    `;
+    break;
+  case 'desktop':
+    // margin: '30px',
     // border: 'solid 1px black',
-    backgroundColor: 'black',
-    color: 'white',
-    padding: '10px',
-    textTransform: 'uppercase',
-    cursor: 'none',
-    margin: currentDevice==='desktop'?'10px':'unset',
-    width: 'fit-content'
+    LangMenuContainer = css`
+      display: flex;
+      justify-content: space-between;
+      width: fit-content;
+      height: 60px;
+    `;
+    break;
+  default:
+    break;
 }
 
-const CurrentLangButton = ({langName}) => {
-    
-    return <span style={currentLangButtonStyle}>{langName}</span>
-}
-
-const langButtonStyle = {
-    backgroundColor: 'white',
-    margin: currentDevice==='desktop'?'10px':'unset',
-    padding: '10px',
-    cursor: 'pointer',
-    width: 'fit-content',
-}
-
-const LangButton = ({langName}) => {
-    return <span 
-    style={langButtonStyle}
-    onClick={() => changeLang.trigger(langName)}
-    >{langName}</span>
-}
-
-let langMenuStyle; 
-switch(currentDevice){
-    case 'mobile':
-        langMenuStyle = {
-            margin: '20px',
-            display: 'flex',
-            justifyContent: 'space-around',
-            alignitems: 'center'
-        }
-        break;
-    case 'desktop':
-        langMenuStyle = {
-            // margin: '30px',
-            display: 'flex',
-            justifyContent: 'space-between',
-            // border: 'solid 1px black',
-            width: 'fit-content',
-            height: '60px'
-        }
-        break;
-        default:
-        break;
-}
-
+LangMenuContainer = styled.div`
+  ${LangMenuContainer}
+`;
 
 const LangMenu = () => {
-return (langNameList.length > 1)?(<div style={langMenuStyle}>
-    {langNameList.map(
-        (ln,i)=>
-        (ln===currentLang.name)?
-        <CurrentLangButton langName={ln} key={i} />
-        :
-        <LangButton langName={ln} key={i} />
-    )}
-</div>):(<></>)
-}
-export default LangMenu
+  return langNameList.length > 1 ? (
+    <LangMenuContainer>
+      {langNameList.map((ln, i) =>
+        ln === currentLang.name ? (
+          <CurrentLangButton key={i}>{ln}</CurrentLangButton>
+        ) : (
+          <LangButton onClick={() => changeLang.trigger(ln)} key={i}>
+            {ln}
+          </LangButton>
+        )
+      )}
+    </LangMenuContainer>
+  ) : (
+    <></>
+  );
+};
+export default LangMenu;

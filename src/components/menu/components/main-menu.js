@@ -1,92 +1,93 @@
 import React from 'react';
-import  {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import deviceDetector from '../../utility/device-detector';
-
-const currentDevice = deviceDetector()
+import styled, { css } from 'styled-components';
+const currentDevice = deviceDetector();
 
 let linkStyle;
-let h1Style;
-let mainMenuStyle;
+let Title;
+let MainMenuContainer;
 
- switch (currentDevice) {
-    case 'tablet':
-        linkStyle ={
-            textDecoration: 'none',
-            color: 'black',
-            textAlign: 'left',
-        };
-        h1Style = {
-            paddingLeft: '30px',
-            fontSize: '25pt',
-            fontWeight: '500',
-            textTransform: 'uppercase',
-            margin : '20px'
-            // border: 'solid 1px black'
-        }
-        break;
-    case 'mobile':
-        linkStyle ={
-            textDecoration: 'none',
-            color: 'black',
-            textAlign: 'left',
-        };
-        h1Style = {
-            paddingLeft: '30px',
-            fontSize: '20pt',
-            fontWeight: '400',
-            textTransform: 'uppercase',
-            margin : '0px'
-            // border: 'solid 1px black'
-        }
-        break;
-    case 'desktop':
-        linkStyle ={
-            textDecoration: 'none',
-            color: 'black',
-            textAlign: 'left',
-        };
-        h1Style = {
-            // paddingLeft: '30px',
-            fontSize: '18px',
-            fontWeight: '300',
+switch (currentDevice) {
+  case 'tablet':
+    linkStyle = {
+      textDecoration: 'none',
+      color: 'black',
+      textAlign: 'left',
+    };
+    Title = css`
+      padding-left: 30px;
+      font-size: 25pt;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 20px;
+    `;
+    break;
+  case 'mobile':
+    linkStyle = {
+      textDecoration: 'none',
+      color: 'black',
+      textAlign: 'left',
+    };
+    Title = css`
+      padding-left: 30px;
+      font-size: 20pt;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin: 0px;
+    `;
+    break;
+  case 'desktop':
+    linkStyle = {
+      textDecoration: 'none',
+      color: 'black',
+      textAlign: 'left',
+    };
 
-        }
-        mainMenuStyle={
-            display: 'flex',
-            justifyContent: 'space-between',
-            width: '98%',
-            flexWrap: 'wrap',
-            textTransform: 'uppercase',
-            // paddingLeft: '3%',
-            // paddingRight: '3%',
+    Title = css`
+      font-size: 18px;
+      font-weight: 300;
+    `;
 
-        }
-        break;
+    MainMenuContainer = css`
+      display: flex;
+      justify-content: space-between;
+      width: 98%;
+      flex-wrap: wrap;
+      text-transform: uppercase;
+    `;
+    break;
 
-    default:
-        break;
+  default:
+    break;
 }
 
+Title = styled.h1`
+  ${Title}
+`;
+MainMenuContainer = styled.div`
+  ${MainMenuContainer}
+`;
 
 const MainMenu = (props) => {
+  return (
+    <MainMenuContainer>
+      {props.langPack.pages
+        .filter((page) => page.tags.includes('mainmenu'))
+        .map((p, i) => (
+          <Link to={`../mainpage${p.id}`} style={linkStyle} key={i}>
+            <Title
+              onClick={() =>
+                (currentDevice === 'mobile' || currentDevice === 'tablet') &&
+                props.setOpen(false)
+              }
+            >
+              {p.title}
+            </Title>
+          </Link>
+        ))}
+    </MainMenuContainer>
+  );
+};
 
-    return <div style={mainMenuStyle}>
-        
-        {props.langPack.pages.filter(
-            (page) => 
-            page.tags.includes('mainmenu')
-        ).map((p,i) =>(<Link to={`../mainpage${p.id}`} style={linkStyle} key={i}>
-                    <h1 style={h1Style}
-                        onClick={() => 
-                            ((currentDevice === 'mobile' ||
-                            currentDevice === 'tablet') &&
-                             props.setOpen(false))}
-                    >{p.title}</h1>
-                </Link>)
-            
-        )}
-    </div>
-}
-
-
-export default MainMenu
+export default MainMenu;

@@ -2,60 +2,52 @@ import React from 'react';
 import LangMenu from './components/lang-menu';
 import MainMenu from './components/main-menu';
 import deviceDetector from './../../components/utility/device-detector';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+const currentDevice = deviceDetector();
 
-const currentDevice = deviceDetector()
+const DesktopMenu = styled.header`
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-top: 20px;
+`;
 
-let desktopmenuStyle ={
-    // border: 'solid 1px black',
-    display: 'flex',
-    justifyContent: 'space-between',
-    marginLeft: '30px',
-    marginTop: '20px',
-}
+const TitleContainerStyle = styled.div``;
 
+const TitleText = styled.span`
+  font-size: 20pt;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 0px;
+  display: flex;
+  width: 100%;
+`;
+//titolo da centrare
 
 const linkStyle = {
-    textDecoration: 'unset',
-    color: 'unset',
-}
-
-const menuTitleContainerStyle = {
-    // border: 'solid 1px black',
-}
-
-
-
-const titleStyle ={
-    // border: 'solid 1px black',
-    fontSize: '20pt',
-    textTransform: 'uppercase',
-    letterSpacing: '15px',
-    fontWeight: '400',
-    cursor: 'pointer',
-    margin: '0px',
-    display: 'flex',
-    width: '100%'
-
-    //titolo da centrare
-}
+  textDecoration: 'unset',
+  color: 'unset',
+};
 
 const Title = () => (
-    <Link style={linkStyle} to='/'>
-        <span style={titleStyle}>
-                Alessandro Sciaraffa
-            
-        </span>
-    </Link>)
+  <Link style={linkStyle} to='/'>
+    <TitleText>Alessandro Sciaraffa</TitleText>
+  </Link>
+);
 
-const MenuContainer = ({langPack}) => {
-    return  <header style={desktopmenuStyle}>
-            <div style={menuTitleContainerStyle}>
-            {(currentDevice === 'desktop')&&<Title />}
-            <MainMenu langPack={langPack}/>
-            </div>
-            <LangMenu langPack={langPack}/>
-        </header>
-}
+const MenuContainer = ({ langPack }) => {
+  return (
+    <DesktopMenu>
+      <TitleContainerStyle>
+        {currentDevice === 'desktop' && <Title />}
+        <MainMenu langPack={langPack} />
+      </TitleContainerStyle>
+      <LangMenu langPack={langPack} />
+    </DesktopMenu>
+  );
+};
 
-export default MenuContainer
+export default MenuContainer;

@@ -13,7 +13,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.0",
     "react-soundcloud": "^0.1.1",
-    "react-soundcloud-player": "^1.1.1"
+    "react-soundcloud-player": "^1.1.1",
+    "styled-components": "^4.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
