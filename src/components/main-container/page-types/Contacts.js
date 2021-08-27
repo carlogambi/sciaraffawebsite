@@ -1,129 +1,145 @@
 import React from 'react';
-import Image from './../../utility/Image'
+import Image from './../../utility/Image';
 import deviceDetector from '../../utility/device-detector';
+import styled, { css } from 'styled-components';
 
 const currentDevice = deviceDetector();
 
-let imgStyle = {
-}
+let imgStyle = {};
 
-let mainContentStyle = {
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    marginBottom: '8%'
-}
-let spaceInfoStyle = {
+let MainContent = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8%;
+`;
+let ContactsContainer = styled.div`
+  // border: 'solid 1px black',
+  width: 90%;
+`;
 
-}
-let contactsContainerStyle = {
-    // border: 'solid 1px black',
-    width: '90%'
-}
+let contactStyle = css`
+  border-bottom: solid 1px black;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+`;
 
-let contactStyle = {
-    borderBottom:'solid 1px black',
-    display: 'flex',
-    justifyContent: 'space-between',
-    margin: 'auto',
-    paddingTop:'40px',
-    flexWrap: 'wrap',
-    paddingBottom: '10px'
-}
+let contactItemStyle = {};
 
-let contactItemStyle = {
-}
-
-let contactLinkStyle = {
-    all:'unset',
-    cursor: 'pointer'
-}
+let contactLinkStyle = css`
+  all: unset;
+  cursor: pointer;
+`;
 
 switch (currentDevice) {
-    case 'mobile':
-        imgStyle = {
-            ...imgStyle,
-            width: '100%'
-        }
-        contactStyle = {
-            ...contactStyle,
-            maxWidth: '100%',
-            flexDirection: 'column',
-            alignItems: 'center',
+  case 'mobile':
+    imgStyle = css`
+      ${imgStyle}
+      width: 100%;
+    `;
+    contactStyle = css`
+      ${contactStyle}
+      max-width:100%;
+      flex-direction: column;
+      align-items: center;
+    `;
+    contactItemStyle = css`
+      ${contactItemStyle}
+      margin: 5px;
+    `;
+    break;
+  case 'tablet':
+    break;
 
-        }
-        contactItemStyle = {
-            ...contactItemStyle,
-            margin:'5px'
-        }
-        break
-    case 'tablet':
-        
-        break
-
-    default:
-            imgStyle = {
-                ...imgStyle,
-                width: '400px'
-            }
-            contactStyle = {
-                ...contactStyle,
-                maxWidth: '100%',
-                flexDirection: 'row',
-                alignItems: 'baseline',
-    
-            }
-            contactItemStyle = {
-                ...contactItemStyle,
-                // margin:'20px',
-                width: '300px',
-                // border: 'solid 1px black',
-                textAlign: 'left'
-            }
-        break
+  default:
+    imgStyle = css`
+      ${imgStyle}
+      width: 400px;
+    `;
+    contactStyle = css`
+      ${contactStyle}
+      max-width:100%;
+      flex-direction: row;
+      align-items: baseline;
+    `;
+    contactItemStyle = css`
+      ${contactItemStyle}
+      // margin:'20px',
+      width: 300px;
+      // border: solid 1px black;
+      text-align: left;
+    `;
+    break;
 }
 
+const ContactContainer = styled.div`
+  ${contactStyle}
+`;
 
-const Contact = ({info}) => {
-    return <div style={contactStyle}>
-        {info.name && <h3 style={contactItemStyle}>{info.name}</h3>}
-        {info.role && <p style={contactItemStyle}><i>{info.role}</i></p>}
-        {info.mail && <h5 style={contactItemStyle}>{info.mail}</h5>}
-        {/* al momento info.phone in realta contiene l'email >:\ */}
-        {info.phone && <a href={info.phone} style={{...contactItemStyle, ...contactLinkStyle}} target='blank'>
-            {
-            info.phone.replace(/(http:\/\/www.)|(https:\/\/www.)|\//g,'')
-            }
-            </a>}
-    </div>
-}
+const ContactTitle = styled.h3`
+  ${contactItemStyle}
+`;
 
-const Contacts = ({langPack}) => {
-    const page = langPack.content;
+const ContactRole = styled.p`
+  ${contactItemStyle}
+`;
 
-    const contactsList = page.contacts.map((c,i) => <Contact info={c} key={i} />)
+const ContactPhone = styled.a`
+  ${contactItemStyle}
+  ${contactLinkStyle}
+`;
 
-    return (
-    <div style={mainContentStyle}>
-        {langPack.title && <h1>{langPack.title.toUpperCase()}</h1>}
-        {page.mainContent && 
-            <p style={mainContentStyle}>{page.mainContent}</p>
-            }
-        {page.image&& 
-            <Image style={imgStyle} src={`/${page.image}`} alt='contacts-img' />
-        }
-        {page.spaceInfo &&
-            <div style={spaceInfoStyle}>
-                <h4>
-                    {page.spaceInfo.name}
-                </h4>
-                {page.spaceInfo.address}
-            </div>
-            }
-        <div style={contactsContainerStyle}>
-            {contactsList}
+const ContactMail = styled.h5`
+  ${{ contactItemStyle }}
+`;
+
+const Contact = ({ info }) => {
+  return (
+    <ContactContainer>
+      {info.name && <ContactTitle>{info.name}</ContactTitle>}
+      {info.role && (
+        <ContactRole>
+          <i>{info.role}</i>
+        </ContactRole>
+      )}
+      {info.mail && <ContactMail>{info.mail}</ContactMail>}
+      {/* al momento info.phone in realta contiene l'email >:\ */}
+      {info.phone && (
+        <ContactPhone href={info.phone} target='blank'>
+          {info.phone.replace(/(http:\/\/www.)|(https:\/\/www.)|\//g, '')}
+        </ContactPhone>
+      )}
+    </ContactContainer>
+  );
+};
+
+const Contacts = ({ langPack }) => {
+  const page = langPack.content;
+
+  const contactsList = page.contacts.map((c, i) => (
+    <Contact info={c} key={i} />
+  ));
+
+  return (
+    <MainContent>
+      {langPack.title && <h1>{langPack.title.toUpperCase()}</h1>}
+      {page.mainContent && <MainContent>{page.mainContent}</MainContent>}
+      {page.image && (
+        <Image style={imgStyle} src={`/${page.image}`} alt='contacts-img' />
+      )}
+      {page.spaceInfo && (
+        <div>
+          <h4>{page.spaceInfo.name}</h4>
+          {page.spaceInfo.address}
         </div>
-    </div>)
-}
-export default Contacts
+      )}
+      <ContactsContainer>{contactsList}</ContactsContainer>
+    </MainContent>
+  );
+};
+export default Contacts;

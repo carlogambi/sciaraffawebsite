@@ -1,211 +1,236 @@
 import React from 'react';
 
-import {Link} from 'react-router-dom';
-import  { currentLang } from '../../../lang-packs/lang-manager';
+import { Link } from 'react-router-dom';
+import { currentLang } from '../../../lang-packs/lang-manager';
 import deviceDetector from '../../utility/device-detector';
-import Caption, {linkStyle} from './../page-components/Caption';
+import Caption, { linkStyle } from './../page-components/Caption';
 
-const currentDevice = deviceDetector()
+import styled, { css } from 'styled-components';
 
-let captionListStyle = {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center'
-}  
+const currentDevice = deviceDetector();
 
-let subTagStyle=  {
-    ...linkStyle, 
-    cursor: 'pointer'
-}
+let captionListStyle = css`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
 
-let subTaglistStyle = {
-    display:'flex',
-    flexWrap: 'wrap',
-    lineHeight: '40px',
-    height: 'fit-content',
-}
+let subTagStyle = css`
+  ${linkStyle}
+  cursor: pointer;
+`;
 
-let mainContainerStyle = {
-    display: 'flex',
-    alignItems: 'top',
-    justifyContent: 'space-between',
-    width: '100%',
-}
+let subTaglistStyle = css`
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 40px;
+  height: fit-content;
+`;
 
-let titleStyle ={
-    textTransform: 'uppercase',
-    fontSize: '18pt',
-    fontWeight: '700',
-}
+let mainContainerStyle = css`
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  width: 100%;
+`;
 
-let subTagMainContainerStyle = {
-    display:'flex',
-    justifyContent: 'center'      
-}
+let titleStyle = css`
+  text-transform: uppercase;
+  font-size: 18pt;
+  font-weight: 700;
+`;
 
-let subTagPageStyle = {
-    ...captionListStyle,
-}
+let subTagMainContainerStyle = css`
+  display: flex;
+  justify-content: center;
+`;
+
+let subTagPageStyle = css`
+  ${captionListStyle}
+`;
 
 switch (currentDevice) {
-    case 'mobile':
-        subTagStyle=  {
-            ...subTagStyle,
-            textAlign: 'left',
-            margin: '20px',
-            marginBottom: '0px',
-            marginTop: '0px',
-        }
-        subTaglistStyle = {
-            ...subTaglistStyle,
-            borderRight: 'solid 1px white',
-            width:'100%',
-            flexDirection: 'row',
-            alignContent: 'center',
-            justifyContent: 'center',
-            alignSelf: 'left',
-            paddingRight: '0px',
-        
-        }
-        mainContainerStyle = {
-            ...mainContainerStyle,
-            flexDirection: 'column',
-            marginTop: '0px'
-        }
-        titleStyle = {
-            ...titleStyle,
-            textAlign: 'center',
-            paddingLeft: '0%',
-            width: '100%',
-            letterSpacing: '5px',
+  case 'mobile':
+    subTagStyle = css`
+      ${subTagStyle}
+      text-align:left;
+      margin: 20px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    `;
+    subTaglistStyle = css`
+      ${subTaglistStyle}
+      border-right:solid 1px white;
+      width: 100%;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      align-self: left;
+      padding-right: 0px;
+    `;
+    mainContainerStyle = css`
+      ${mainContainerStyle}
+      flex-direction:column;
+      margin-top: 0px;
+    `;
+    titleStyle = css`
+      ${titleStyle}
+      text-align:center;
+      padding-left: 0%;
+      width: 100%;
+      letter-spacing: 5px;
+    `;
+    captionListStyle = css`
+      ${captionListStyle}
+      max-width:100%;
+      min-width: 100%;
+    `;
+    subTagPageStyle = css`
+      ${subTagPageStyle}
+      min-width:100%;
+      justify-content: center;
+    `;
+    break;
+  case 'tablet':
+    titleStyle = css`
+      ${titleStyle}
+      text-align:center;
+      width: 100%;
+      font-size: 30pt;
+      font-weight: 500;
+      letter-spacing: 15px;
+      min-width: 100%;
+      justify-content: center;
+    `;
+    subTagStyle = css`
+      ${subTagStyle}
+      font-size:15pt;
+      padding-right: 15px;
+      padding-left: 15px;
+    `;
+    mainContainerStyle = css`
+      ${mainContainerStyle}
+      flex-direction:column;
+      margin-top: 0px;
+      align-items: center;
+    `;
+    break;
 
-        }
-        captionListStyle = {
-            ...captionListStyle,
-            maxWidth: '100%',
-            minWidth: '100%',
-        }
-        subTagPageStyle = {
-            ...subTagPageStyle,
-            minWidth: '100%',
-            justifyContent: 'center',
-        }
-        break;
-        case 'tablet':
-        titleStyle = {
-            ...titleStyle,
-            textAlign: 'center',
-            width: '100%',
-            fontSize: '30pt',
-            fontWeight: '500',
-            letterSpacing: '15px',
-        }
-        subTagStyle=  {
-            ...subTagStyle,
-            fontSize: '15pt',
-            paddingRight: '15px',
-            paddingLeft: '15px',
-        }
-        mainContainerStyle = {
-            ...mainContainerStyle,
-            flexDirection: 'column',
-            marginTop: '0px',
-            alignItems: 'center'
-        }
-        break;
-
-    default:
-        subTagStyle=  {
-            ...subTagStyle,
-            textAlign: 'center',
-        }
-        subTaglistStyle = {
-            ...subTaglistStyle,
-            borderRight: 'solid 1px black',
-            width: '17%',        
-            flexDirection: 'column',        
-            alignContent: 'flex-end',        
-            paddingRight: '20px',        
-        }
-        mainContainerStyle = {
-            ...mainContainerStyle,
-            flexDirection: 'row',
-            marginTop: '80px'
-        }
-        titleStyle = {
-            ...titleStyle,
-            textAlign: 'left',
-            paddingLeft: '30%',
-            letterSpacing: '20px',
-
-        }
-        captionListStyle = {
-            ...captionListStyle,
-            maxWidth: '75%',
-            minWidth: '20%',
-            justifyContent: 'left'
-        }
-        subTagPageStyle = {
-            ...subTagPageStyle,
-            minWidth: '70%',
-        }
-        break;
+  default:
+    subTagStyle = css`
+      ${subTagStyle}
+      text-align: center;
+    `;
+    subTaglistStyle = css`
+      ${subTaglistStyle}
+      border-right:solid 1px black;
+      width: 17%;
+      flex-direction: column;
+      align-content: flex-end;
+      padding-right: 20px;
+    `;
+    mainContainerStyle = css`
+      ${mainContainerStyle}
+      flex-direction:row;
+      margin-top: 80px;
+    `;
+    titleStyle = css`
+      ${titleStyle}
+      text-align: left;
+      padding-left: 30%;
+      letter-spacing: 20px;
+    `;
+    captionListStyle = css`
+      ${captionListStyle}
+      text-align:left;
+      padding-left: 30%;
+      letter-spacing: 20px;
+    `;
+    subTagPageStyle = css`
+      ${subTagPageStyle}
+      min-width: 70%;
+    `;
+    break;
 }
 
-export  { captionListStyle }
+export { captionListStyle };
 
+const CustomLink = styled(Link)`
+  ${subTagStyle}
+`;
 
-const SubTag = ({tag}) => {
-    const target = window.location.pathname.replace('mainpage', '')
-    const link = `subTagAggregator${tag}${target}`
-    return <Link style={subTagStyle} to={link}>
-           {tag}
-        </Link>
-}
+const SubTag = ({ tag }) => {
+  const target = window.location.pathname.replace('mainpage', '');
+  const link = `subTagAggregator${tag}${target}`;
+  return <CustomLink to={link}>{tag}</CustomLink>;
+};
 
-const SubTagList = ({data}) => {
-    const list = (data.langPack.tagReference.find(mt => mt.mainTagName === data.id)).subtags
-    return <div style={subTaglistStyle}>
-        {list.map((st, i) => <SubTag tag={st} key={i} />)}
-    </div>
-}
+const SubTagListContainer = styled.div`
+  ${subTaglistStyle}
+`;
+
+const SubTagList = ({ data }) => {
+  const list = data.langPack.tagReference.find(
+    (mt) => mt.mainTagName === data.id
+  ).subtags;
+  return (
+    <SubTagListContainer>
+      {list.map((st, i) => (
+        <SubTag tag={st} key={i} />
+      ))}
+    </SubTagListContainer>
+  );
+};
+
+const SubTagCaptionListContainer = styled.div`
+  ${(props) => (props.match ? subTagPageStyle : captionListStyle)}
+`;
+
+const LevellerMainContainer = styled.div`
+  ${(props) => (props.match ? subTagMainContainerStyle : mainContainerStyle)}
+`;
+
+const Title = styled.h1`
+  ${titleStyle}
+`;
 
 const PageLeveller = (props) => {
-    const mainTagsList = () => props.langPack.pages.filter(p => p.tags.includes(props.id));
-    const subTagList = () => {
-        let pages = currentLang.pages.filter(p => p.subtags)
-        pages = pages.filter(p => {              
-            return p.subtags.includes(props.match.params.tag)
-        })
-        return pages;
-    } 
-    const pageList = props.match?subTagList():mainTagsList();
+  const mainTagsList = () =>
+    props.langPack.pages.filter((p) => p.tags.includes(props.id));
+  const subTagList = () => {
+    let pages = currentLang.pages.filter((p) => p.subtags);
+    pages = pages.filter((p) => {
+      return p.subtags.includes(props.match.params.tag);
+    });
+    return pages;
+  };
+  const pageList = props.match ? subTagList() : mainTagsList();
 
-    return <div style={{ width: '100%' }} >
-        {props.match && (
-            <h1 style={titleStyle}>
-                <span 
-                    style={{cursor: 'pointer', fontWeight: '300'}}
-                    onClick={() => props.history.goBack()}
-                >
-                    {props.match.params.prev}/
-                </span>
-                {currentDevice==='mobile' && (<br/>)}
-                {props.match.params.tag}
-            </h1>
-            )}
-        {props.id && (<h1 style={{...titleStyle, marginTop:'0px'}}>{props.id}</h1>)}
-        <div style={props.match?subTagMainContainerStyle:mainContainerStyle}>
-        {!props.match&&<SubTagList data={props} />}
-        <div style={props.match?subTagPageStyle:captionListStyle}>
-            
-            {pageList.map(
-                (p,i) =>
-                <Caption data={p} key={i} />
-            )}
-        </div>
-        </div>
+  return (
+    <div style={{ width: '100%' }}>
+      {props.match && (
+        <Title>
+          <span
+            style={{ cursor: 'pointer', fontWeight: '300' }}
+            onClick={() => props.history.goBack()}
+          >
+            {props.match.params.prev}/
+          </span>
+          {currentDevice === 'mobile' && <br />}
+          {props.match.params.tag}
+        </Title>
+      )}
+      {props.id && <Title style={{ marginTop: '0px' }}>{props.id}</Title>}
+      <LevellerMainContainer>
+        {!props.match && <SubTagList data={props} />}
+        <SubTagCaptionListContainer {...props}>
+          {pageList.map((p, i) => (
+            <Caption data={p} key={i} />
+          ))}
+        </SubTagCaptionListContainer>
+      </LevellerMainContainer>
     </div>
-}
+  );
+};
 
 export default PageLeveller;
