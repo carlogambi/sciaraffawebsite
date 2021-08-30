@@ -1,179 +1,235 @@
-import React from 'react';
-import langManager from '../../../lang-packs/lang-manager';
-import deviceDetector from '../../utility/device-detector';
-import Audio from '../page-components/Audio';
-import ScrollToTopButton from '../page-components/ScrollToTopButton';
-import Text from '../page-components/Text';
-import Video from '../page-components/Video';
-import Image from './../../utility/Image'
+import React from "react";
+import langManager from "../../../lang-packs/lang-manager";
+import deviceDetector from "../../utility/device-detector";
+import Audio from "../page-components/Audio";
+import ScrollToTopButton from "../page-components/ScrollToTopButton";
+import Text from "../page-components/Text";
+import Video from "../page-components/Video";
+import Image from "./../../utility/Image";
+import styled, { css } from "styled-components";
 const currentDevice = deviceDetector();
 
-let audioStyle= {
-    margin: '10px',
-}
-let titleStyle= {
-    fontSize: '20px',
-    textTransform: 'uppercase',
-    marginBottom: '0px',
-    width: '70%',
-    textAlign: 'right'
-}
-let dateStyle= {
-    width: '70%',
-    // border: 'solid 1px black',
-    fontWeight: '300',
-    marginBottom: '0px',
-    textAlign: 'right'
-}
-let subTitleStyle = {
-    width: '70%',
-    marginTop: '0px',
-    fontWeight: '300',
-    textAlign: 'right'
-}
+let audioStyle = css`
+  margin: 10px;
+`;
+let titleStyle = css`
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  width: 70%;
+  text-align: right;
+`;
 
-let imgStyle={
-    alignSelf: 'center',
-    marginBottom: '3px'
-}
+let imgStyle = css`
+  align-self: center;
+  margin-bottom: 3px;
+`;
 
-let pageStyle ={
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: '100%',
-    pagging: '0%'
-}
 
-let mainContent = {
-    textAlign: 'justify'
-}
 
-let citStyle = {
-    width: '70%',
-    textAlign: "right"
-    
-}
-let footerStyle ={
-    textAlign: 'justify',
-}
+let mainContent = css`
+  text-align: justify;
+`;
 
-let didaStyle = {
-    fontSize: '8pt', 
-    width: '70%',
-    textAlign: 'right',
-    marginTop: '0px'
-}
+let citStyle = css`
+  width: 70%;
+  text-align: right;
+`;
+
+let footerStyle = css`
+  text-align: justify;
+`;
+
 
 switch (currentDevice) {
-    case 'mobile':
-        audioStyle= {
-            ...audioStyle,
-            minWidth: '100%',
-        }
-        mainContent = {
-        ...mainContent, 
-            width: '83%',
-            fontSize: '12pt',
-        }
-        
-        citStyle = {
-        ...citStyle, 
-            fontSize: '11pt',            
-        }
-        footerStyle = {
-        ...footerStyle,
-            width: '83%',
-            fontSize: '11pt',
-        }
-        imgStyle=  {
-        ...imgStyle,
-                width: '100%',
-                margin: '15px',
-            }
-        break;
+  case "mobile":
+    audioStyle = css`
+      ${audioStyle}
+      min-width: 100%;
+    `;
 
-    default: //desktop
-        audioStyle ={
-        ...audioStyle, 
-            alignSelf: 'center',
-            width: "70%"
-        }
-        mainContent ={
-        ...mainContent, 
-            width: '70%',
-            fontSize: '9pt',
-        }
-        citStyle ={
-        ...citStyle, 
-            fontSize: '12pt',            
-        }
-        footerStyle ={
-        ...footerStyle,
-            width: '70%',
-            fontSize: '9pt',
-        }
-        imgStyle= {
-        ...imgStyle,
-                width: '70%',
-                margin: '30px',
-            }
-        break;
+    mainContent = css`
+      ${mainContent}
+      width: 83%;
+      font-size: 12pt;
+    `;
+
+    citStyle = css`
+      ${citStyle}
+      font-size: 11pt;
+    `;
+
+    footerStyle = css`
+      ${footerStyle}
+      width: 83%;
+      font-size: 11pt;
+    `;
+
+    imgStyle = css`
+      ${imgStyle}
+      width: 100%;
+      margin: 15px;
+    `;
+
+    break;
+
+  default:
+    //desktop
+    audioStyle = css`
+      ${audioStyle}
+      align-self: center;
+      width: 70%;
+    `;
+
+    mainContent = css`
+      ${mainContent}
+      width: 70%;
+      font-size: 9pt;
+    `;
+
+    citStyle = css`
+      ${citStyle}
+      font-size: 12pt;
+    `;
+
+    footerStyle = css`
+      ${footerStyle}
+      width: 70%;
+      font-size: 9pt;
+    `;
+
+    imgStyle = css`
+      ${imgStyle}
+      width: 70%;
+      margin: 30px;
+    `;
+
+    break;
 }
 
+const DateContainer = styled.h4`
+  width: 70%;
+  font-weight: 300;
+  margin-bottom: 0px;
+  text-align: right;
+`;
+
+const Title = styled.h5`
+  ${titleStyle}
+`;
+
+const SubTitle = styled.h3`
+  width: 70%;
+  margin-top: 0px;
+  font-weight: 300;
+  text-align: right;
+`;
+
+const Cit = styled.p`
+  ${citStyle}
+`;
+
+const MainContent = styled.p`
+  ${mainContent}
+`;
+
+const Footer = styled.p`
+  ${footerStyle}
+`;
+
+const StyledAudio = styled(Audio)`
+  ${audioStyle}
+`;
+
+const StyledImg = styled(Image)`
+  ${imgStyle}
+`;
+
+let Page = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+`;
+
+
+let Dida = styled.i`
+  font-size: 8pt;
+  width: 70%;
+  text-align: right;
+  margin-top: 0px;
+`;
 
 const SinglePage = (props) => {
-    const pageId = props.match.params.id;
-    const page = langManager.currentLang.pages.find(p => p.id === pageId);
-    const content = page.content;
-    
-    return <div style={pageStyle}>
-        {page.title && 
-            <h5 style={titleStyle}>{page.title}</h5>}
+  const pageId = props.match.params.id;
+  const page = langManager.currentLang.pages.find((p) => p.id === pageId);
+  const content = page.content;
 
-        {content.date && 
-            <h4 style={dateStyle}>{content.date}</h4>}
+  return (
+    <Page>
+      {page.title && <Title>{page.title}</Title>}
 
-        {content.subTitle && 
-            <h3 style={subTitleStyle}>{content.subTitle}</h3>}
+      {content.date && <DateContainer>{content.date}</DateContainer>}
 
-        {content.images && 
-            <>
-                <Image style={imgStyle} src={content.images[0].img} alt='anteprima-img-single-page' />
-                {content.images[0].dida && (<i style={didaStyle}>{content.images[0].dida}</i>)}
-            </>
-        }
+      {content.subTitle && <SubTitle>{content.subTitle}</SubTitle>}
 
-        {content.audios && 
-            content.audios
-                .map((v, i) => <Audio key={i} url={v} style={audioStyle}/>)}
+      {content.images && (
+        <>
+          <StyledImg
+            src={content.images[0].img}
+            alt="anteprima-img-single-page"
+          />
+          {content.images[0].dida && (
+            <Dida>{content.images[0].dida}</Dida>
+          )}
+        </>
+      )}
 
-        {content.cit && 
-            <p style={citStyle}><i><Text content={content.cit.text}/></i><br/>{content.cit.author}</p>}
+      {content.audios &&
+        content.audios.map((v, i) => <StyledAudio key={i} url={v} />)}
 
-        {content.mainContent && 
-            <p style={mainContent}><Text content={content.mainContent}/></p>}
+      {content.cit && (
+        <Cit>
+          <i>
+            <Text content={content.cit.text} />
+          </i>
+          <br />
+          {content.cit.author}
+        </Cit>
+      )}
 
-        {content.footer && 
-            <p style={footerStyle}><Text content={content.footer}/></p>}
+      {content.mainContent && (
+        <MainContent>
+          <Text content={content.mainContent} />
+        </MainContent>
+      )}
 
-        {content.videos && 
-            content.videos
-                .map((v, i) => <Video key={i} url={v} />)}
+      {content.footer && (
+        <Footer>
+          <Text content={content.footer} />
+        </Footer>
+      )}
 
-        {content.images && 
-            content.images
-                .filter((img, indx) => indx !== 0)
-                .map((img, i) => (
-                    <React.Fragment key={i}>
-                        <Image style={imgStyle} src={img.img}  alt={img.dida?img.dida:'single-page-img'} />
-                        {img.dida && (<i style={didaStyle}>{img.dida}</i>)}
-                    </React.Fragment>
-                ))}
+      {content.videos &&
+        content.videos.map((v, i) => <Video key={i} url={v} />)}
 
-        {(currentDevice === 'desktop') && <ScrollToTopButton/>}
-    </div>
-}
+      {content.images &&
+        content.images
+          .filter((img, indx) => indx !== 0)
+          .map((img, i) => (
+            <React.Fragment key={i}>
+              <StyledImg
+                src={img.img}
+                alt={img.dida ? img.dida : "single-page-img"}
+              />
+              {img.dida && <Dida>{img.dida}</Dida>}
+            </React.Fragment>
+          ))}
+      {currentDevice === "desktop" && <ScrollToTopButton />}
+    </Page>
+  );
+};
 
-export default SinglePage
+export default SinglePage;
